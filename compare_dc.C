@@ -1,5 +1,5 @@
 
-void compare_dc(Int_t RunNumber=52949, Int_t MaxEventToReplay=11000) {
+void compare_dc(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=11000) {
 
   //
   //  Steering script to test hodoscope decoding
@@ -36,7 +36,7 @@ void compare_dc(Int_t RunNumber=52949, Int_t MaxEventToReplay=11000) {
 
   // Add hodoscope
   HMS->AddDetector( new THcHodoscope("hod", "Hodoscope" ));
-  HMS->AddDetector( new THcShower("cal", "Shower" ));
+  //  HMS->AddDetector( new THcShower("cal", "Shower" ));
   HMS->AddDetector( new THcDC("dc", "Drift Chambers" ));
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
@@ -62,11 +62,13 @@ void compare_dc(Int_t RunNumber=52949, Int_t MaxEventToReplay=11000) {
 
   // Eventually need to learn to skip over, or properly analyze
   // the pedestal events
-  run->SetEventRange(1,MaxEventToReplay);//  Physics Event number, does not
+  run->SetEventRange(FirstToReplay,MaxEventToReplay);//  Physics Event number, does not
                                 // include scaler or control events
 
   // Define the analysis parameters
-  analyzer->SetCountMode( 0 );
+  analyzer->SetCountMode( 2 ); // 0 = counter is # of physics triggers
+			       //1 = counter is # of all decode reads 
+                               //2= counter is event number
   analyzer->SetEvent( event );
   analyzer->SetOutFile(Form("Rootfiles/compare_dc_%05d.root",RunNumber));
   analyzer->SetOdefFile("output_dc.def");

@@ -1,5 +1,5 @@
 
-void compare_hodo(Int_t RunNumber=52949, Int_t MaxEventToReplay=11000) {
+void compare_hodo(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=11000) {
 
   //
   //  Steering script to test hodoscope decoding
@@ -62,11 +62,11 @@ void compare_hodo(Int_t RunNumber=52949, Int_t MaxEventToReplay=11000) {
 
   // Eventually need to learn to skip over, or properly analyze
   // the pedestal events
-  run->SetEventRange(1,MaxEventToReplay);//  Physics Event number, does not
+  run->SetEventRange(FirstToReplay,MaxEventToReplay);//  Physics Event number, does not
                                 // include scaler or control events
 
   // Define the analysis parameters
-  analyzer->SetCountMode( 0 );
+  analyzer->SetCountMode( 2 );
   analyzer->SetEvent( event );
   analyzer->SetOutFile(Form("Rootfiles/compare_hodo_%05d.root",RunNumber));
   analyzer->SetOdefFile("output_hodo.def");
