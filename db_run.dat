@@ -3,9 +3,9 @@
 # DAQ04
 --------[ 2000-01-01 01:00:00 ]
 
-#A1 2202 pedestal
-ebeam           = 4.02187
-H.theta         = 19.99
-H.pcentral      = 2.074
+# run 52949
+ebeam           = 1.2048
+H.theta         = 55.
+H.pcentral      = 0.811
 
 
