@@ -116,7 +116,7 @@ char *s = new char[1];
        if ( TMath::Abs(myhcana->H_tr_chi2[i]-myengine->dc_chi2[i]) >= 10. ) hchi2_eng2[i]->Fill(myengine->dc_chi2[i]);
     }
   }
-      if ( myhcana->H_dc_ntrack>2 && -1 == 1) {
+  if ( TMath::Abs(myhcana->H_dc_yp[0]-myengine->dc_ypfp[0]) >= 0.001 ) {
 	//cout  << " hcana event number = "<< myhcana->g_evnum << " Engine event number = " << myengine->evnum << endl;
       myhcana->PrintTrack(ni);
       myengine->PrintTrack(ni);

@@ -165,7 +165,7 @@ void engine::PrintTrack(Long64_t entry)
    cout << " Number of Tracks  = " << dc_ntr << endl;
    printf(" Track   x (cm)    y (cm)   dx/dz      dy/dz  \n");
    for (Int_t i=0;i<dc_ntr;i++) {
-     printf(" %3d   %7.3f   %7.3f   %7.5f    %7.5f \n",i+1,dc_xfp[i],dc_yfp[i],dc_xpfp[i],dc_ypfp[i]);
+     printf(" %3d   %8.4f   %8.4f   %8.6f    %8.6f \n",i+1,dc_xfp[i],dc_yfp[i],dc_xpfp[i],dc_ypfp[i]);
    }
    printf(" Track   y (cm)   dx/dz      dy/dz  delta chi2 \n");
    for (Int_t i=0;i<dc_ntr;i++) {

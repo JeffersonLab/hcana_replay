@@ -669,7 +669,7 @@ void scan_hcana::PrintTrack(Long64_t entry)
    cout << " Number of Tracks  = " << H_dc_ntrack << endl;
    printf(" Track   x (cm)    y (cm)   dx/dz      dy/dz \n");
    for (Int_t i=0;i<H_dc_ntrack;i++) {
-     printf(" %3d   %7.3f   %7.3f   %7.5f    %7.5f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
+     printf(" %3d   %8.4f   %8.4f   %8.6f    %8.6f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
    }
    printf(" Track   y (cm)   dx/dz      dy/dz  delta  chisq\n");
    for (Int_t i=0;i<H_dc_ntrack;i++) {
