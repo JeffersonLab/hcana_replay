@@ -120,6 +120,7 @@ char *s = new char[1];
 	//cout  << " hcana event number = "<< myhcana->g_evnum << " Engine event number = " << myengine->evnum << endl;
       myhcana->PrintTrack(ni);
       myengine->PrintTrack(ni);
+      cout << " Hit return to see next event " << endl;
       gets(s);
       if ( s == "q") exit;
        }

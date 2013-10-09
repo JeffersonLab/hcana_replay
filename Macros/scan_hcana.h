@@ -667,14 +667,16 @@ void scan_hcana::PrintTrack(Long64_t entry)
    cout << " hcana event number = " << g_evnum << " event type = " << g_evtyp << endl;
    cout << " Number of Total hits  = " << H_dc_nhit << endl;
    cout << " Number of Tracks  = " << H_dc_ntrack << endl;
-   printf(" Track   x (cm)    y (cm)   dx/dz      dy/dz \n");
+   printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
    for (Int_t i=0;i<H_dc_ntrack;i++) {
-     printf(" %3d   %8.4f   %8.4f   %8.6f    %8.6f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
+     printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
    }
-   printf(" Track   y (cm)   dx/dz      dy/dz  delta  chisq\n");
+   cout << " Print track focal plane is not sorted by chi-squared " << endl;
+   printf(" Track target        y (cm)   dx/dz     dy/dz       delta      chi2 \n");
    for (Int_t i=0;i<H_dc_ntrack;i++) {
-     printf(" %3d   %7.3f   %7.3f   %7.5f    %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_chi2[i]);
+     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_chi2[i]);
    }
+   cout << " Print track target info sorted by chi-squared " << endl;
 }
 Int_t scan_hcana::Cut(Long64_t entry)
 {
