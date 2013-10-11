@@ -12,63 +12,70 @@ void scan_comp_engine( TString engine1_file, TString engine_file) {
   Long64_t nent_engine = myengine->fChain->GetEntriesFast();
   cout << " engine1 entries = " << nent_engine1 << " engine entries = " << nent_engine  << endl;
   Long64_t nb_engine1 = 0,nb_engine = 0;
+  //
   TH1F *hntr_engine1 = new TH1F("hntr_engine1","; Ntracks; Counts",50,0,50);
   TH1F *hntr_eng = new TH1F("hntr_eng","; Ntracks; Counts",50,0,50);
   TH2F *hntr_2d = new TH2F("hntr_2d","; ENGINE1 Ntracks ; ENGINE Ntracks",40,0,40,40,0,40);
   TH1F *hntr_diff = new TH1F("hntr_diff","; Ntracks; Counts",50,0,50);
+  TH1F *hxpfp_eng[3],*hxpfp_engine1[3],*hxpfp_diff[3],*hxpfp_sub[3];
+  TH1F *hypfp_eng[3],*hypfp_engine1[3],*hypfp_diff[3],*hypfp_sub[3];
+  TH1F *hyfp_eng[3],*hyfp_engine1[3],*hyfp_diff[3],*hyfp_sub[3];
+  TH1F *hxfp_eng[3],*hxfp_engine1[3],*hxfp_diff[3],*hxfp_sub[3];
   //
-  TH1F *hxpfp_eng = new TH1F("hxpfp_eng","; Xpfp (mr); Counts",100,-100.,100.);
-  TH1F *hxpfp_engine1 = new TH1F("hxpfp_engine1","; Xpfp (mr); Counts",100,-100.,100.);
-  TH1F *hxpfp_diff = new TH1F("hxpfp_diff","Difference; Xpfp (mr); Counts",100,-100.,100.);
-  //
-  TH1F *hypfp_eng = new TH1F("hypfp_eng","; Ypfp (mr); Counts",100,-50.,50.);
-  TH1F *hypfp_engine1 = new TH1F("hypfp_engine1","; Ypfp (mr); Counts",100,-50.,50.);
-  TH1F *hypfp_diff = new TH1F("hypfp_diff","Difference; Ypfp (mr); Counts",100,-50.,50.);
-  //
-  TH1F *hxfp_eng = new TH1F("hxfp_eng","; Xfp (cm); Counts",100,-50,50);
-  TH1F *hxfp_engine1 = new TH1F("hxfp_engine1","; Xfp (cm); Counts",100,-50,50);
-  TH1F *hxfp_diff = new TH1F("hxfp_diff","Difference; Xfp (cm); Counts",100,-50,50);
-  //
-  TH1F *hyfp_eng = new TH1F("hyfp_eng","; Yfp (cm); Counts",60,-30,30);
-  TH1F *hyfp_engine1 = new TH1F("hyfp_engine1","; Yfp (cm); Counts",60,-30,30);
-  TH1F *hyfp_diff = new TH1F("hyfp_diff","Difference; Yfp (cm); Counts",60,-30,30);
-  //
-  TH1F *hyfp_sub = new TH1F("hyfp_sub","; Yfp (ENGINE1-ENGINE); Counts",60,-.5,.5);
-  TH1F *hxfp_sub = new TH1F("hxfp_sub","; Xfp (ENGINE1-ENGINE); Counts",100,-.5,.5);
-  TH1F *hxpfp_sub = new TH1F("hxpfp_sub","; Xpfp (ENGINE1-ENGINE); Counts",100,-.2,.2);
-  TH1F *hypfp_sub = new TH1F("hypfp_sub","; Ypfp  (ENGINE1-ENGINE); Counts",100,-.2,.2);
-  //
+  Int_t i;
+   for (i=0 ; i<3 ;i++) {
+  hxpfp_eng[i] = new TH1F(Form("hxpfp_eng%d",i),"; Xpfp (mr); Counts",100,-100.,100.);
+  hxpfp_engine1[i] = new TH1F(Form("hxpfp_engine1%d",i),"; Xpfp (mr); Counts",100,-100.,100.);
+  hxpfp_diff[i] = new TH1F(Form("hxpfp_diff%d",i),"Difference; Xpfp (mr); Counts",100,-100.,100.);
+  
+  hypfp_eng[i] = new TH1F(Form("hypfp_eng%d",i),"; Ypfp (mr); Counts",100,-50.,50.);
+  hypfp_engine1[i] = new TH1F(Form("hypfp_engine1%d",i),"; Ypfp (mr); Counts",100,-50.,50.);
+  hypfp_diff[i] = new TH1F(Form("hypfp_diff%d",i),"Difference; Ypfp (mr); Counts",100,-50.,50.);
+  
+  hxfp_eng[i] = new TH1F(Form("hxfp_eng%d",i),"; Xfp (cm); Counts",100,-50,50);
+  hxfp_engine1[i] = new TH1F(Form("hxfp_engine1%d",i),"; Xfp (cm); Counts",100,-50,50);
+  hxfp_diff[i] = new TH1F(Form("hxfp_diff%d",i),"Difference; Xfp (cm); Counts",100,-50,50);
+  
+  hyfp_eng[i] = new TH1F(Form("hyfp_eng%d",i),"; Yfp (cm); Counts",60,-30,30);
+  hyfp_engine1[i] = new TH1F(Form("hyfp_engine1%d",i),"; Yfp (cm); Counts",60,-30,30);
+  hyfp_diff[i] = new TH1F(Form("hyfp_diff%d",i),"Difference; Yfp (cm); Counts",60,-30,30);
+  
+  hyfp_sub[i] = new TH1F(Form("hyfp_sub%d",i),"; Yfp (ENGINE1-ENGINE); Counts",60,-.5,.5);
+  hxfp_sub[i] = new TH1F(Form("hxfp_sub%d",i),"; Xfp (ENGINE1-ENGINE); Counts",100,-.5,.5);
+  hxpfp_sub[i] = new TH1F(Form("hxpfp_sub%d",i),"; Xpfp (ENGINE1-ENGINE); Counts",100,-.2,.2);
+  hypfp_sub[i] = new TH1F(Form("hypfp_sub%d",i),"; Ypfp  (ENGINE1-ENGINE); Counts",100,-.2,.2);
+   }//
   //
   Int_t counter=0;
-  for (Long64_t i=0 ; i<nent_engine1 ;i++) {
-      nb_engine1 = myengine1->fChain->GetEntry(i);
-      nb_engine = myengine->fChain->GetEntry(i);
+  for (Long64_t ni=0 ; ni<nent_engine1 ;ni++) {
+      nb_engine1 = myengine1->fChain->GetEntry(ni);
+      nb_engine = myengine->fChain->GetEntry(ni);
       hntr_engine1->Fill(myengine1->dc_ntr);
       hntr_eng->Fill(myengine->dc_ntr);
-      if ( myengine1->dc_ntr == 1) {
-      hxfp_engine1->Fill(myengine1->dc_xfp[0]);
-      hyfp_engine1->Fill(myengine1->dc_yfp[0]);
-      hxpfp_engine1->Fill(myengine1->dc_xpfp[0]*1000);
-      hypfp_engine1->Fill(myengine1->dc_ypfp[0]*1000);
-      }
-      if ( myengine->dc_ntr == 1) {
-      hxfp_eng->Fill(myengine->dc_xfp[0]);
-      hyfp_eng->Fill(myengine->dc_yfp[0]);
-      hxpfp_eng->Fill(myengine->dc_xpfp[0]*1000);
-      hypfp_eng->Fill(myengine->dc_ypfp[0]*1000);
-      }
       if ((myengine1->dc_ntr) != (myengine->dc_ntr) )hntr_2d->Fill(myengine1->dc_ntr,myengine->dc_ntr);
-      if ( myengine->dc_ntr == 1 &&  myengine1->dc_ntr == 1) {
-      if ( TMath::Abs((myengine1->dc_yfp[0]-myengine->dc_yfp[0])) != 0.0 || (myengine1->dc_xfp[0]-myengine->dc_xfp[0]) != 0.0
-|| (myengine1->dc_xpfp[0]-myengine->dc_xpfp[0]) != 0.0 || (myengine1->dc_ypfp[0]-myengine->dc_ypfp[0]) != 0.0 ) {
-	hyfp_sub->Fill((myengine1->dc_yfp[0]-myengine->dc_yfp[0]));
-	hxfp_sub->Fill((myengine1->dc_xfp[0]-myengine->dc_xfp[0]));
-	hypfp_sub->Fill((myengine1->dc_ypfp[0]-myengine->dc_ypfp[0]));
-        hxpfp_sub->Fill((myengine1->dc_xpfp[0]-myengine->dc_xpfp[0]));
+      if ( myengine1->dc_ntr==myengine->dc_ntr &&myengine1->dc_ntr<=3 ) {
+     for (i=0 ; i<myengine->dc_ntr ;i++) {
+     hxfp_engine1[i]->Fill(myengine1->dc_xfp[i]);
+      hyfp_engine1[i]->Fill(myengine1->dc_yfp[i]);
+      hxpfp_engine1[i]->Fill(myengine1->dc_xpfp[i]*1000);
+      hypfp_engine1[i]->Fill(myengine1->dc_ypfp[i]*1000);
+      hxfp_eng[i]->Fill(myengine->dc_xfp[i]);
+      hyfp_eng[i]->Fill(myengine->dc_yfp[i]);
+      hxpfp_eng[i]->Fill(myengine->dc_xpfp[i]*1000);
+      hypfp_eng[i]->Fill(myengine->dc_ypfp[i]*1000);
+          if ( TMath::Abs((myengine1->dc_yfp[i]-myengine->dc_yfp[i])) != 0.0 || (myengine1->dc_xfp[i]-myengine->dc_xfp[i]) != 0.0
+|| (myengine1->dc_xpfp[i]-myengine->dc_xpfp[i]) != 0.0 || (myengine1->dc_ypfp[i]-myengine->dc_ypfp[i]) != 0.0 ) {
+	hyfp_sub[i]->Fill((myengine1->dc_yfp[i]-myengine->dc_yfp[i]));
+	hxfp_sub[i]->Fill((myengine1->dc_xfp[i]-myengine->dc_xfp[i]));
+	hypfp_sub[i]->Fill((myengine1->dc_ypfp[i]-myengine->dc_ypfp[i]));
+        hxpfp_sub[i]->Fill((myengine1->dc_xpfp[i]-myengine->dc_xpfp[i]));
+          }
+      }
+      }
+      if ( myengine->dc_ntr == 1 &&  myengine1->dc_ntr == 1 && -1==1) {
       cout  << " Counter = "<< counter++ << endl;
-      myengine1->PrintTrack(i);
-      myengine->PrintTrack(i);
-       }
+      myengine1->PrintTrack(ni);
+      myengine->PrintTrack(ni);
       }
   }
   cout << " Engine1 File= " << engine1_file << endl;
@@ -83,46 +90,53 @@ void scan_comp_engine( TString engine1_file, TString engine_file) {
  MyStyle->SetStatFontSize(0.2);
  MyStyle->SetTitleFontSize(0.1);
  gROOT->SetStyle("MyStyle");
-TCanvas *cplot2 = new TCanvas("cplot2"," Focal Plane Positions ( 1 track)  ",800,800);
- cplot2->Divide(2,3);
- cplot2->cd(1);
- hxfp_engine1->Draw();
- hxfp_eng->Draw("same");
- hxfp_eng->SetLineColor(2);
- cplot2->cd(3);
- hxfp_diff->Add(hxfp_engine1,hxfp_eng,-1);
- hxfp_diff->Draw();
- cplot2->cd(5);
- hxfp_sub->Draw();
- cplot2->cd(2);
- hyfp_engine1->Draw();
- hyfp_eng->Draw("same");
- hyfp_eng->SetLineColor(2);
- cplot2->cd(4);
- hyfp_diff->Add(hyfp_engine1,hyfp_eng,-1);
- hyfp_diff->Draw();
- cplot2->cd(6);
- hyfp_sub->Draw();
-TCanvas *cplot3 = new TCanvas("cplot3"," Focal Plane Angles (1 track)  ",800,800);
- cplot3->Divide(2,3);
- cplot3->cd(1);
- hxpfp_engine1->Draw();
- hxpfp_eng->Draw("same");
- hxpfp_eng->SetLineColor(2);
- cplot3->cd(3);
- hxpfp_diff->Add(hxpfp_engine1,hxpfp_eng,-1);
- hxpfp_diff->Draw();
- cplot3->cd(5);
- hxpfp_sub->Draw();
- cplot3->cd(2);
- hypfp_engine1->Draw();
- hypfp_eng->Draw("same");
- hypfp_eng->SetLineColor(2);
- cplot3->cd(4);
- hypfp_diff->Add(hypfp_engine1,hypfp_eng,-1);
- hypfp_diff->Draw();
- cplot3->cd(6);
- hypfp_sub->Draw();
+ //
+  TCanvas *cplot2[3];
+  for (i=0 ; i<3 ;i++) {
+  cplot2[i] = new TCanvas(Form("cplot2_%d",i),Form(" Focal Plane Positions ( %d track)  ",i+1),800,800);
+ cplot2[i]->Divide(2,3);
+ cplot2[i]->cd(1);
+ hxfp_engine1[i]->Draw();
+ hxfp_eng[i]->Draw("same");
+ hxfp_eng[i]->SetLineColor(2);
+ cplot2[i]->cd(3);
+ hxfp_diff[i]->Add(hxfp_engine1[i],hxfp_eng[i],-1);
+ hxfp_diff[i]->Draw();
+ cplot2[i]->cd(5);
+ hxfp_sub[i]->Draw();
+ cplot2[i]->cd(2);
+ hyfp_engine1[i]->Draw();
+ hyfp_eng[i]->Draw("same");
+ hyfp_eng[i]->SetLineColor(2);
+ cplot2[i]->cd(4);
+ hyfp_diff[i]->Add(hyfp_engine1[i],hyfp_eng[i],-1);
+ hyfp_diff[i]->Draw();
+ cplot2[i]->cd(6);
+ hyfp_sub[i]->Draw();
+  }
+  TCanvas *cplot3[3];
+  for (i=0 ; i<3 ;i++) {
+ cplot3[i]= new TCanvas(Form("cplot3_%d",i),Form(" Focal Plane Angles (%d track)  ",i+1),800,800);
+ cplot3[i]->Divide(2,3);
+ cplot3[i]->cd(1);
+ hxpfp_engine1[i]->Draw();
+ hxpfp_eng[i]->Draw("same");
+ hxpfp_eng[i]->SetLineColor(2);
+ cplot3[i]->cd(3);
+ hxpfp_diff[i]->Add(hxpfp_engine1[i],hxpfp_eng[i],-1);
+ hxpfp_diff[i]->Draw();
+ cplot3[i]->cd(5);
+ hxpfp_sub[i]->Draw();
+ cplot3[i]->cd(2);
+ hypfp_engine1[i]->Draw();
+ hypfp_eng[i]->Draw("same");
+ hypfp_eng[i]->SetLineColor(2);
+ cplot3[i]->cd(4);
+ hypfp_diff[i]->Add(hypfp_engine1[i],hypfp_eng[i],-1);
+ hypfp_diff[i]->Draw();
+ cplot3[i]->cd(6);
+ hypfp_sub[i]->Draw();
+  }
 TCanvas *cplot1 = new TCanvas("cplot1","2D ntrack ",800,800);
  hntr_2d->Draw("colz");
 TCanvas *cplot = new TCanvas("cplot","1D ntrack ",800,800);
