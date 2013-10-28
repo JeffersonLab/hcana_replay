@@ -8,13 +8,15 @@ void compare_dc(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToRe
   //Int_t RunNumber=52949;
     char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
-  gHcParms->AddString("g_ctp_database_filename", "DBASE/test.database");
+  gHcParms->AddString("g_ctp_database_filename", "jan05.database");
   
   gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), RunNumber);
 
   // g_ctp_parm_filename and g_decode_map_filename should now be defined
 
+  gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"));
   gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
+  gHcParms->Load("hcana.param");
 
   // Constants not in ENGINE PARAM files that we want to be
   // configurable
@@ -36,7 +38,7 @@ void compare_dc(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToRe
 
   // Add hodoscope
   HMS->AddDetector( new THcHodoscope("hod", "Hodoscope" ));
-  //  HMS->AddDetector( new THcShower("cal", "Shower" ));
+   HMS->AddDetector( new THcShower("cal", "Shower" ));
   HMS->AddDetector( new THcDC("dc", "Drift Chambers" ));
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
