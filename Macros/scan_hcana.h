@@ -672,9 +672,9 @@ void scan_hcana::PrintTrack(Long64_t entry)
      printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
    }
    cout << " Print track focal plane is not sorted by chi-squared " << endl;
-   printf(" Track target        y (cm)   dx/dz     dy/dz       delta      chi2 \n");
+   printf(" Track target        y (cm)   dx/dz     dy/dz       delta   p   chi2 \n");
    for (Int_t i=0;i<H_dc_ntrack;i++) {
-     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_chi2[i]);
+     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f  %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_p[i],H_tr_chi2[i]);
    }
    cout << " Print track target info sorted by chi-squared " << endl;
 }
