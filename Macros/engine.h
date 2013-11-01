@@ -35,6 +35,7 @@ public :
    Float_t         dc_xptg[20];   //[dc_ntr]
    Float_t         dc_yptg[20];   //[dc_ntr]
    Float_t         dc_delta[20];   //[dc_ntr]
+   Float_t         dc_ptar[20];   //[dc_ntr]
 
    // List of branches
    TBranch        *b_evnum;   //!
@@ -49,6 +50,7 @@ public :
    TBranch        *b_dc_xptg;   //!
    TBranch        *b_dc_yptg;   //!
    TBranch        *b_dc_delta;   //!
+   TBranch        *b_dc_ptar;   //!
 
    engine(TString ifile="",TTree *tree=0);
    virtual ~engine();
@@ -133,6 +135,7 @@ void engine::Init(TTree *tree)
    fChain->SetBranchAddress("dc_xptg", dc_xptg, &b_dc_xptg);
    fChain->SetBranchAddress("dc_yptg", dc_yptg, &b_dc_yptg);
    fChain->SetBranchAddress("dc_delta", dc_delta, &b_dc_delta);
+   fChain->SetBranchAddress("dc_ptar", dc_ptar, &b_dc_ptar);
    Notify();
 }
 
@@ -168,9 +171,9 @@ void engine::PrintTrack(Long64_t entry)
      printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,dc_xfp[i],dc_yfp[i],dc_xpfp[i],dc_ypfp[i]);
    }
    cout << " Print track focal plane is not sorted by chi-squared " << endl;
-   printf(" Track target        y (cm)   dx/dz     dy/dz       delta      chi2 \n");
+   printf(" Track target        y (cm)   dx/dz     dy/dz       delta   p     chi2 \n");
    for (Int_t i=0;i<dc_ntr;i++) {
-     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f   %7.5f \n",i+1,dc_ytg[i],dc_xptg[i],dc_yptg[i],dc_delta[i],dc_chi2[i]);
+     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f   %7.5f   %7.5f \n",i+1,dc_ytg[i],dc_xptg[i],dc_yptg[i],dc_delta[i],dc_ptar[i],dc_chi2[i]);
    }
    cout << " Print track target info sorted by chi-squared " << endl;
 }

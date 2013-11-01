@@ -14,7 +14,7 @@ void compare_dc(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToRe
 
   // g_ctp_parm_filename and g_decode_map_filename should now be defined
 
-  gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), RunNumber);
   gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
   gHcParms->Load("hcana.param");
 
