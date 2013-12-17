@@ -5,8 +5,8 @@
 // found on file: hms_dc_52949.root
 //////////////////////////////////////////////////////////
 
-#ifndef analyze_engine_sos_tree_h
-#define analyze_engine_sos_tree_h
+#ifndef analyze_engine_tree_h
+#define analyze_engine_tree_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -16,7 +16,7 @@
 
 // Fixed size dimensions of array or collections stored in the TTree if any.
 
-class analyze_engine_sos_tree {
+class analyze_engine_tree {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
@@ -73,8 +73,8 @@ public :
    TBranch        *b_sdc_delta;   //!
    TBranch        *b_sdc_ptar;   //!
 
-   analyze_engine_sos_tree(TString ifile,TTree *tree=0);
-   virtual ~analyze_engine_sos_tree();
+   analyze_engine_tree(TString ifile,TTree *tree=0);
+   virtual ~analyze_engine_tree();
    virtual Int_t    Cut(Long64_t entry);
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
@@ -87,8 +87,8 @@ public :
 
 #endif
 
-#ifdef analyze_engine_sos_tree_cxx
-analyze_engine_sos_tree::analyze_engine_sos_tree(TString ifile,TTree *tree) : fChain(0) 
+#ifdef analyze_engine_tree_cxx
+analyze_engine_tree::analyze_engine_tree(TString ifile,TTree *tree) : fChain(0) 
 {
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
@@ -103,19 +103,19 @@ analyze_engine_sos_tree::analyze_engine_sos_tree(TString ifile,TTree *tree) : fC
    Init(tree);
 }
 
-analyze_engine_sos_tree::~analyze_engine_sos_tree()
+analyze_engine_tree::~analyze_engine_tree()
 {
    if (!fChain) return;
    delete fChain->GetCurrentFile();
 }
 
-Int_t analyze_engine_sos_tree::GetEntry(Long64_t entry)
+Int_t analyze_engine_tree::GetEntry(Long64_t entry)
 {
 // Read contents of entry.
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
-Long64_t analyze_engine_sos_tree::LoadTree(Long64_t entry)
+Long64_t analyze_engine_tree::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
    if (!fChain) return -5;
@@ -128,7 +128,7 @@ Long64_t analyze_engine_sos_tree::LoadTree(Long64_t entry)
    return centry;
 }
 
-void analyze_engine_sos_tree::Init(TTree *tree)
+void analyze_engine_tree::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the branch addresses and branch
@@ -171,7 +171,7 @@ void analyze_engine_sos_tree::Init(TTree *tree)
    Notify();
 }
 
-Bool_t analyze_engine_sos_tree::Notify()
+Bool_t analyze_engine_tree::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -182,29 +182,29 @@ Bool_t analyze_engine_sos_tree::Notify()
    return kTRUE;
 }
 
-void analyze_engine_sos_tree::Show(Long64_t entry)
+void analyze_engine_tree::Show(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->Show(entry);
 }
-Int_t analyze_engine_sos_tree::Cut(Long64_t entry)
+Int_t analyze_engine_tree::Cut(Long64_t entry)
 {
 // This function may be called from Loop.
 // returns  1 if entry is accepted.
 // returns -1 otherwise.
    return 1;
 }
-void analyze_engine_sos_tree::PrintTrack(Long64_t entry)
+void analyze_engine_tree::PrintTrack(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->GetEntry(entry);
    cout << " Engine event number = " << evnum << " event type = " << evtype << endl;
-   if (evtype == 1) {
-   cout << " Number of Tracks  = " << hdc_ntr << endl;
+   if (evtype == 1||evtype == 3) {
+   cout << "HMS  Number of Tracks  = " << hdc_ntr << endl;
    printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
    for (Int_t i=0;i<hdc_ntr;i++) {
      printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,hdc_xfp[i],hdc_yfp[i],hdc_xpfp[i],hdc_ypfp[i]);
@@ -216,9 +216,8 @@ void analyze_engine_sos_tree::PrintTrack(Long64_t entry)
    }
    cout << " Print track target info sorted by chi-squared " << endl;
    }
-   if (evtype == 2) {
-   cout << " Engine event number = " << evnum << " event type = " << evtype << endl;
-   cout << " Number of Tracks  = " << sdc_ntr << endl;
+   if (evtype == 2||evtype == 3) {
+   cout << "SOS  Number of Tracks  = " << sdc_ntr << endl;
    printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
    for (Int_t i=0;i<sdc_ntr;i++) {
      printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,sdc_xfp[i],sdc_yfp[i],sdc_xpfp[i],sdc_ypfp[i]);
@@ -231,4 +230,4 @@ void analyze_engine_sos_tree::PrintTrack(Long64_t entry)
    cout << " Print track target info sorted by chi-squared " << endl;
    }
 }
-#endif // #ifdef analyze_engine_sos_tree_cxx
+#endif // #ifdef analyze_engine_tree_cxx

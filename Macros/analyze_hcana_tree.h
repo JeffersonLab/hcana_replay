@@ -5,8 +5,8 @@
 // found on file: replay_sos_52949.root
 //////////////////////////////////////////////////////////
 
-#ifndef analyze_hcana_sos_tree_h
-#define analyze_hcana_sos_tree_h
+#ifndef analyze_hcana_tree_h
+#define analyze_hcana_tree_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -16,7 +16,7 @@
 
 // Fixed size dimensions of array or collections stored in the TTree if any.
 
-class analyze_hcana_sos_tree {
+class analyze_hcana_tree {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
@@ -219,13 +219,13 @@ public :
    Int_t           Ndata_H_dc_residual;
    Double_t        H_dc_residual[12];   //[Ndata.H.dc.residual]
    Int_t           Ndata_H_dc_x;
-   Double_t        H_dc_x[1];   //[Ndata.H.dc.x]
+   Double_t        H_dc_x[10];   //[Ndata.H.dc.x]
    Int_t           Ndata_H_dc_xp;
-   Double_t        H_dc_xp[1];   //[Ndata.H.dc.xp]
+   Double_t        H_dc_xp[10];   //[Ndata.H.dc.xp]
    Int_t           Ndata_H_dc_y;
-   Double_t        H_dc_y[1];   //[Ndata.H.dc.y]
+   Double_t        H_dc_y[10];   //[Ndata.H.dc.y]
    Int_t           Ndata_H_dc_yp;
-   Double_t        H_dc_yp[1];   //[Ndata.H.dc.yp]
+   Double_t        H_dc_yp[10];   //[Ndata.H.dc.yp]
    Int_t           Ndata_H_hod_1x_negadchits;
    Double_t        H_hod_1x_negadchits[1];   //[Ndata.H.hod.1x.negadchits]
    Int_t           Ndata_H_hod_1x_negtdchits;
@@ -259,67 +259,67 @@ public :
    Int_t           Ndata_H_hod_2y_postdchits;
    Double_t        H_hod_2y_postdchits[1];   //[Ndata.H.hod.2y.postdchits]
    Int_t           Ndata_H_tr_beta;
-   Double_t        H_tr_beta[1];   //[Ndata.H.tr.beta]
+   Double_t        H_tr_beta[10];   //[Ndata.H.tr.beta]
    Int_t           Ndata_H_tr_chi2;
-   Double_t        H_tr_chi2[1];   //[Ndata.H.tr.chi2]
+   Double_t        H_tr_chi2[10];   //[Ndata.H.tr.chi2]
    Int_t           Ndata_H_tr_d_ph;
-   Double_t        H_tr_d_ph[1];   //[Ndata.H.tr.d_ph]
+   Double_t        H_tr_d_ph[10];   //[Ndata.H.tr.d_ph]
    Int_t           Ndata_H_tr_d_th;
-   Double_t        H_tr_d_th[1];   //[Ndata.H.tr.d_th]
+   Double_t        H_tr_d_th[10];   //[Ndata.H.tr.d_th]
    Int_t           Ndata_H_tr_d_x;
-   Double_t        H_tr_d_x[1];   //[Ndata.H.tr.d_x]
+   Double_t        H_tr_d_x[10];   //[Ndata.H.tr.d_x]
    Int_t           Ndata_H_tr_d_y;
-   Double_t        H_tr_d_y[1];   //[Ndata.H.tr.d_y]
+   Double_t        H_tr_d_y[10];   //[Ndata.H.tr.d_y]
    Int_t           Ndata_H_tr_dbeta;
-   Double_t        H_tr_dbeta[1];   //[Ndata.H.tr.dbeta]
+   Double_t        H_tr_dbeta[10];   //[Ndata.H.tr.dbeta]
    Int_t           Ndata_H_tr_dtime;
-   Double_t        H_tr_dtime[1];   //[Ndata.H.tr.dtime]
+   Double_t        H_tr_dtime[10];   //[Ndata.H.tr.dtime]
    Int_t           Ndata_H_tr_flag;
-   Double_t        H_tr_flag[1];   //[Ndata.H.tr.flag]
+   Double_t        H_tr_flag[10];   //[Ndata.H.tr.flag]
    Int_t           Ndata_H_tr_ndof;
-   Double_t        H_tr_ndof[1];   //[Ndata.H.tr.ndof]
+   Double_t        H_tr_ndof[10];   //[Ndata.H.tr.ndof]
    Int_t           Ndata_H_tr_p;
-   Double_t        H_tr_p[1];   //[Ndata.H.tr.p]
+   Double_t        H_tr_p[10];   //[Ndata.H.tr.p]
    Int_t           Ndata_H_tr_pathl;
-   Double_t        H_tr_pathl[1];   //[Ndata.H.tr.pathl]
+   Double_t        H_tr_pathl[10];   //[Ndata.H.tr.pathl]
    Int_t           Ndata_H_tr_ph;
-   Double_t        H_tr_ph[1];   //[Ndata.H.tr.ph]
+   Double_t        H_tr_ph[10];   //[Ndata.H.tr.ph]
    Int_t           Ndata_H_tr_px;
-   Double_t        H_tr_px[1];   //[Ndata.H.tr.px]
+   Double_t        H_tr_px[10];   //[Ndata.H.tr.px]
    Int_t           Ndata_H_tr_py;
-   Double_t        H_tr_py[1];   //[Ndata.H.tr.py]
+   Double_t        H_tr_py[10];   //[Ndata.H.tr.py]
    Int_t           Ndata_H_tr_pz;
-   Double_t        H_tr_pz[1];   //[Ndata.H.tr.pz]
+   Double_t        H_tr_pz[10];   //[Ndata.H.tr.pz]
    Int_t           Ndata_H_tr_r_ph;
-   Double_t        H_tr_r_ph[1];   //[Ndata.H.tr.r_ph]
+   Double_t        H_tr_r_ph[10];   //[Ndata.H.tr.r_ph]
    Int_t           Ndata_H_tr_r_th;
-   Double_t        H_tr_r_th[1];   //[Ndata.H.tr.r_th]
+   Double_t        H_tr_r_th[10];   //[Ndata.H.tr.r_th]
    Int_t           Ndata_H_tr_r_x;
-   Double_t        H_tr_r_x[1];   //[Ndata.H.tr.r_x]
+   Double_t        H_tr_r_x[10];   //[Ndata.H.tr.r_x]
    Int_t           Ndata_H_tr_r_y;
-   Double_t        H_tr_r_y[1];   //[Ndata.H.tr.r_y]
+   Double_t        H_tr_r_y[10];   //[Ndata.H.tr.r_y]
    Int_t           Ndata_H_tr_tg_dp;
-   Double_t        H_tr_tg_dp[1];   //[Ndata.H.tr.tg_dp]
+   Double_t        H_tr_tg_dp[10];   //[Ndata.H.tr.tg_dp]
    Int_t           Ndata_H_tr_tg_ph;
-   Double_t        H_tr_tg_ph[1];   //[Ndata.H.tr.tg_ph]
+   Double_t        H_tr_tg_ph[10];   //[Ndata.H.tr.tg_ph]
    Int_t           Ndata_H_tr_tg_th;
-   Double_t        H_tr_tg_th[1];   //[Ndata.H.tr.tg_th]
+   Double_t        H_tr_tg_th[10];   //[Ndata.H.tr.tg_th]
    Int_t           Ndata_H_tr_tg_y;
-   Double_t        H_tr_tg_y[1];   //[Ndata.H.tr.tg_y]
+   Double_t        H_tr_tg_y[10];   //[Ndata.H.tr.tg_y]
    Int_t           Ndata_H_tr_th;
-   Double_t        H_tr_th[1];   //[Ndata.H.tr.th]
+   Double_t        H_tr_th[10];   //[Ndata.H.tr.th]
    Int_t           Ndata_H_tr_time;
-   Double_t        H_tr_time[1];   //[Ndata.H.tr.time]
+   Double_t        H_tr_time[10];   //[Ndata.H.tr.time]
    Int_t           Ndata_H_tr_vx;
-   Double_t        H_tr_vx[1];   //[Ndata.H.tr.vx]
+   Double_t        H_tr_vx[10];   //[Ndata.H.tr.vx]
    Int_t           Ndata_H_tr_vy;
-   Double_t        H_tr_vy[1];   //[Ndata.H.tr.vy]
+   Double_t        H_tr_vy[10];   //[Ndata.H.tr.vy]
    Int_t           Ndata_H_tr_vz;
-   Double_t        H_tr_vz[1];   //[Ndata.H.tr.vz]
+   Double_t        H_tr_vz[10];   //[Ndata.H.tr.vz]
    Int_t           Ndata_H_tr_x;
-   Double_t        H_tr_x[1];   //[Ndata.H.tr.x]
+   Double_t        H_tr_x[10];   //[Ndata.H.tr.x]
    Int_t           Ndata_H_tr_y;
-   Double_t        H_tr_y[1];   //[Ndata.H.tr.y]
+   Double_t        H_tr_y[10];   //[Ndata.H.tr.y]
    Int_t           Ndata_S_cal_1pr_aneg;
    Double_t        S_cal_1pr_aneg[11];   //[Ndata.S.cal.1pr.aneg]
    Int_t           Ndata_S_cal_1pr_aneg_p;
@@ -1394,8 +1394,8 @@ public :
    TBranch        *b_Event_Branch_fEvtHdr_fTargetPol;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fRun;   //!
 
-   analyze_hcana_sos_tree(TString ifile,TTree *tree=0);
-   virtual ~analyze_hcana_sos_tree();
+   analyze_hcana_tree(TString ifile,TTree *tree=0);
+   virtual ~analyze_hcana_tree();
    virtual Int_t    Cut(Long64_t entry);
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
@@ -1408,8 +1408,8 @@ public :
 
 #endif
 
-#ifdef analyze_hcana_sos_tree_cxx
-analyze_hcana_sos_tree::analyze_hcana_sos_tree(TString ifile,TTree *tree) : fChain(0) 
+#ifdef analyze_hcana_tree_cxx
+analyze_hcana_tree::analyze_hcana_tree(TString ifile,TTree *tree) : fChain(0) 
 {
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
@@ -1424,19 +1424,19 @@ analyze_hcana_sos_tree::analyze_hcana_sos_tree(TString ifile,TTree *tree) : fCha
    Init(tree);
 }
 
-analyze_hcana_sos_tree::~analyze_hcana_sos_tree()
+analyze_hcana_tree::~analyze_hcana_tree()
 {
    if (!fChain) return;
    delete fChain->GetCurrentFile();
 }
 
-Int_t analyze_hcana_sos_tree::GetEntry(Long64_t entry)
+Int_t analyze_hcana_tree::GetEntry(Long64_t entry)
 {
 // Read contents of entry.
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
-Long64_t analyze_hcana_sos_tree::LoadTree(Long64_t entry)
+Long64_t analyze_hcana_tree::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
    if (!fChain) return -5;
@@ -1449,7 +1449,7 @@ Long64_t analyze_hcana_sos_tree::LoadTree(Long64_t entry)
    return centry;
 }
 
-void analyze_hcana_sos_tree::Init(TTree *tree)
+void analyze_hcana_tree::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the branch addresses and branch
@@ -2152,7 +2152,7 @@ void analyze_hcana_sos_tree::Init(TTree *tree)
    Notify();
 }
 
-Bool_t analyze_hcana_sos_tree::Notify()
+Bool_t analyze_hcana_tree::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -2163,28 +2163,43 @@ Bool_t analyze_hcana_sos_tree::Notify()
    return kTRUE;
 }
 
-void analyze_hcana_sos_tree::Show(Long64_t entry)
+void analyze_hcana_tree::Show(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->Show(entry);
 }
-Int_t analyze_hcana_sos_tree::Cut(Long64_t entry)
+Int_t analyze_hcana_tree::Cut(Long64_t entry)
 {
 // This function may be called from Loop.
 // returns  1 if entry is accepted.
 // returns -1 otherwise.
    return 1;
 }
-void analyze_hcana_sos_tree::PrintTrack(Long64_t entry)
+void analyze_hcana_tree::PrintTrack(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->GetEntry(entry);
    cout << " hcana event number = " << g_evnum << " event type = " << fEvtHdr_fEvtType << endl;
-   cout << " Number of Total hits  = " << S_dc_nhit << endl;
+   if (fEvtHdr_fEvtType==1 ||fEvtHdr_fEvtType==3) { 
+   cout << " HMS  Number of Total hits  = " << H_dc_nhit << endl;
+   cout << " Number of Tracks  = " << H_dc_ntrack << endl;
+   printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
+   for (Int_t i=0;i<H_dc_ntrack;i++) {
+     printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
+   }
+      cout << " Print track focal plane is not sorted by chi-squared " << endl;
+   printf(" Track target        y (cm)   dx/dz     dy/dz       delta   p   chi2 \n");
+   for (Int_t i=0;i<H_dc_ntrack;i++) {
+     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f  %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_p[i],H_tr_chi2[i]);
+   }
+   cout << " Print track target info sorted by chi-squared " << endl;
+   }
+   if (fEvtHdr_fEvtType==2 ||fEvtHdr_fEvtType==3) { 
+   cout << " SOS  Number of Total hits  = " << S_dc_nhit << endl;
    cout << " Number of Tracks  = " << S_dc_ntrack << endl;
    printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
    for (Int_t i=0;i<S_dc_ntrack;i++) {
@@ -2196,5 +2211,6 @@ void analyze_hcana_sos_tree::PrintTrack(Long64_t entry)
      printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f  %7.5f   %7.5f \n",i+1,S_tr_tg_y[i],S_tr_tg_th[i],S_tr_tg_ph[i],S_tr_tg_dp[i],S_tr_p[i],S_tr_chi2[i]);
    }
    cout << " Print track target info sorted by chi-squared " << endl;
+   }
 }
-#endif // #ifdef analyze_hcana_sos_tree_cxx
+#endif // #ifdef analyze_hcana_tree_cxx
