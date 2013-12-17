@@ -1,16 +1,16 @@
-#include "analyze_hcana_sos_tree.h"
-#include "analyze_engine_sos_tree.h"
+#include "analyze_hcana_tree.h"
+#include "analyze_engine_tree.h"
 #include <TCanvas.h>
 #include <iostream>
 #include <fstream>
 #include <iomanip>
 #include <TStyle.h>
 void comp_sos_engine_hcana( TString hcana_file, TString engine_file) {
-  analyze_hcana_sos_tree *myhcana = new analyze_hcana_sos_tree(hcana_file,0);
-  //  TString engine_file="paw/hms_dc_52949.root";
-  analyze_engine_sos_tree *myengine = new analyze_engine_sos_tree(engine_file,0);
+  analyze_hcana_tree *myhcana = new analyze_hcana_tree(hcana_file,0);
+  analyze_engine_tree *myengine = new analyze_engine_tree(engine_file,0);
   Long64_t nent_hcana = myhcana->fChain->GetEntriesFast();
   Long64_t nent_engine = myengine->fChain->GetEntriesFast();
+  Long64_t nent_loop=TMath::Min(nent_hcana,nent_engine);
   cout << " hcana entries = " << nent_hcana << " engine entries = " << nent_engine  << endl;
   Long64_t nb_hcana = 0,nb_engine = 0;
   TH1F *hntr_hcana = new TH1F("hntr_hcana","; Ntracks; Counts",50,0,50);
@@ -82,14 +82,15 @@ void comp_sos_engine_hcana( TString hcana_file, TString engine_file) {
   }
   //
 char *s = new char[1];
-  for (Long64_t ni=0 ; ni<nent_hcana ;ni++) {
+  for (Long64_t ni=0 ; ni<nent_loop ;ni++) {
       nb_hcana = myhcana->fChain->GetEntry(ni);
       nb_engine = myengine->fChain->GetEntry(ni);
+      if (myhcana->fEvtHdr_fEvtType==2&& myengine->evtype==2 && myhcana->g_evnum==myengine->evnum) {
       hntr_hcana->Fill(myhcana->S_dc_ntrack);
       hntr_eng->Fill(myengine->sdc_ntr);
       if ((myhcana->S_dc_ntrack) != (myengine->sdc_ntr) )hntr_2d->Fill(myhcana->S_dc_ntrack,myengine->sdc_ntr);
-  if ( myengine->sdc_ntr==myhcana->S_dc_ntrack && myengine->sdc_ntr <= 3 ) {
-    for (i=0 ; i<myengine->sdc_ntr ;i++) {
+      if ( myengine->sdc_ntr==myhcana->S_dc_ntrack && myengine->sdc_ntr <= 3 ) {
+       for (i=0 ; i<myengine->sdc_ntr ;i++) {
       if( myhcana->S_dc_x[i] >= xlo && myhcana->S_dc_x[i] <= xhi && myhcana->S_dc_y[i] >= ylo && myhcana->S_dc_y[i] <= yhi
 	 	  && myhcana->S_dc_xp[i] >= xplo/1000. && myhcana->S_dc_xp[i] <= xphi/1000. && myhcana->S_dc_yp[i] >= yplo/1000. && myhcana->S_dc_yp[i] <= yphi/1000.) {
       hxfp_hcana[i]->Fill(myhcana->S_dc_x[i]);
@@ -125,13 +126,14 @@ char *s = new char[1];
   }
       if ( TMath::Abs(myhcana->S_dc_ntrack-myengine->sdc_ntr) > 0 && -1 == 1) {
 	//cout  << " hcana event number = "<< myhcana->g_evnum << " Engine event number = " << myengine->evnum << endl;
-      myhcana->PrintTrack(ni);
-      myengine->PrintTrack(ni);
-      cout << " Hit return to see next event " << endl;
-      gets(s);
-      if ( s == "q") exit;
+          myhcana->PrintTrack(ni);
+          myengine->PrintTrack(ni);
+          cout << " Hit return to see next event " << endl;
+          gets(s);
+          if ( s == "q") exit;
        }
-  }
+      }// if 
+  }//for
   cout << " Hcana File= " << hcana_file << endl;
   cout << " Engine File= " << engine_file << endl;
   TStyle *MyStyle = new TStyle("MyStyle"," My Style");

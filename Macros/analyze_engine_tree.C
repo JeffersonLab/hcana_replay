@@ -1,14 +1,14 @@
-#define analyze_engine_sos_tree_cxx
-#include "analyze_engine_sos_tree.h"
+#define analyze_engine_tree_cxx
+#include "analyze_engine_tree.h"
 #include <TH2.h>
 #include <TStyle.h>
 #include <TCanvas.h>
 
-void analyze_engine_sos_tree::Loop()
+void analyze_engine_tree::Loop()
 {
 //   In a ROOT session, you can do:
-//      Root > .L analyze_engine_sos_tree.C
-//      Root > analyze_engine_sos_tree t
+//      Root > .L analyze_engine_tree.C
+//      Root > analyze_engine_tree t
 //      Root > t.GetEntry(12); // Fill t data members with entry number 12
 //      Root > t.Show();       // Show values of entry 12
 //      Root > t.Show(16);     // Read and show values of entry 16
