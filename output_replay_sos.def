@@ -1,0 +1,90 @@
+# See $ANALYZER/examples/output_example.def for examples
+#
+block H.tr.*
+block H.dc.*
+block H.hod.*
+block H.cal.*
+block H.aero.*
+block H.cher.*
+block S.tr.*
+block S.dc.*
+block S.hod.*
+block S.cal.*
+block g.evnum
+
+# TDC spectra
+TH1F hfptime1x ' HMS s1x fptime' H.hod.1x.fptime 80 0. 80.
+TH1F hfptime1y ' HMS s1y fptime' H.hod.1y.fptime 80 0. 80.
+TH1F hfptime2x ' HMS s2x fptime' H.hod.2x.fptime 80 0. 80.
+TH1F hfptime2y ' HMS s2y fptime' H.hod.2y.fptime 80 0. 80.
+TH1F hstart_time1 ' HMS Start Time ' H.hod.starttime 80 0. 80.
+# TDC hits per paddle
+TH1F hpostdc1 'HMS s1x+ TDC hits' H.hod.1x.postdchits 16 0.5 16.5
+TH1F hnegtdc1 'HMS s1x- TDC hits' H.hod.1x.negtdchits 16 0.5 16.5
+TH1F hpostdc2 'HMS s1y+ TDC hits' H.hod.1y.postdchits 10 0.5 10.5
+TH1F hnegtdc2 'HMS s1y- TDC hits' H.hod.1y.negtdchits 10 0.5 10.5
+TH1F hpostdc3 'HMS s2x+ TDC hits' H.hod.2x.postdchits 16 0.5 16.5
+TH1F hnegtdc3 'HMS s2x- TDC hits' H.hod.2x.negtdchits 16 0.5 16.5
+TH1F hpostdc4 'HMS s2y+ TDC hits' H.hod.2y.postdchits 10 0.5 10.5
+TH1F hnegtdc4 'HMS s2y- TDC hits' H.hod.2y.negtdchits 10 0.5 10.5
+
+# ADC hits per paddle
+TH1F hposadc1 'HMS s1x+ ADC hits' H.hod.1x.posadchits 16 0.5 16.5
+TH1F hnegadc1 'HMS s1x- ADC hits' H.hod.1x.negadchits 16 0.5 16.5
+TH1F hposadc2 'HMS s1y+ ADC hits' H.hod.1y.posadchits 10 0.5 10.5
+TH1F hnegadc2 'HMS s1y- ADC hits' H.hod.1y.negadchits 10 0.5 10.5
+TH1F hposadc3 'HMS s2x+ ADC hits' H.hod.2x.posadchits 16 0.5 16.5
+TH1F hnegadc3 'HMS s2x- ADC hits' H.hod.2x.negadchits 16 0.5 16.5
+TH1F hposadc4 'HMS s2y+ ADC hits' H.hod.2y.posadchits 10 0.5 10.5
+TH1F hnegadc4 'HMS s2y- ADC hits' H.hod.2y.negadchits 10 0.5 10.5
+
+
+
+#TH1F hdcrawtdc
+#TH1F hdccuttdc
+
+# Can we use variables for the constants.  In CTP we used hdc_nwire(i)
+TH1F hsx_fp 'HDC x fp ' H.dc.x 200 -70 70 H.dc.ntrack==1
+TH1F hsy_fp 'HDC y fp ' H.dc.y 150 -30 30 H.dc.ntrack==1
+TH1F hsxp_fp 'HDC xp fp ' H.dc.xp 200 -.3 .3 H.dc.ntrack==1
+TH1F hsyp_fp 'HDC yp fp ' H.dc.yp 100 -.1 .1 H.dc.ntrack==1
+#
+TH1F hdc1x1_wm 'HDC 1X1 Wiremap' H.dc.1x1.tdchits 113 0.5 113.5
+TH1F hdc1y1_wm 'HDC 1Y1 Wiremap' H.dc.1y1.tdchits 52 0.5 52.5
+TH1F hdc1u1_wm 'HDC 1U1 Wiremap' H.dc.1u1.tdchits 107 0.5 107.5
+TH1F hdc1v1_wm 'HDC 1V1 Wiremap' H.dc.1v1.tdchits 107 0.5 107.5
+TH1F hdc1y2_wm 'HDC 1Y2 Wiremap' H.dc.1y2.tdchits 52 0.5 52.5
+TH1F hdc1x2_wm 'HDC 1X2 Wiremap' H.dc.1x2.tdchits 113 0.5 113.5
+TH1F hdc2x1_wm 'HDC 2X1 Wiremap' H.dc.2x1.tdchits 113 0.5 113.5
+TH1F hdc2y1_wm 'HDC 2Y1 Wiremap' H.dc.2y1.tdchits 52 0.5 52.5
+TH1F hdc2u1_wm 'HDC 2U1 Wiremap' H.dc.2u1.tdchits 107 0.5 107.5
+TH1F hdc2v1_wm 'HDC 2V1 Wiremap' H.dc.2v1.tdchits 107 0.5 107.5
+TH1F hdc2y2_wm 'HDC 2Y2 Wiremap' H.dc.2y2.tdchits 52 0.5 52.5
+TH1F hdc2x2_wm 'HDC 2X2 Wiremap' H.dc.2x2.tdchits 113 0.5 113.5
+#
+TH1F ddist_hdc1x1 'HDC 1X1 Drift Dis' H.dc.1x1.dist 30 -0.1 0.6
+TH1F ddist_hdc1y1 'HDC 1Y1 Drift Dis' H.dc.1y1.dist 30 -0.1 0.6
+TH1F ddist_hdc1u1 'HDC 1U1 Drift Dis' H.dc.1u1.dist 30 -0.1 0.6
+TH1F ddist_hdc1v1 'HDC 1V1 Drift Dis' H.dc.1v1.dist 30 -0.1 0.6
+TH1F ddist_hdc1y2 'HDC 1Y2 Drift Dis' H.dc.1y2.dist 30 -0.1 0.6
+TH1F ddist_hdc1x2 'HDC 1X2 Drift Dis' H.dc.1x2.dist 30 -0.1 0.6
+TH1F ddist_hdc2x1 'HDC 2X1 Drift Dis' H.dc.2x1.dist 30 -0.1 0.6
+TH1F ddist_hdc2y1 'HDC 2Y1 Drift Dis' H.dc.2y1.dist 30 -0.1 0.6
+TH1F ddist_hdc2u1 'HDC 2U1 Drift Dis' H.dc.2u1.dist 30 -0.1 0.6
+TH1F ddist_hdc2v1 'HDC 2V1 Drift Dis' H.dc.2v1.dist 30 -0.1 0.6
+TH1F ddist_hdc2y2 'HDC 2Y2 Drift Dis' H.dc.2y2.dist 30 -0.1 0.6
+TH1F ddist_hdc2x2 'HDC 2X2 Drift Dis' H.dc.2x2.dist 30 -0.1 0.6
+#
+TH1F dtime_hdc1x1 'HDC 1X1 Drift Time' H.dc.1x1.time 200 -100 300
+TH1F dtime_hdc1y1 'HDC 1Y1 Drift Time' H.dc.1y1.time 200 -100 300
+TH1F dtime_hdc1u1 'HDC 1U1 Drift Time' H.dc.1u1.time 200 -100 300
+TH1F dtime_hdc1v1 'HDC 1V1 Drift Time' H.dc.1v1.time 200 -100 300
+TH1F dtime_hdc1y2 'HDC 1Y2 Drift Time' H.dc.1y2.time 200 -100 300
+TH1F dtime_hdc1x2 'HDC 1X2 Drift Time' H.dc.1x2.time 200 -100 300
+TH1F dtime_hdc2x1 'HDC 2X1 Drift Time' H.dc.2x1.time 200 -100 300
+TH1F dtime_hdc2y1 'HDC 2Y1 Drift Time' H.dc.2y1.time 200 -100 300
+TH1F dtime_hdc2u1 'HDC 2U1 Drift Time' H.dc.2u1.time 200 -100 300
+TH1F dtime_hdc2v1 'HDC 2V1 Drift Time' H.dc.2v1.time 200 -100 300
+TH1F dtime_hdc2y2 'HDC 2Y2 Drift Time' H.dc.2y2.time 200 -100 300
+TH1F dtime_hdc2x2 'HDC 2X2 Drift Time' H.dc.2x2.time 200 -100 300
+
