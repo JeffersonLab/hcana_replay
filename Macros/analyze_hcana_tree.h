@@ -2184,7 +2184,22 @@ void analyze_hcana_tree::PrintTrack(Long64_t entry)
    if (!fChain) return;
    fChain->GetEntry(entry);
    cout << " hcana event number = " << g_evnum << " event type = " << fEvtHdr_fEvtType << endl;
-   cout << " Number of Total hits  = " << S_dc_nhit << endl;
+   if (fEvtHdr_fEvtType==1 ||fEvtHdr_fEvtType==3) { 
+   cout << " HMS  Number of Total hits  = " << H_dc_nhit << endl;
+   cout << " Number of Tracks  = " << H_dc_ntrack << endl;
+   printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
+   for (Int_t i=0;i<H_dc_ntrack;i++) {
+     printf("  %3d              %8.4f  %8.4f  %8.6f  %8.6f \n",i+1,H_dc_x[i],H_dc_y[i],H_dc_xp[i],H_dc_yp[i]);
+   }
+      cout << " Print track focal plane is not sorted by chi-squared " << endl;
+   printf(" Track target        y (cm)   dx/dz     dy/dz       delta   p   chi2 \n");
+   for (Int_t i=0;i<H_dc_ntrack;i++) {
+     printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f  %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_p[i],H_tr_chi2[i]);
+   }
+   cout << " Print track target info sorted by chi-squared " << endl;
+   }
+   if (fEvtHdr_fEvtType==2 ||fEvtHdr_fEvtType==3) { 
+   cout << " SOS  Number of Total hits  = " << S_dc_nhit << endl;
    cout << " Number of Tracks  = " << S_dc_ntrack << endl;
    printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
    for (Int_t i=0;i<S_dc_ntrack;i++) {
@@ -2196,5 +2211,6 @@ void analyze_hcana_tree::PrintTrack(Long64_t entry)
      printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f  %7.5f   %7.5f \n",i+1,S_tr_tg_y[i],S_tr_tg_th[i],S_tr_tg_ph[i],S_tr_tg_dp[i],S_tr_p[i],S_tr_chi2[i]);
    }
    cout << " Print track target info sorted by chi-squared " << endl;
+   }
 }
 #endif // #ifdef analyze_hcana_tree_cxx
