@@ -118,8 +118,14 @@ public :
    Double_t        H_cal_4ta_negadchits[1];   //[Ndata.H.cal.4ta.negadchits]
    Int_t           Ndata_H_cal_4ta_posadchits;
    Double_t        H_cal_4ta_posadchits[1];   //[Ndata.H.cal.4ta.posadchits]
-   Int_t           Ndata_H_cher_posadchits;
-   Double_t        H_cher_posadchits[1];   //[Ndata.H.cher.posadchits]
+   Int_t           Ndata_H_cher_adc;
+   Double_t        H_cher_adc[2];   //[Ndata.H.cher.adc]
+   Int_t           Ndata_H_cher_adc_p;
+   Double_t        H_cher_adc_p[2];   //[Ndata.H.cher.adc_p]
+   Int_t           Ndata_H_cher_npe;
+   Double_t        H_cher_npe[2];   //[Ndata.H.cher.npe]
+   Int_t           Ndata_H_cher_phototubes;
+   Double_t        H_cher_phototubes[2];   //[Ndata.H.cher.phototubes]
    Int_t           Ndata_H_dc_1u1_dist;
    Double_t        H_dc_1u1_dist[1];   //[Ndata.H.dc.1u1.dist]
    Int_t           Ndata_H_dc_1u1_rawtdc;
@@ -623,12 +629,8 @@ public :
    Double_t        H_cal_trx;
    Double_t        H_cal_try;
    Double_t        H_cal_xmax;
-   Double_t        H_cher_adc_1;
-   Double_t        H_cher_adc_2;
-   Double_t        H_cher_adc_p_1;
-   Double_t        H_cher_adc_p_2;
-   Double_t        H_cher_npe_1;
-   Double_t        H_cher_npe_2;
+   Double_t        H_cher_ncherhit;
+   Double_t        H_cher_npesum;
    Double_t        H_dc_1u1_nhit;
    Double_t        H_dc_1v1_nhit;
    Double_t        H_dc_1x1_nhit;
@@ -867,8 +869,14 @@ public :
    TBranch        *b_H_cal_4ta_negadchits;   //!
    TBranch        *b_Ndata_H_cal_4ta_posadchits;   //!
    TBranch        *b_H_cal_4ta_posadchits;   //!
-   TBranch        *b_Ndata_H_cher_posadchits;   //!
-   TBranch        *b_H_cher_posadchits;   //!
+   TBranch        *b_Ndata_H_cher_adc;   //!
+   TBranch        *b_H_cher_adc;   //!
+   TBranch        *b_Ndata_H_cher_adc_p;   //!
+   TBranch        *b_H_cher_adc_p;   //!
+   TBranch        *b_Ndata_H_cher_npe;   //!
+   TBranch        *b_H_cher_npe;   //!
+   TBranch        *b_Ndata_H_cher_phototubes;   //!
+   TBranch        *b_H_cher_phototubes;   //!
    TBranch        *b_Ndata_H_dc_1u1_dist;   //!
    TBranch        *b_H_dc_1u1_dist;   //!
    TBranch        *b_Ndata_H_dc_1u1_rawtdc;   //!
@@ -1310,12 +1318,8 @@ public :
    TBranch        *b_H_cal_trx;   //!
    TBranch        *b_H_cal_try;   //!
    TBranch        *b_H_cal_xmax;   //!
-   TBranch        *b_H_cher_adc_1;   //!
-   TBranch        *b_H_cher_adc_2;   //!
-   TBranch        *b_H_cher_adc_p_1;   //!
-   TBranch        *b_H_cher_adc_p_2;   //!
-   TBranch        *b_H_cher_npe_1;   //!
-   TBranch        *b_H_cher_npe_2;   //!
+   TBranch        *b_H_cher_ncherhit;   //!
+   TBranch        *b_H_cher_npesum;   //!
    TBranch        *b_H_dc_1u1_nhit;   //!
    TBranch        *b_H_dc_1v1_nhit;   //!
    TBranch        *b_H_dc_1x1_nhit;   //!
@@ -1623,8 +1627,14 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("H.cal.4ta.negadchits", &H_cal_4ta_negadchits, &b_H_cal_4ta_negadchits);
    fChain->SetBranchAddress("Ndata.H.cal.4ta.posadchits", &Ndata_H_cal_4ta_posadchits, &b_Ndata_H_cal_4ta_posadchits);
    fChain->SetBranchAddress("H.cal.4ta.posadchits", &H_cal_4ta_posadchits, &b_H_cal_4ta_posadchits);
-   fChain->SetBranchAddress("Ndata.H.cher.posadchits", &Ndata_H_cher_posadchits, &b_Ndata_H_cher_posadchits);
-   fChain->SetBranchAddress("H.cher.posadchits", &H_cher_posadchits, &b_H_cher_posadchits);
+   fChain->SetBranchAddress("Ndata.H.cher.adc", &Ndata_H_cher_adc, &b_Ndata_H_cher_adc);
+   fChain->SetBranchAddress("H.cher.adc", H_cher_adc, &b_H_cher_adc);
+   fChain->SetBranchAddress("Ndata.H.cher.adc_p", &Ndata_H_cher_adc_p, &b_Ndata_H_cher_adc_p);
+   fChain->SetBranchAddress("H.cher.adc_p", H_cher_adc_p, &b_H_cher_adc_p);
+   fChain->SetBranchAddress("Ndata.H.cher.npe", &Ndata_H_cher_npe, &b_Ndata_H_cher_npe);
+   fChain->SetBranchAddress("H.cher.npe", H_cher_npe, &b_H_cher_npe);
+   fChain->SetBranchAddress("Ndata.H.cher.phototubes", &Ndata_H_cher_phototubes, &b_Ndata_H_cher_phototubes);
+   fChain->SetBranchAddress("H.cher.phototubes", H_cher_phototubes, &b_H_cher_phototubes);
    fChain->SetBranchAddress("Ndata.H.dc.1u1.dist", &Ndata_H_dc_1u1_dist, &b_Ndata_H_dc_1u1_dist);
    fChain->SetBranchAddress("H.dc.1u1.dist", &H_dc_1u1_dist, &b_H_dc_1u1_dist);
    fChain->SetBranchAddress("Ndata.H.dc.1u1.rawtdc", &Ndata_H_dc_1u1_rawtdc, &b_Ndata_H_dc_1u1_rawtdc);
@@ -2066,12 +2076,8 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("H.cal.trx", &H_cal_trx, &b_H_cal_trx);
    fChain->SetBranchAddress("H.cal.try", &H_cal_try, &b_H_cal_try);
    fChain->SetBranchAddress("H.cal.xmax", &H_cal_xmax, &b_H_cal_xmax);
-   fChain->SetBranchAddress("H.cher.adc_1", &H_cher_adc_1, &b_H_cher_adc_1);
-   fChain->SetBranchAddress("H.cher.adc_2", &H_cher_adc_2, &b_H_cher_adc_2);
-   fChain->SetBranchAddress("H.cher.adc_p_1", &H_cher_adc_p_1, &b_H_cher_adc_p_1);
-   fChain->SetBranchAddress("H.cher.adc_p_2", &H_cher_adc_p_2, &b_H_cher_adc_p_2);
-   fChain->SetBranchAddress("H.cher.npe_1", &H_cher_npe_1, &b_H_cher_npe_1);
-   fChain->SetBranchAddress("H.cher.npe_2", &H_cher_npe_2, &b_H_cher_npe_2);
+   fChain->SetBranchAddress("H.cher.ncherhit", &H_cher_ncherhit, &b_H_cher_ncherhit);
+   fChain->SetBranchAddress("H.cher.npesum", &H_cher_npesum, &b_H_cher_npesum);
    fChain->SetBranchAddress("H.dc.1u1.nhit", &H_dc_1u1_nhit, &b_H_dc_1u1_nhit);
    fChain->SetBranchAddress("H.dc.1v1.nhit", &H_dc_1v1_nhit, &b_H_dc_1v1_nhit);
    fChain->SetBranchAddress("H.dc.1x1.nhit", &H_dc_1x1_nhit, &b_H_dc_1x1_nhit);

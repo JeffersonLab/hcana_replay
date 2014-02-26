@@ -82,9 +82,13 @@ void comp_hms_engine_hcana( TString hcana_file, TString engine_file) {
   }
   //
 char *s = new char[1];
+  Long64_t engine_ent=0;
   for (Long64_t ni=0 ; ni<nent_loop ;ni++) {
       nb_hcana = myhcana->fChain->GetEntry(ni);
-      nb_engine = myengine->fChain->GetEntry(ni);
+      nb_engine = myengine->fChain->GetEntry(engine_ent++);
+      while (myhcana->g_evnum!=myengine->evnum) {
+         nb_engine = myengine->fChain->GetEntry(engine_ent++);
+      }
       if (myhcana->fEvtHdr_fEvtType==1&& myengine->evtype==1 && myhcana->g_evnum==myengine->evnum) {
       hntr_hcana->Fill(myhcana->H_dc_ntrack);
       hntr_eng->Fill(myengine->hdc_ntr);

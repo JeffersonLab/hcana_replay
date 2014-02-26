@@ -35,6 +35,8 @@ public :
    Float_t         hdc_yptg[20];   //[hdc_ntr]
    Float_t         hdc_delta[20];   //[hdc_ntr]
    Float_t         hdc_ptar[20];   //[hdc_ntr]
+   Float_t         hscin_starttime;
+   Float_t         hscin_rfptime[4];
    Int_t           sdc_ntr;
    Float_t         sdc_xfp[20];   //[sdc_ntr]
    Float_t         sdc_yfp[20];   //[sdc_ntr]
@@ -61,6 +63,8 @@ public :
    TBranch        *b_hdc_yptg;   //!
    TBranch        *b_hdc_delta;   //!
    TBranch        *b_hdc_ptar;   //!
+   TBranch        *b_hscin_starttime;   //!
+   TBranch        *b_hscin_rfptime;   //!
    TBranch        *b_sdc_ntr;   //!
    TBranch        *b_sdc_xfp;   //!
    TBranch        *b_sdc_yfp;   //!
@@ -157,6 +161,8 @@ void analyze_engine_tree::Init(TTree *tree)
    fChain->SetBranchAddress("hdc_yptg", hdc_yptg, &b_hdc_yptg);
    fChain->SetBranchAddress("hdc_delta", hdc_delta, &b_hdc_delta);
    fChain->SetBranchAddress("hdc_ptar", hdc_ptar, &b_hdc_ptar);
+   fChain->SetBranchAddress("hscin_starttime", &hscin_starttime, &b_hscin_starttime);
+   fChain->SetBranchAddress("hscin_rfptime", hscin_rfptime, &b_hscin_rfptime);
    fChain->SetBranchAddress("sdc_ntr", &sdc_ntr, &b_sdc_ntr);
    fChain->SetBranchAddress("sdc_xfp", sdc_xfp, &b_sdc_xfp);
    fChain->SetBranchAddress("sdc_yfp", sdc_yfp, &b_sdc_yfp);
