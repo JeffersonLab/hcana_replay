@@ -59,25 +59,29 @@ void comp_hms_engine_hcana( TString hcana_file, TString engine_file) {
   hyfp_diff[i] = new TH1F(Form("hyfp_diff%d",i),"Difference; Yfp (cm); Counts",60,ylo,yhi);
   hyfp_sub[i] = new TH1F(Form("hyfp_sub%d",i),"; Yfp (cm) (HCANA-ENGINE); Counts",2000,-.0001,.0001);
   //
-  hxptg_eng[i] = new TH1F(Form("hxptg_eng%d",i),"; Xptg (mr); Counts",100,-100.,100.);
-  hxptg_hcana[i] = new TH1F(Form("hxptg_hcana%d",i),"; Xptg (mr); Counts",100,-100.,100.);
-  hxptg_diff[i] = new TH1F(Form("hxptg_diff%d",i),"Difference; Xptg (mr); Counts",100,-100.,100.);
-  hxptg_sub[i] = new TH1F(Form("hxptg_sub%d",i),"; Xptg (mr) (HCANA-ENGINE); Counts",100,-.1,.1);
+  Double_t xptglo=-100.,xptghi=100.;
+  hxptg_eng[i] = new TH1F(Form("hxptg_eng%d",i),"; Xptg (mr); Counts",100,xptglo,xptghi);
+  hxptg_hcana[i] = new TH1F(Form("hxptg_hcana%d",i),"; Xptg (mr); Counts",100,xptglo,xptghi);
+  hxptg_diff[i] = new TH1F(Form("hxptg_diff%d",i),"Difference; Xptg (mr); Counts",100,xptglo,xptghi);
+  hxptg_sub[i] = new TH1F(Form("hxptg_sub%d",i),"; Xptg (mr) (HCANA-ENGINE); Counts",2000,-.1,.1);
   //
-  hyptg_eng[i] = new TH1F(Form("hyptg_eng%d",i),"; Yptg (mr); Counts",100,-50.,50.);
-  hyptg_hcana[i] = new TH1F(Form("hyptg_hcana%d",i),"; Yptg (mr); Counts",100,-50.,50.);
-  hyptg_diff[i] = new TH1F(Form("hyptg_diff%d",i),"Difference; Yptg (mr); Counts",100,-50.,50.);
-  hyptg_sub[i] = new TH1F(Form("hyptg_sub%d",i),"; Yptg  (HCANA-ENGINE); Counts",100,-.1,.1);
+  Double_t yptglo=-50.,yptghi=50.;
+  hyptg_eng[i] = new TH1F(Form("hyptg_eng%d",i),"; Yptg (mr); Counts",100,yptglo,yptghi);
+  hyptg_hcana[i] = new TH1F(Form("hyptg_hcana%d",i),"; Yptg (mr); Counts",100,yptglo,yptghi);
+  hyptg_diff[i] = new TH1F(Form("hyptg_diff%d",i),"Difference; Yptg (mr); Counts",100,yptglo,yptghi);
+  hyptg_sub[i] = new TH1F(Form("hyptg_sub%d",i),"; Yptg  (HCANA-ENGINE); Counts",2000,-.1,.1);
   //
-  hytg_eng[i] = new TH1F(Form("hytg_eng%d",i),"; Ytg (cm); Counts",60,-10,10);
-  hytg_hcana[i] = new TH1F(Form("hytg_hcana%d",i),"; Ytg (cm); Counts",60,-10,10);
-  hytg_diff[i] = new TH1F(Form("hytg_diff%d",i),"Difference; Ytg (cm); Counts",60,-10,10);
-  hytg_sub[i] = new TH1F(Form("hytg_sub%d",i),"; Ytg (cm) (HCANA-ENGINE); Counts",60,-.0001,.0001);
+  Double_t ytglo=-10.,ytghi=10.;
+  hytg_eng[i] = new TH1F(Form("hytg_eng%d",i),"; Ytg (cm); Counts",60,ytglo,ytghi);
+  hytg_hcana[i] = new TH1F(Form("hytg_hcana%d",i),"; Ytg (cm); Counts",60,ytglo,ytghi);
+  hytg_diff[i] = new TH1F(Form("hytg_diff%d",i),"Difference; Ytg (cm); Counts",60,ytglo,ytghi);
+  hytg_sub[i] = new TH1F(Form("hytg_sub%d",i),"; Ytg (cm) (HCANA-ENGINE); Counts",2000,-.1,.1);
   //
-  hdelta_eng[i] = new TH1F(Form("hdelta_eng%d",i),"; Delta (%); Counts",60,-15,15);
-  hdelta_hcana[i] = new TH1F(Form("hdelta_hcana%d",i),"; Delta (%); Counts",60,-15,15);
-  hdelta_diff[i] = new TH1F(Form("hdelta_diff%d",i),"Difference; Delta (%); Counts",60,-15,15);
-  hdelta_sub[i] = new TH1F(Form("hdelta_sub%d",i),"; Delta (%) (HCANA-ENGINE); Counts",60,-.005,.005);
+  Double_t deltalo=-15.,deltahi=15.;
+  hdelta_eng[i] = new TH1F(Form("hdelta_eng%d",i),"; Delta (%); Counts",60,deltalo,deltahi);
+  hdelta_hcana[i] = new TH1F(Form("hdelta_hcana%d",i),"; Delta (%); Counts",60,deltalo,deltahi);
+  hdelta_diff[i] = new TH1F(Form("hdelta_diff%d",i),"Difference; Delta (%); Counts",60,deltalo,deltahi);
+  hdelta_sub[i] = new TH1F(Form("hdelta_sub%d",i),"; Delta (%) (HCANA-ENGINE); Counts",2000,-.001,.001);
    //
   }
   //
@@ -107,6 +111,14 @@ char *s = new char[1];
       hypfp_eng[i]->Fill(myengine->hdc_ypfp[i]*1000);
       hchi2_hcana[i]->Fill(myhcana->H_tr_chi2[i]);
       hchi2_eng[i]->Fill(myengine->hdc_chi2[i]);
+	hchi2_sub[i]->Fill((myhcana->H_tr_chi2[i]-myengine->hdc_chi2[i]));
+	hxfp_sub[i]->Fill((myhcana->H_dc_x[i]-myengine->hdc_xfp[i]));
+	hyfp_sub[i]->Fill((myhcana->H_dc_y[i]-myengine->hdc_yfp[i]));
+	hypfp_sub[i]->Fill((myhcana->H_dc_yp[i]-myengine->hdc_ypfp[i]));
+        hxpfp_sub[i]->Fill((myhcana->H_dc_xp[i]-myengine->hdc_xpfp[i]));
+      }
+      if( myhcana->H_tr_tg_y[i] >= ytglo && myhcana->H_tr_tg_y[i] <= ytghi && myhcana->H_tr_tg_th[i] >= xptglo/1000. && myhcana->H_tr_tg_th[i] <= xptghi/1000.
+	 	  && myhcana->H_tr_tg_ph[i] >= yptglo/1000. && myhcana->H_tr_tg_ph[i] <= yptghi/1000. && myhcana->H_tr_tg_dp[i] >= deltalo && myhcana->H_tr_tg_dp[i] <= deltahi) {
       hytg_hcana[i]->Fill(myhcana->H_tr_tg_y[i]);
       hxptg_hcana[i]->Fill(myhcana->H_tr_tg_th[i]*1000.);
       hyptg_hcana[i]->Fill(myhcana->H_tr_tg_ph[i]*1000.);
@@ -115,21 +127,17 @@ char *s = new char[1];
       hxptg_eng[i]->Fill(myengine->hdc_xptg[i]*1000);
       hyptg_eng[i]->Fill(myengine->hdc_yptg[i]*1000);
       hdelta_eng[i]->Fill(myengine->hdc_delta[i]);
-	hchi2_sub[i]->Fill((myhcana->H_tr_chi2[i]-myengine->hdc_chi2[i]));
-	hxfp_sub[i]->Fill((myhcana->H_dc_x[i]-myengine->hdc_xfp[i]));
-	hyfp_sub[i]->Fill((myhcana->H_dc_y[i]-myengine->hdc_yfp[i]));
-	hypfp_sub[i]->Fill((myhcana->H_dc_yp[i]-myengine->hdc_ypfp[i]));
-        hxpfp_sub[i]->Fill((myhcana->H_dc_xp[i]-myengine->hdc_xpfp[i]));
 	hytg_sub[i]->Fill((myhcana->H_tr_tg_y[i]-myengine->hdc_ytg[i]));
 	hyptg_sub[i]->Fill((myhcana->H_tr_tg_ph[i]-myengine->hdc_yptg[i])*1000);
          hxptg_sub[i]->Fill((myhcana->H_tr_tg_th[i]-myengine->hdc_xptg[i])*1000);
          hdelta_sub[i]->Fill((myhcana->H_tr_tg_dp[i]-myengine->hdc_delta[i]));
+      }
        if ( TMath::Abs(myhcana->H_tr_chi2[i]-myengine->hdc_chi2[i]) >= 10. ) hchi2_eng2[i]->Fill(myengine->hdc_chi2[i]);
-      }   
+        
     }
   }
-    if (myhcana->H_dc_ntrack <0 && TMath::Abs(myhcana->H_dc_x[0]-myengine->hdc_xfp[0]) >= 0.01 ) {
-  //  if ( TMath::Abs(myhcana->H_dc_ntrack-myengine->hdc_ntr) > 0 ) {
+  //  if (myhcana->H_dc_ntrack <0 && TMath::Abs(myhcana->H_dc_x[0]-myengine->hdc_xfp[0]) >= 0.01 ) {
+    if ( 1 == -1 ) {
 	//cout  << " hcana event number = "<< myhcana->g_evnum << " Engine event number = " << myengine->evnum << endl;
       myhcana->PrintTrack(ni);
       myengine->PrintTrack(ni);
@@ -166,7 +174,7 @@ char *s = new char[1];
     sum_tracks[1][i]=hntr_eng->Integral(i+1,4);
     printf("%3d   %10d   %10d  %10d  %10d \n",i,num_tracks[0][i],num_tracks[1][i],num_tracks[0][i]-num_tracks[1][i],sum_tracks[0][i]);
   } 
- printf("%-5s %+10s %+10s %+10s %+10s %+10s \n"," Track","  cut "," XP "," YP "," X "," Y ");
+ printf("%-5s %+10s %+10s %+10s %+10s %+10s \n","FP Track","  cut "," XP "," YP "," X "," Y ");
  Int_t j;
  Double_t num_pass_xp[3][4],num_pass_yp[3][4];
  Double_t num_pass_x[3][4],num_pass_y[3][4];
@@ -179,7 +187,27 @@ char *s = new char[1];
      num_pass_x[i][j]=hxfp_sub[i]->Integral(binlo[j],binhi[j]); 
      num_pass_y[i][j]=hyfp_sub[i]->Integral(binlo[j],binhi[j]); 
      xlo_pass_xp[i][j]=hxpfp_sub[i]->GetBinLowEdge(binlo[j]); 
-     printf("%3d   %8.4e  %10d  %10d  %10d  %10d %5.4f %5.4f %5.4f %5.4f   \n",i+1,-xlo_pass_xp[i][j],num_pass_xp[i][j],num_pass_yp[i][j],num_pass_x[i][j],num_pass_y[i][j],num_pass_xp[i][j]/good_events[i],num_pass_yp[i][j]/good_events[i],num_pass_x[i][j]/good_events[i],num_pass_y[i][j]/good_events[i]);
+     printf("%5d   %8.4e  %10d  %10d  %10d  %10d %5.4f %5.4f %5.4f %5.4f   \n",i+1,-xlo_pass_xp[i][j],num_pass_xp[i][j],num_pass_yp[i][j],num_pass_x[i][j],num_pass_y[i][j],num_pass_xp[i][j]/good_events[i],num_pass_yp[i][j]/good_events[i],num_pass_x[i][j]/good_events[i],num_pass_y[i][j]/good_events[i]);
+     }
+   }
+   //
+  good_events[0]=hxptg_eng[0]->Integral();
+ good_events[1]=hxptg_eng[1]->Integral();
+ good_events[2]=hxptg_eng[2]->Integral();
+Double_t num_pass_xptg[3][4],num_pass_yptg[3][4];
+ Double_t num_pass_delta[3][4],num_pass_ytg[3][4];
+ Double_t xlo_pass_xptg[3][4],xlo_pass_yptg[3][4];
+ printf("%-5s %+10s %+10s %+10s %+10s %+10s \n","Tar Track","  cut "," XP "," YP ","Delta "," Y ");
+  Int_t binlo[4]={1,901,991,1000},binhi[4]={2000,1101,1011,1001};
+   for (i=0 ; i<3 ;i++) {
+     for (j=0 ; j<4 ;j++) {
+     num_pass_xptg[i][j]=hxptg_sub[i]->Integral(binlo[j],binhi[j]); 
+     num_pass_yptg[i][j]=hyptg_sub[i]->Integral(binlo[j],binhi[j]); 
+     num_pass_delta[i][j]=hdelta_sub[i]->Integral(binlo[j],binhi[j]); 
+     num_pass_ytg[i][j]=hytg_sub[i]->Integral(binlo[j],binhi[j]); 
+     xlo_pass_yptg[i][j]=hytg_sub[i]->GetBinLowEdge(binlo[j]); 
+     //     xlo_pass_yptg[i][j]=hytg_sub[i]->GetBinLowEdge(binlo[j]); 
+     printf("%5d   %5.4e %5.4e  %10d  %10d  %10d  %10d %5.4f %5.4f %5.4f %5.4f   \n",i+1,-xlo_pass_yptg[i][j],hytg_sub[i]->GetBinLowEdge(binhi[j]),num_pass_xptg[i][j],num_pass_yptg[i][j],num_pass_x[i][j],num_pass_y[i][j],num_pass_xptg[i][j]/good_events[i],num_pass_yptg[i][j]/good_events[i],num_pass_delta[i][j]/good_events[i],num_pass_y[i][j]/good_events[i]);
      }
    }
  //

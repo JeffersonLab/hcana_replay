@@ -39,40 +39,40 @@ void comp_sos_engine_hcana( TString hcana_file, TString engine_file) {
   hxpfp_eng[i] = new TH1F(Form("hxpfp_eng%d",i),"; Xpfp (mr); Counts",100,xplo,xphi);
   hxpfp_hcana[i] = new TH1F(Form("hxpfp_hcana%d",i),"; Xpfp (mr); Counts",100,xplo,xphi);
   hxpfp_diff[i] = new TH1F(Form("hxpfp_diff%d",i),"Difference; Xpfp (mr); Counts",100,xplo,xphi);
-  hxpfp_sub[i] = new TH1F(Form("hxpfp_sub%d",i),"; Xpfp  (HCANA-ENGINE); Counts",2000,-1.,1.);
+  hxpfp_sub[i] = new TH1F(Form("hxpfp_sub%d",i),"; Xpfp  (HCANA-ENGINE); Counts",2000,-0.0001,0.0001);
   //
   Double_t yplo=-50.,yphi=50.;
   hypfp_eng[i] = new TH1F(Form("hypfp_eng%d",i),"; Ypfp (mr); Counts",100,yplo,yphi);
   hypfp_hcana[i] = new TH1F(Form("hypfp_hcana%d",i),"; Ypfp (mr); Counts",100,yplo,yphi);
   hypfp_diff[i] = new TH1F(Form("hypfp_diff%d",i),"Difference; Ypfp (mr); Counts",100,yplo,yphi);
-  hypfp_sub[i] = new TH1F(Form("hypfp_sub%d",i),"; Ypfp  (mr) (HCANA-ENGINE); Counts",2000,-1.,1.);
+  hypfp_sub[i] = new TH1F(Form("hypfp_sub%d",i),"; Ypfp  (mr) (HCANA-ENGINE); Counts",2000,-0.0001,0.0001);
   //
   Double_t xlo=-50.,xhi=50.;
   hxfp_eng[i] = new TH1F(Form("hxfp_eng%d",i),"; Xfp (cm); Counts",100,xlo,xhi);
   hxfp_hcana[i] = new TH1F(Form("hxfp_hcana%d",i),"; Xfp (cm); Counts",100,xlo,xhi);
   hxfp_diff[i] = new TH1F(Form("hxfp_diff%d",i),"Difference; Xfp (cm); Counts",100,xlo,xhi);
-  hxfp_sub[i] = new TH1F(Form("hxfp_sub%d",i),"; Xfp (cm) (HCANA-ENGINE); Counts",2000,-1.,1.);
+  hxfp_sub[i] = new TH1F(Form("hxfp_sub%d",i),"; Xfp (cm) (HCANA-ENGINE); Counts",2000,-0.0001,0.0001);
   //
   Double_t ylo=-30.,yhi=30.;
   hyfp_eng[i] = new TH1F(Form("hyfp_eng%d",i),"; Yfp (cm); Counts",60,ylo,yhi);
   hyfp_hcana[i] = new TH1F(Form("hyfp_hcana%d",i),"; Yfp (cm); Counts",60,ylo,yhi);
   hyfp_diff[i] = new TH1F(Form("hyfp_diff%d",i),"Difference; Yfp (cm); Counts",60,ylo,yhi);
-  hyfp_sub[i] = new TH1F(Form("hyfp_sub%d",i),"; Yfp (cm) (HCANA-ENGINE); Counts",2000,-1.,1.);
+  hyfp_sub[i] = new TH1F(Form("hyfp_sub%d",i),"; Yfp (cm) (HCANA-ENGINE); Counts",2000,-0.0001,0.0001);
   //
   hxptg_eng[i] = new TH1F(Form("hxptg_eng%d",i),"; Xptg (mr); Counts",100,-100.,100.);
   hxptg_hcana[i] = new TH1F(Form("hxptg_hcana%d",i),"; Xptg (mr); Counts",100,-100.,100.);
   hxptg_diff[i] = new TH1F(Form("hxptg_diff%d",i),"Difference; Xptg (mr); Counts",100,-100.,100.);
-  hxptg_sub[i] = new TH1F(Form("hxptg_sub%d",i),"; Xptg (mr) (HCANA-ENGINE); Counts",100,-.1,.1);
+  hxptg_sub[i] = new TH1F(Form("hxptg_sub%d",i),"; Xptg (mr) (HCANA-ENGINE); Counts",100,-0.01,0.01);
   //
   hyptg_eng[i] = new TH1F(Form("hyptg_eng%d",i),"; Yptg (mr); Counts",100,-50.,50.);
   hyptg_hcana[i] = new TH1F(Form("hyptg_hcana%d",i),"; Yptg (mr); Counts",100,-50.,50.);
   hyptg_diff[i] = new TH1F(Form("hyptg_diff%d",i),"Difference; Yptg (mr); Counts",100,-50.,50.);
-  hyptg_sub[i] = new TH1F(Form("hyptg_sub%d",i),"; Yptg  (HCANA-ENGINE); Counts",100,-.1,.1);
+  hyptg_sub[i] = new TH1F(Form("hyptg_sub%d",i),"; Yptg  (HCANA-ENGINE); Counts",100,-0.01,0.01);
   //
   hytg_eng[i] = new TH1F(Form("hytg_eng%d",i),"; Ytg (cm); Counts",60,-10,10);
   hytg_hcana[i] = new TH1F(Form("hytg_hcana%d",i),"; Ytg (cm); Counts",60,-10,10);
   hytg_diff[i] = new TH1F(Form("hytg_diff%d",i),"Difference; Ytg (cm); Counts",60,-10,10);
-  hytg_sub[i] = new TH1F(Form("hytg_sub%d",i),"; Ytg (cm) (HCANA-ENGINE); Counts",60,-1.,1.);
+  hytg_sub[i] = new TH1F(Form("hytg_sub%d",i),"; Ytg (cm) (HCANA-ENGINE); Counts",60,-0.01,0.01);
   //
   hdelta_eng[i] = new TH1F(Form("hdelta_eng%d",i),"; Delta (%); Counts",60,-15,15);
   hdelta_hcana[i] = new TH1F(Form("hdelta_hcana%d",i),"; Delta (%); Counts",60,-15,15);
@@ -82,9 +82,13 @@ void comp_sos_engine_hcana( TString hcana_file, TString engine_file) {
   }
   //
 char *s = new char[1];
+  Long64_t engine_ent=0;
   for (Long64_t ni=0 ; ni<nent_loop ;ni++) {
       nb_hcana = myhcana->fChain->GetEntry(ni);
-      nb_engine = myengine->fChain->GetEntry(ni);
+      nb_engine = myengine->fChain->GetEntry(engine_ent++);
+      while (myhcana->g_evnum!=myengine->evnum) {
+         nb_engine = myengine->fChain->GetEntry(engine_ent++);
+      }
       if (myhcana->fEvtHdr_fEvtType==2&& myengine->evtype==2 && myhcana->g_evnum==myengine->evnum) {
       hntr_hcana->Fill(myhcana->S_dc_ntrack);
       hntr_eng->Fill(myengine->sdc_ntr);
@@ -124,7 +128,7 @@ char *s = new char[1];
       }   
     }
   }
-      if ( TMath::Abs(myhcana->S_dc_ntrack-myengine->sdc_ntr) > 0 && -1 == 1) {
+      if ( TMath::Abs(myhcana->S_dc_ntrack-myengine->sdc_ntr) < 0 ) {
 	//cout  << " hcana event number = "<< myhcana->g_evnum << " Engine event number = " << myengine->evnum << endl;
           myhcana->PrintTrack(ni);
           myengine->PrintTrack(ni);
@@ -154,7 +158,7 @@ char *s = new char[1];
  good_events[1]=hxfp_eng[1]->Integral();
  good_events[2]=hxfp_eng[2]->Integral();
  printf("%-5s %+10s %+10s %+10s \n"," Track","# Hcana","# ENGINE","Diff");
-  for (i=0 ; i<10 ;i++) {
+  for (i=0 ; i<=10 ;i++) {
     num_tracks[0][i]=hntr_hcana->GetBinContent(i+1);
     num_tracks[1][i]=hntr_eng->GetBinContent(i+1);
     sum_tracks[0][i]=hntr_hcana->Integral(i+1,4);
