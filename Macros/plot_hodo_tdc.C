@@ -21,7 +21,7 @@ void plot_hodo_tdc(Int_t nrun) {
 TCanvas *ch1tdc = new TCanvas("ch1tdc","Ch1 Compare TDC hit spectra ",1200,1000);
 TCanvas *ch2tdc = new TCanvas("ch2tdc","Ch2 Compare TDC hit spectra ",1200,1000);
  TFile *fh1 =  new TFile(Form("paw/%05d.root",nrun));
-  TFile *fh2 =  new TFile(Form("Rootfiles/compare_hodo_%05d.root",nrun));
+  TFile *fh2 =  new TFile(Form("Rootfiles/replay_both_%05d.root",nrun));
   //
   TString hname1[8] = { "h227","h228","h229","h230","h231","h232","h233","h234"};
   TString hname2[8] = { "hpostdc1","hnegtdc1","hpostdc2","hnegtdc2","hpostdc3","hnegtdc3","hpostdc4","hnegtdc4"};

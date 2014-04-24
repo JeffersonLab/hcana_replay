@@ -11,13 +11,16 @@ block S.dc.*
 block S.hod.*
 block S.cal.*
 block g.evnum
-
+# cuts
+cut hfoundtrack   H.dc.ntrack>0
+cut hfound1track   H.dc.ntrack==1
+cut hmscoin_event     g.evtyp==1||g.evtyp==3
 # TDC spectra
-TH1F hfptime1x ' HMS s1x fptime' H.hod.1x.fptime 80 0. 80.
-TH1F hfptime1y ' HMS s1y fptime' H.hod.1y.fptime 80 0. 80.
-TH1F hfptime2x ' HMS s2x fptime' H.hod.2x.fptime 80 0. 80.
-TH1F hfptime2y ' HMS s2y fptime' H.hod.2y.fptime 80 0. 80.
-TH1F hstart_time1 ' HMS Start Time ' H.hod.starttime 80 0. 80.
+TH1F hfptime1x ' HMS s1x fptime' H.hod.1x.fptime 80 0. 80. hfoundtrack
+TH1F hfptime1y ' HMS s1y fptime' H.hod.1y.fptime 80 0. 80. hfoundtrack 
+TH1F hfptime2x ' HMS s2x fptime' H.hod.2x.fptime 80 0. 80. hfoundtrack 
+TH1F hfptime2y ' HMS s2y fptime' H.hod.2y.fptime 80 0. 80. hfoundtrack 
+TH1F hstart_time1 ' HMS Start Time ' H.hod.starttime 80 0. 80. hmscoin_event
 # TDC hits per paddle
 TH1F hpostdc1 'HMS s1x+ TDC hits' H.hod.1x.postdchits 16 0.5 16.5
 TH1F hnegtdc1 'HMS s1x- TDC hits' H.hod.1x.negtdchits 16 0.5 16.5
