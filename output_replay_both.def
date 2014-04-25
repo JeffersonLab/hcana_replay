@@ -11,6 +11,8 @@ block S.dc.*
 block S.hod.*
 block S.cal.*
 block g.evnum
+block RB.*
+
 # cuts
 cut hfoundtrack   H.dc.ntrack>0
 cut hfound1track   H.dc.ntrack==1
@@ -91,3 +93,8 @@ TH1F dtime_hdc2v1 'HDC 2V1 Drift Time' H.dc.2v1.time 200 -100 300
 TH1F dtime_hdc2y2 'HDC 2Y2 Drift Time' H.dc.2y2.time 200 -100 300
 TH1F dtime_hdc2x2 'HDC 2X2 Drift Time' H.dc.2x2.time 200 -100 300
 
+# Beam related ADC channels. eg. raster
+TH1F rstrx_i 'Raster X Current' RB.raster.xcurrent 4000 -2000 2000
+TH1F rstry_i 'Raster Y Current' RB.raster.ycurrent 4000 -2000 2000
+TH1F rstrx_p 'Raster X Position' RB.raster.xpos 40 -20   20
+TH1F rstry_p 'Raster Y Position' RB.raster.ypos 40 -20   20
