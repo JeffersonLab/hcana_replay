@@ -48,7 +48,12 @@ public :
    Float_t         sdc_yptg[20];   //[sdc_ntr]
    Float_t         sdc_delta[20];   //[sdc_ntr]
    Float_t         sdc_ptar[20];   //[sdc_ntr]
-
+   Float_t         frx_raw_adc[20];  
+   Float_t         fry_raw_adc[20];  
+   Float_t         frx_adc[20];  
+   Float_t         fry_adc[20];  
+   Float_t         frx[20];  
+   Float_t         fry[20];  
    // List of branches
    TBranch        *b_evnum;   //!
    TBranch        *b_evtype;   //!
@@ -76,6 +81,12 @@ public :
    TBranch        *b_sdc_yptg;   //!
    TBranch        *b_sdc_delta;   //!
    TBranch        *b_sdc_ptar;   //!
+   TBranch        *b_frx_raw_adc;   //!
+   TBranch        *b_fry_raw_adc;   //!
+   TBranch        *b_frx_adc;   //!
+   TBranch        *b_fry_adc;   //!
+   TBranch        *b_frx;   //!
+   TBranch        *b_fry;   //!
 
    analyze_engine_tree(TString ifile,TTree *tree=0);
    virtual ~analyze_engine_tree();
@@ -174,6 +185,12 @@ void analyze_engine_tree::Init(TTree *tree)
    fChain->SetBranchAddress("sdc_yptg", sdc_yptg, &b_sdc_yptg);
    fChain->SetBranchAddress("sdc_delta", sdc_delta, &b_sdc_delta);
    fChain->SetBranchAddress("sdc_ptar", sdc_ptar, &b_sdc_ptar);
+   fChain->SetBranchAddress("frx_raw_adc", frx_raw_adc, &b_frx_raw_adc);
+   fChain->SetBranchAddress("fry_raw_adc", fry_raw_adc, &b_fry_raw_adc);
+   fChain->SetBranchAddress("frx_adc", frx_adc, &b_frx_adc);
+   fChain->SetBranchAddress("fry_adc", fry_adc, &b_fry_adc);
+   fChain->SetBranchAddress("frx", frx, &b_frx);
+   fChain->SetBranchAddress("fry", fry, &b_fry);
    Notify();
 }
 
@@ -208,7 +225,7 @@ void analyze_engine_tree::PrintTrack(Long64_t entry)
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->GetEntry(entry);
-   cout << " Engine event number = " << evnum << " event type = " << evtype << endl;
+   cout << "\nEngine event number = " << evnum << " event type = " << evtype << endl;
    if (evtype == 1||evtype == 3) {
    cout << "HMS  Number of Tracks  = " << hdc_ntr << endl;
    printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
@@ -235,5 +252,12 @@ void analyze_engine_tree::PrintTrack(Long64_t entry)
    }
    cout << " Print track target info sorted by chi-squared " << endl;
    }
+   cout<<" Raster x_raw_adc = "<<frx_raw_adc[i]
+       <<"\n        y_raw_adc = "<<fry_raw_adc[i]
+       <<"\n        x_adc = "<<frx_adc[i]
+       <<"\n        y_adc = "<<fry_adc[i]
+       <<"\n        x = "<<frx[i]
+       <<"\n        x = "<<fry[i] <<endl;
+
 }
 #endif // #ifdef analyze_engine_tree_cxx

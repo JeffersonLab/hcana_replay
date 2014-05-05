@@ -700,6 +700,12 @@ public :
    Double_t        S_hod_hgoodstarttime;
    Double_t        S_hod_starttime;
    Double_t        S_tr_n;
+   Double_t        RB_raster_frx_raw_adc;
+   Double_t        RB_raster_fry_raw_adc;
+   Double_t        RB_raster_frx_adc;
+   Double_t        RB_raster_fry_adc;
+   Double_t        RB_raster_frx;
+   Double_t        RB_raster_fry;
    Double_t        g_evnum;
  //THaEvent        *Event_Branch;
    ULong64_t       fEvtHdr_fEvtTime;
@@ -1397,6 +1403,12 @@ public :
    TBranch        *b_Event_Branch_fEvtHdr_fHelicity;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fTargetPol;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fRun;   //!
+   TBranch        *b_RB_raster_frx_raw_adc;
+   TBranch        *b_RB_raster_fry_raw_adc;
+   TBranch        *b_RB_raster_frx_adc;
+   TBranch        *b_RB_raster_fry_adc;
+   TBranch        *b_RB_raster_frx;
+   TBranch        *b_RB_raster_fry;
 
    analyze_hcana_tree(TString ifile,TTree *tree=0);
    virtual ~analyze_hcana_tree();
@@ -2155,6 +2167,14 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("fEvtHdr.fHelicity", &fEvtHdr_fHelicity, &b_Event_Branch_fEvtHdr_fHelicity);
    fChain->SetBranchAddress("fEvtHdr.fTargetPol", &fEvtHdr_fTargetPol, &b_Event_Branch_fEvtHdr_fTargetPol);
    fChain->SetBranchAddress("fEvtHdr.fRun", &fEvtHdr_fRun, &b_Event_Branch_fEvtHdr_fRun);
+   fChain->SetBranchAddress("RB.raster.frx_raw_adc", &RB_raster_frx_raw_adc, &b_RB_raster_frx_raw_adc);
+   fChain->SetBranchAddress("RB.raster.fry_raw_adc", &RB_raster_fry_raw_adc, &b_RB_raster_fry_raw_adc);
+   fChain->SetBranchAddress("RB.raster.frx_adc", &RB_raster_frx_adc, &b_RB_raster_frx_adc);
+   fChain->SetBranchAddress("RB.raster.fry_adc", &RB_raster_fry_adc, &b_RB_raster_fry_adc);
+   fChain->SetBranchAddress("RB.raster.frx", &RB_raster_frx, &b_RB_raster_frx);
+   fChain->SetBranchAddress("RB.raster.fry", &RB_raster_fry, &b_RB_raster_fry);
+
+
    Notify();
 }
 
