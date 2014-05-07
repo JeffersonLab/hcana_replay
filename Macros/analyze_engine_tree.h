@@ -48,12 +48,12 @@ public :
    Float_t         sdc_yptg[20];   //[sdc_ntr]
    Float_t         sdc_delta[20];   //[sdc_ntr]
    Float_t         sdc_ptar[20];   //[sdc_ntr]
-   Float_t         frx_raw_adc[20];  
-   Float_t         fry_raw_adc[20];  
-   Float_t         frx_adc[20];  
-   Float_t         fry_adc[20];  
-   Float_t         frx[20];  
-   Float_t         fry[20];  
+   Float_t         frx_raw_adc;  
+   Float_t         fry_raw_adc;  
+   Float_t         frx_adc;  
+   Float_t         fry_adc;  
+   Float_t         frx;  
+   Float_t         fry;  
    // List of branches
    TBranch        *b_evnum;   //!
    TBranch        *b_evtype;   //!
@@ -185,12 +185,12 @@ void analyze_engine_tree::Init(TTree *tree)
    fChain->SetBranchAddress("sdc_yptg", sdc_yptg, &b_sdc_yptg);
    fChain->SetBranchAddress("sdc_delta", sdc_delta, &b_sdc_delta);
    fChain->SetBranchAddress("sdc_ptar", sdc_ptar, &b_sdc_ptar);
-   fChain->SetBranchAddress("frx_raw_adc", frx_raw_adc, &b_frx_raw_adc);
-   fChain->SetBranchAddress("fry_raw_adc", fry_raw_adc, &b_fry_raw_adc);
-   fChain->SetBranchAddress("frx_adc", frx_adc, &b_frx_adc);
-   fChain->SetBranchAddress("fry_adc", fry_adc, &b_fry_adc);
-   fChain->SetBranchAddress("frx", frx, &b_frx);
-   fChain->SetBranchAddress("fry", fry, &b_fry);
+   fChain->SetBranchAddress("frx_raw_adc", &frx_raw_adc, &b_frx_raw_adc);
+   fChain->SetBranchAddress("fry_raw_adc", &fry_raw_adc, &b_fry_raw_adc);
+   fChain->SetBranchAddress("frx_adc", &frx_adc, &b_frx_adc);
+   fChain->SetBranchAddress("fry_adc", &fry_adc, &b_fry_adc);
+   fChain->SetBranchAddress("frx", &frx, &b_frx);
+   fChain->SetBranchAddress("fry", &fry, &b_fry);
    Notify();
 }
 
