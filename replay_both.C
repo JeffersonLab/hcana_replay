@@ -6,7 +6,7 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   //
   
   //Int_t RunNumber=52949;
-    char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
+  char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
   gHcParms->AddString("g_ctp_database_filename", "jan05.database");
   
@@ -30,26 +30,30 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   // Load the Hall C style detector map
   gHcDetectorMap=new THcDetectorMap();
   gHcDetectorMap->Load(gHcParms->GetString("g_decode_map_filename"));
-
+  
   // Set up the equipment to be analyzed.
-
+  
   THaApparatus* HMS = new THcHallCSpectrometer("H","HMS");
   gHaApps->Add( HMS );
-
+  
   HMS->AddDetector( new THcHodoscope("hod", "Hodoscope" ));
-   HMS->AddDetector( new THcShower("cal", "Shower" ));
+  HMS->AddDetector( new THcShower("cal", "Shower" ));
   THcCherenkov* cherenkov = new THcCherenkov("cher", "Gas Cerenkov" );
   HMS->AddDetector( cherenkov );
   HMS->AddDetector( new THcDC("dc", "Drift Chambers" ));
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
   //
- THaApparatus* SOS = new THcHallCSpectrometer("S","SOS");
+  THaApparatus* SOS = new THcHallCSpectrometer("S","SOS");
   gHaApps->Add( SOS );
   // Add detectors
   SOS->AddDetector( new THcHodoscope("hod", "Hodoscope" ));
   SOS->AddDetector( new THcShower("cal", "Shower" ));
   SOS->AddDetector( new THcDC("dc", "Drift Chambers" ));
+
+  // Beamline and its detectors
+  THaApparatus * BEAM = new THcRasteredBeam("RB","Rastered Beamline");
+  gHaApps->Add( BEAM );
 
   // Set up the analyzer - we use the standard one,
   // but this could be an experiment-specific one as well.
