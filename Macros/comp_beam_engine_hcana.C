@@ -23,19 +23,19 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   cout << " hcana entries = " << nent_hcana << " engine entries = " << nent_engine  << endl;
   Long64_t nb_hcana = 0,nb_engine = 0;
 
-  TH1F *rb_frx_raw_adc[2],*rb_fry_raw_adc[2],*rb_frx_adc[2],*rb_fry_adc[2],*rb_frx[2],*rb_fry[2];
+  TH1F *comp_frx_raw_adc[2],*comp_fry_raw_adc[2],*comp_frx_adc[2],*comp_fry_adc[2],*comp_frx[2],*comp_fry[2];
   TH1F *pos_diff[2],*raw_adc_diff[2], *adc_diff[2]; 
 
   TString comp[2] = {"eng","hcana"};
   Int_t i;
 
   for (i=0 ; i<2 ;i++) {
-    rb_frx_raw_adc[i] =  new TH1F(Form("rb_frx_raw_adc_%s",comp[i].Data()),"frx_raw_adc; Raw ADC value; Events",1200,3200,4400);
-    rb_fry_raw_adc[i] =  new TH1F(Form("rb_fry_raw_adc_%s",comp[i].Data()),"fry_raw_adc; Raw ADC value; Events",1200,3200,4400);
-    rb_frx_adc[i] =  new TH1F(Form("rb_frx_adc_%s",comp[i].Data()),"frx_adc; ADC value; Events",1000,-500,500);
-    rb_fry_adc[i] =  new TH1F(Form("rb_fry_adc_%s",comp[i].Data()),"fry_adc; ADC value; Events",1000,-500,500);
-    rb_frx[i] =  new TH1F(Form("rb_frx_%s",comp[i].Data()),"frx; Position (cm); Events",100,-0.5,0.5);
-    rb_fry[i] =  new TH1F(Form("rb_fry_%s",comp[i].Data()),"fry; Position (cm); Events",100,-0.5,0.5);
+    comp_frx_raw_adc[i] =  new TH1F(Form("comp_frx_raw_adc_%s",comp[i].Data()),"frx_raw_adc; Raw ADC value; Events",1200,3200,4400);
+    comp_fry_raw_adc[i] =  new TH1F(Form("comp_fry_raw_adc_%s",comp[i].Data()),"fry_raw_adc; Raw ADC value; Events",1200,3200,4400);
+    comp_frx_adc[i] =  new TH1F(Form("comp_frx_adc_%s",comp[i].Data()),"frx_adc; ADC value; Events",1000,-500,500);
+    comp_fry_adc[i] =  new TH1F(Form("comp_fry_adc_%s",comp[i].Data()),"fry_adc; ADC value; Events",1000,-500,500);
+    comp_frx[i] =  new TH1F(Form("comp_frx_%s",comp[i].Data()),"frx; Position (cm); Events",100,-0.5,0.5);
+    comp_fry[i] =  new TH1F(Form("comp_fry_%s",comp[i].Data()),"fry; Position (cm); Events",100,-0.5,0.5);
 
     pos_diff[i] =  new TH1F(Form("pos_diff_%d",i),"Differences in reconstructed position; Difference (cm); Events",100,-0.5,0.5);
     raw_adc_diff[i] =  new TH1F(Form("raw_adc_dif_%d",i),"Differences in raw ADC values; Difference ; Events",1200,3200,4400);
@@ -52,23 +52,23 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
 	nb_engine = myengine->fChain->GetEntry(engine_ent++);
       }
       if (myhcana->fEvtHdr_fEvtType==1&& myengine->evtype==1 && myhcana->g_evnum==myengine->evnum) {
-	rb_frx_raw_adc[1]->Fill(myhcana->RB_raster_frx_raw_adc);
-	rb_frx_raw_adc[0]->Fill(myengine->fry_raw_adc);
-	
-	rb_frx_adc[1]->Fill(myhcana->RB_raster_frx_adc);
-	rb_frx_adc[0]->Fill(myengine->frx_adc);
+	comp_frx_raw_adc[0]->Fill(myengine->frx_raw_adc);
+	comp_frx_raw_adc[1]->Fill(myhcana->RB_raster_frx_raw_adc);
 
-	rb_frx[1]->Fill(myhcana->RB_raster_frx);
-	rb_frx[0]->Fill(myengine->frx);
+	comp_frx_adc[0]->Fill(myengine->frx_adc);
+	comp_frx_adc[1]->Fill(myhcana->RB_raster_frx_adc);
 
-	rb_fry_raw_adc[1]->Fill(myhcana->RB_raster_fry_raw_adc);
-	rb_fry_raw_adc[0]->Fill(myengine->frx_raw_adc);
+	comp_frx[0]->Fill(myengine->frx);
+	comp_frx[1]->Fill(myhcana->RB_raster_frx);
 
-	rb_fry_adc[1]->Fill(myhcana->RB_raster_fry_adc);
-	rb_fry_adc[0]->Fill(myengine->fry_adc);
+	comp_fry_raw_adc[0]->Fill(myengine->fry_raw_adc);
+	comp_fry_raw_adc[1]->Fill(myhcana->RB_raster_fry_raw_adc);
 
-	rb_fry[1]->Fill(myhcana->RB_raster_fry);
-	rb_fry[0]->Fill(myengine->fry);
+	comp_fry_adc[0]->Fill(myengine->fry_adc);
+	comp_fry_adc[1]->Fill(myhcana->RB_raster_fry_adc);
+
+	comp_fry[0]->Fill(myengine->fry);
+	comp_fry[1]->Fill(myhcana->RB_raster_fry);
       } // if
 
   } // for loop
@@ -96,36 +96,36 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   cx->Divide(2,3);
 
   cx->cd(1);
-  rb_frx_raw_adc[0]->Draw();
-  rb_frx_raw_adc[1]->Draw("same");
-  rb_frx_raw_adc[0]->SetLineColor(2);
+  comp_frx_raw_adc[0]->Draw();
+  comp_frx_raw_adc[0]->SetLineColor(2);
+  comp_frx_raw_adc[1]->Draw("same");
   legx = new TLegend(0.15,0.8,0.30,0.88);
-  legx->AddEntry(rb_frx_raw_adc[0],"ENGINE","l");
-  legx->AddEntry(rb_frx_raw_adc[1],"HCANA","l");
+  legx->AddEntry(comp_frx_raw_adc[0],"ENGINE","l");
+  legx->AddEntry(comp_frx_raw_adc[1],"HCANA","l");
   legx->Draw();
 
   cx->cd(2);
-  raw_adc_diff[0]->Add(rb_frx_raw_adc[1],rb_frx_raw_adc[0],-1);
+  raw_adc_diff[0]->Add(comp_frx_raw_adc[1],comp_frx_raw_adc[0],-1);
   raw_adc_diff[0]->Draw();
   raw_adc_diff[0]->SetLineColor(kGreen-2);
 
   cx->cd(3);
-  rb_frx_adc[0]->Draw();
-  rb_frx_adc[1]->Draw("same");
-  rb_frx_adc[0]->SetLineColor(2);
+  comp_frx_adc[0]->Draw();
+  comp_frx_adc[0]->SetLineColor(2);
+  comp_frx_adc[1]->Draw("same");
 
   cx->cd(4);
-  adc_diff[0]->Add(rb_frx_adc[1],rb_frx_adc[0],-1);
+  adc_diff[0]->Add(comp_frx_adc[1],comp_frx_adc[0],-1);
   adc_diff[0]->Draw();
   adc_diff[0]->SetLineColor(kGreen-2);
 
   cx->cd(5);
-  rb_frx[0]->Draw();
-  rb_frx[1]->Draw("same");
-  rb_frx[0]->SetLineColor(2);
+  comp_frx[0]->Draw();
+  comp_frx[0]->SetLineColor(2);
+  comp_frx[1]->Draw("same");
 
   cx->cd(6);
-  pos_diff[0]->Add(rb_frx[1],rb_frx[0],-1);
+  pos_diff[0]->Add(comp_frx[1],comp_frx[0],-1);
   pos_diff[0]->Draw();
   pos_diff[0]->SetLineColor(kGreen-2);
 
@@ -134,36 +134,36 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   cy->Divide(2,3);
 
   cy->cd(1);
-  rb_fry_raw_adc[0]->Draw();
-  rb_fry_raw_adc[1]->Draw("same");
-  rb_fry_raw_adc[0]->SetLineColor(2);
+  comp_fry_raw_adc[0]->Draw();
+  comp_fry_raw_adc[0]->SetLineColor(2);
+  comp_fry_raw_adc[1]->Draw("same");
   legy = new TLegend(0.15,0.8,0.3,0.88);
-  legy->AddEntry(rb_fry_raw_adc[0],"ENGINE","l");
-  legy->AddEntry(rb_fry_raw_adc[1],"HCANA","l");
+  legy->AddEntry(comp_fry_raw_adc[0],"ENGINE","l");
+  legy->AddEntry(comp_fry_raw_adc[1],"HCANA","l");
   legy->Draw();
 
   cy->cd(2);
-  raw_adc_diff[1]->Add(rb_fry_raw_adc[1],rb_fry_raw_adc[0],-1);
+  raw_adc_diff[1]->Add(comp_fry_raw_adc[1],comp_fry_raw_adc[0],-1);
   raw_adc_diff[1]->Draw();
   raw_adc_diff[1]->SetLineColor(kGreen-2);
 
   cy->cd(3);
-  rb_fry_adc[0]->Draw();
-  rb_fry_adc[1]->Draw("same");
-  rb_fry_adc[0]->SetLineColor(2);
+  comp_fry_adc[0]->Draw();
+  comp_fry_adc[0]->SetLineColor(2);
+  comp_fry_adc[1]->Draw("same");
 
   cy->cd(4);
-  adc_diff[1]->Add(rb_fry_adc[1],rb_fry_adc[0],-1);
+  adc_diff[1]->Add(comp_fry_adc[1],comp_fry_adc[0],-1);
   adc_diff[1]->Draw();
   adc_diff[1]->SetLineColor(kGreen-2);
 
   cy->cd(5);
-  rb_fry[0]->Draw();
-  rb_fry[0]->SetLineColor(2);
-  rb_fry[1]->Draw("same");
+  comp_fry[0]->Draw();
+  comp_fry[0]->SetLineColor(2);
+  comp_fry[1]->Draw("same");
 
   cy->cd(6);
-  pos_diff[1]->Add(rb_fry[1],rb_fry[0],-1);
+  pos_diff[1]->Add(comp_fry[1],comp_fry[0],-1);
   pos_diff[1]->Draw();
   pos_diff[1]->SetLineColor(kGreen-2);
 

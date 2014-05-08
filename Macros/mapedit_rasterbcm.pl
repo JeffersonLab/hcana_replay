@@ -10,7 +10,7 @@ use POSIX qw(strftime);
 
 $RASTERID=18;
 $BCMID=19;
-$SWAPRASTERXY=1;
+$SWAPRASTERXY=0;
 
 $thedate = strftime( '%b %e, %Y', localtime );
 
