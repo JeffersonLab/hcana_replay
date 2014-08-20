@@ -646,6 +646,19 @@ public :
    Double_t        H_dc_nhit;
    Double_t        H_dc_nsp;
    Double_t        H_dc_ntrack;
+   Double_t        H_dc_tnhit;
+   Double_t        H_dc_trawhit;
+   Double_t        H_gold_dp;
+   Double_t        H_gold_index;
+   Double_t        H_gold_ok;
+   Double_t        H_gold_p;
+   Double_t        H_gold_ph;
+   Double_t        H_gold_px;
+   Double_t        H_gold_py;
+   Double_t        H_gold_pz;
+   Double_t        H_gold_th;
+   Double_t        H_gold_x;
+   Double_t        H_gold_y;
    Double_t        H_hod_1x_fptime;
    Double_t        H_hod_1y_fptime;
    Double_t        H_hod_2x_fptime;
@@ -1341,6 +1354,19 @@ public :
    TBranch        *b_H_dc_nhit;   //!
    TBranch        *b_H_dc_nsp;   //!
    TBranch        *b_H_dc_ntrack;   //!
+   TBranch        *b_H_dc_tnhit;   //!
+   TBranch        *b_H_dc_trawhit;   //!
+   TBranch        *b_H_gold_dp;   //!
+   TBranch        *b_H_gold_index;   //!
+   TBranch        *b_H_gold_ok;   //!
+   TBranch        *b_H_gold_p;   //!
+   TBranch        *b_H_gold_ph;   //!
+   TBranch        *b_H_gold_px;   //!
+   TBranch        *b_H_gold_py;   //!
+   TBranch        *b_H_gold_pz;   //!
+   TBranch        *b_H_gold_th;   //!
+   TBranch        *b_H_gold_x;   //!
+   TBranch        *b_H_gold_y;   //!
    TBranch        *b_H_hod_1x_fptime;   //!
    TBranch        *b_H_hod_1y_fptime;   //!
    TBranch        *b_H_hod_2x_fptime;   //!
@@ -2105,6 +2131,19 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("H.dc.nhit", &H_dc_nhit, &b_H_dc_nhit);
    fChain->SetBranchAddress("H.dc.nsp", &H_dc_nsp, &b_H_dc_nsp);
    fChain->SetBranchAddress("H.dc.ntrack", &H_dc_ntrack, &b_H_dc_ntrack);
+   fChain->SetBranchAddress("H.dc.tnhit", &H_dc_tnhit, &b_H_dc_tnhit);
+   fChain->SetBranchAddress("H.dc.trawhit", &H_dc_trawhit, &b_H_dc_trawhit);
+   fChain->SetBranchAddress("H.gold.dp", &H_gold_dp, &b_H_gold_dp);
+   fChain->SetBranchAddress("H.gold.index", &H_gold_index, &b_H_gold_index);
+   fChain->SetBranchAddress("H.gold.ok", &H_gold_ok, &b_H_gold_ok);
+   fChain->SetBranchAddress("H.gold.p", &H_gold_p, &b_H_gold_p);
+   fChain->SetBranchAddress("H.gold.ph", &H_gold_ph, &b_H_gold_ph);
+   fChain->SetBranchAddress("H.gold.px", &H_gold_px, &b_H_gold_px);
+   fChain->SetBranchAddress("H.gold.py", &H_gold_py, &b_H_gold_py);
+   fChain->SetBranchAddress("H.gold.pz", &H_gold_pz, &b_H_gold_pz);
+   fChain->SetBranchAddress("H.gold.th", &H_gold_th, &b_H_gold_th);
+   fChain->SetBranchAddress("H.gold.x", &H_gold_x, &b_H_gold_x);
+   fChain->SetBranchAddress("H.gold.y", &H_gold_y, &b_H_gold_y);
    fChain->SetBranchAddress("H.hod.1x.fptime", &H_hod_1x_fptime, &b_H_hod_1x_fptime);
    fChain->SetBranchAddress("H.hod.1y.fptime", &H_hod_1y_fptime, &b_H_hod_1y_fptime);
    fChain->SetBranchAddress("H.hod.2x.fptime", &H_hod_2x_fptime, &b_H_hod_2x_fptime);
@@ -2211,6 +2250,7 @@ void analyze_hcana_tree::PrintTrack(Long64_t entry)
    fChain->GetEntry(entry);
    cout << " hcana event number = " << g_evnum << " event type = " << fEvtHdr_fEvtType << endl;
    if (fEvtHdr_fEvtType==1 ||fEvtHdr_fEvtType==3) { 
+     cout << " number of 1x1 hits = " << Ndata_H_dc_1x1_tdchits << endl;
    cout << " HMS  Number of Total hits  = " << H_dc_nhit << endl;
    cout << " Number of Tracks  = " << H_dc_ntrack << endl;
    printf(" Track focal plane  x (cm)    y (cm)    dx/dz     dy/dz  \n");
@@ -2223,6 +2263,7 @@ void analyze_hcana_tree::PrintTrack(Long64_t entry)
      printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f  %7.5f   %7.5f \n",i+1,H_tr_tg_y[i],H_tr_tg_th[i],H_tr_tg_ph[i],H_tr_tg_dp[i],H_tr_p[i],H_tr_chi2[i]);
    }
    cout << " Print track target info sorted by chi-squared " << endl;
+   cout << " Xtar =  " << H_gold_x << " Ytar =  " <<  H_gold_y << " Xptar =  " << H_gold_th << " Yptar =  " <<  H_gold_ph << endl; 
    }
    if (fEvtHdr_fEvtType==2 ||fEvtHdr_fEvtType==3) { 
    cout << " SOS  Number of Total hits  = " << S_dc_nhit << endl;

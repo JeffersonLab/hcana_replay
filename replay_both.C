@@ -6,7 +6,11 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   //
   
   //Int_t RunNumber=52949;
+  if (RunNumber == 50017) {
+  char* RunFileNamePattern="daq04_%d.log.0";
+  } else {
   char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
+  }
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
   gHcParms->AddString("g_ctp_database_filename", "jan05.database");
   
@@ -55,6 +59,8 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   THaApparatus * BEAM = new THcRasteredBeam("RB","Rastered Beamline");
   gHaApps->Add( BEAM );
 
+  // setup physics
+  gHaPhysics->Add( new THaGoldenTrack( "H.gold", "HMS Golden Track", "H" ));
   // Set up the analyzer - we use the standard one,
   // but this could be an experiment-specific one as well.
   // The Analyzer controls the reading of the data, executes

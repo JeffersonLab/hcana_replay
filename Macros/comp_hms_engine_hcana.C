@@ -27,12 +27,13 @@ void comp_hms_engine_hcana( TString hcana_file, TString engine_file) {
   TH1F *hyptg_eng[3],*hyptg_hcana[3],*hyptg_diff[3],*hyptg_sub[3];
   TH1F *hytg_eng[3],*hytg_hcana[3],*hytg_diff[3],*hytg_sub[3];
   TH1F *hdelta_eng[3],*hdelta_hcana[3],*hdelta_diff[3],*hdelta_sub[3];
+  TH1F *hmom_eng[3],*hmom_hcana[3],*hmom_diff[3],*hmom_sub[3];
   Int_t i;
   for (i=0 ; i<3 ;i++) {
     hchi2_eng[i] = new TH1F(Form("hchi2_eng%d",i),"; Chi2 ; Counts",100,0.,1000.);
   hchi2_hcana[i] = new TH1F(Form("hchi2_hcana%d",i),"; Chi2 ; Counts",100,0.,1000.);
   hchi2_diff[i] = new TH1F(Form("hchi2_diff%d",i),"Difference; Chi2 ; Counts",100,0.,1000.);
-  hchi2_sub[i] = new TH1F(Form("hchi2_sub%d",i),"; Chi2 (HCANA-ENGINE); Counts",100,-10.,10.);
+  hchi2_sub[i] = new TH1F(Form("hchi2_sub%d",i),"; Chi2 (HCANA-ENGINE); Counts",100,-1.,1.);
   hchi2_eng2[i] = new TH1F(Form("hchi2_eng2%d",i),"; Chi2 ; Counts",100,0.,1000.);
   //
   Double_t xplo=-100.,xphi=100.;
@@ -82,6 +83,12 @@ void comp_hms_engine_hcana( TString hcana_file, TString engine_file) {
   hdelta_hcana[i] = new TH1F(Form("hdelta_hcana%d",i),"; Delta (%); Counts",60,deltalo,deltahi);
   hdelta_diff[i] = new TH1F(Form("hdelta_diff%d",i),"Difference; Delta (%); Counts",60,deltalo,deltahi);
   hdelta_sub[i] = new TH1F(Form("hdelta_sub%d",i),"; Delta (%) (HCANA-ENGINE); Counts",2000,-.001,.001);
+  //
+  Double_t momlo=0.,momhi=1.;
+  hmom_eng[i] = new TH1F(Form("hmom_eng%d",i),"; Mom (GeV); Counts",60,momlo,momhi);
+  hmom_hcana[i] = new TH1F(Form("hmom_hcana%d",i),"; Mom (GeV); Counts",60,momlo,momhi);
+  hmom_diff[i] = new TH1F(Form("hmom_diff%d",i),"Difference; Mom (GeV); Counts",60,momlo,momhi);
+  hmom_sub[i] = new TH1F(Form("hmom_sub%d",i),"; Mom (GeV) (HCANA-ENGINE); Counts",2000,-.00001,.00001);
    //
   }
   //
@@ -123,14 +130,17 @@ char *s = new char[1];
       hxptg_hcana[i]->Fill(myhcana->H_tr_tg_th[i]*1000.);
       hyptg_hcana[i]->Fill(myhcana->H_tr_tg_ph[i]*1000.);
       hdelta_hcana[i]->Fill(myhcana->H_tr_tg_dp[i]);
+      hmom_hcana[i]->Fill(myhcana->H_tr_p[i]);
       hytg_eng[i]->Fill(myengine->hdc_ytg[i]);
       hxptg_eng[i]->Fill(myengine->hdc_xptg[i]*1000);
       hyptg_eng[i]->Fill(myengine->hdc_yptg[i]*1000);
       hdelta_eng[i]->Fill(myengine->hdc_delta[i]);
+      hmom_eng[i]->Fill(myengine->hdc_ptar[i]);
 	hytg_sub[i]->Fill((myhcana->H_tr_tg_y[i]-myengine->hdc_ytg[i]));
 	hyptg_sub[i]->Fill((myhcana->H_tr_tg_ph[i]-myengine->hdc_yptg[i])*1000);
          hxptg_sub[i]->Fill((myhcana->H_tr_tg_th[i]-myengine->hdc_xptg[i])*1000);
          hdelta_sub[i]->Fill((myhcana->H_tr_tg_dp[i]-myengine->hdc_delta[i]));
+         hmom_sub[i]->Fill((myhcana->H_tr_p[i]-myengine->hdc_ptar[i]));
       }
        if ( TMath::Abs(myhcana->H_tr_chi2[i]-myengine->hdc_chi2[i]) >= 10. ) hchi2_eng2[i]->Fill(myengine->hdc_chi2[i]);
         
@@ -179,7 +189,7 @@ char *s = new char[1];
  Double_t num_pass_xp[3][4],num_pass_yp[3][4];
  Double_t num_pass_x[3][4],num_pass_y[3][4];
  Double_t xlo_pass_xp[3][4],xlo_pass_yp[3][4];
-  Int_t binlo[4]={1,901,991,1000},binhi[4]={2001,1101,1011,1001};
+  Int_t binlo[4]={1,901,991,1000},binhi[4]={2000,1101,1011,1001};
    for (i=0 ; i<3 ;i++) {
      for (j=0 ; j<4 ;j++) {
      num_pass_xp[i][j]=hxpfp_sub[i]->Integral(binlo[j],binhi[j]); 
@@ -257,6 +267,22 @@ TCanvas *ctg2[3];
  hytg_diff[i]->Draw();
  ctg2[i]->cd(6);
  hytg_sub[i]->Draw();
+  }
+ //
+TCanvas *ctg3[3];
+  for (i=0 ; i<3 ;i++) {
+    ctg3[i] = new TCanvas(Form("ctg3_%d",i),Form(" Momentum ( %d track)",i+1),800,800);
+ ctg3[i]->Divide(2,3);
+ ctg3[i]->cd(1);
+ hmom_hcana[i]->Draw();
+ ctg3[i]->cd(2);
+ hmom_eng[i]->Draw();
+ hmom_eng[i]->SetLineColor(2);
+ ctg3[i]->cd(3);
+ hmom_diff[i]->Add(hmom_hcana[i],hmom_eng[i],-1);
+ hmom_diff[i]->Draw();
+ ctg3[i]->cd(5);
+ hmom_sub[i]->Draw();
   }
   TCanvas *cchi[3];
   for (i=0 ; i<3 ;i++) {

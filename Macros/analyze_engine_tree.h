@@ -35,7 +35,11 @@ public :
    Float_t         hdc_yptg[20];   //[hdc_ntr]
    Float_t         hdc_delta[20];   //[hdc_ntr]
    Float_t         hdc_ptar[20];   //[hdc_ntr]
-   Float_t         hscin_starttime;
+   Float_t         hdc_chi2min;
+   Float_t         hdc_x2dmin;
+   Float_t         hdc_y2dmin;
+   Int_t           hdc_ngoodtr;
+    Float_t         hscin_starttime;
    Float_t         hscin_rfptime[4];
    Int_t           sdc_ntr;
    Float_t         sdc_xfp[20];   //[sdc_ntr]
@@ -68,7 +72,11 @@ public :
    TBranch        *b_hdc_yptg;   //!
    TBranch        *b_hdc_delta;   //!
    TBranch        *b_hdc_ptar;   //!
-   TBranch        *b_hscin_starttime;   //!
+   TBranch        *b_hdc_chi2min;   //!
+   TBranch        *b_hdc_x2dmin;   //!
+   TBranch        *b_hdc_y2dmin;   //!
+   TBranch        *b_hdc_ngoodtr;   //!
+    TBranch        *b_hscin_starttime;   //!
    TBranch        *b_hscin_rfptime;   //!
    TBranch        *b_sdc_ntr;   //!
    TBranch        *b_sdc_xfp;   //!
@@ -172,7 +180,11 @@ void analyze_engine_tree::Init(TTree *tree)
    fChain->SetBranchAddress("hdc_yptg", hdc_yptg, &b_hdc_yptg);
    fChain->SetBranchAddress("hdc_delta", hdc_delta, &b_hdc_delta);
    fChain->SetBranchAddress("hdc_ptar", hdc_ptar, &b_hdc_ptar);
-   fChain->SetBranchAddress("hscin_starttime", &hscin_starttime, &b_hscin_starttime);
+   fChain->SetBranchAddress("hdc_chi2min", &hdc_chi2min, &b_hdc_chi2min);
+   fChain->SetBranchAddress("hdc_x2dmin", &hdc_x2dmin, &b_hdc_x2dmin);
+   fChain->SetBranchAddress("hdc_y2dmin", &hdc_y2dmin, &b_hdc_y2dmin);
+   fChain->SetBranchAddress("hdc_ngoodtr", &hdc_ngoodtr, &b_hdc_ngoodtr);
+    fChain->SetBranchAddress("hscin_starttime", &hscin_starttime, &b_hscin_starttime);
    fChain->SetBranchAddress("hscin_rfptime", hscin_rfptime, &b_hscin_rfptime);
    fChain->SetBranchAddress("sdc_ntr", &sdc_ntr, &b_sdc_ntr);
    fChain->SetBranchAddress("sdc_xfp", sdc_xfp, &b_sdc_xfp);
@@ -238,6 +250,7 @@ void analyze_engine_tree::PrintTrack(Long64_t entry)
      printf(" %3d               %7.3f   %7.3f   %7.5f    %7.5f   %7.5f   %7.5f \n",i+1,hdc_ytg[i],hdc_xptg[i],hdc_yptg[i],hdc_delta[i],hdc_ptar[i],hdc_chi2[i]);
    }
    cout << " Print track target info sorted by chi-squared " << endl;
+   cout << " Good track number = " << hdc_ngoodtr << endl;
    }
    if (evtype == 2||evtype == 3) {
    cout << "SOS  Number of Tracks  = " << sdc_ntr << endl;

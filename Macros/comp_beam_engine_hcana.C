@@ -30,18 +30,20 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   Int_t i;
 
   for (i=0 ; i<2 ;i++) {
-    comp_frx_raw_adc[i] =  new TH1F(Form("comp_frx_raw_adc_%s",comp[i].Data()),"frx_raw_adc; Raw ADC value; Events",1200,3200,4400);
-    comp_fry_raw_adc[i] =  new TH1F(Form("comp_fry_raw_adc_%s",comp[i].Data()),"fry_raw_adc; Raw ADC value; Events",1200,3200,4400);
-    comp_frx_adc[i] =  new TH1F(Form("comp_frx_adc_%s",comp[i].Data()),"frx_adc; ADC value; Events",1000,-500,500);
-    comp_fry_adc[i] =  new TH1F(Form("comp_fry_adc_%s",comp[i].Data()),"fry_adc; ADC value; Events",1000,-500,500);
-    comp_frx[i] =  new TH1F(Form("comp_frx_%s",comp[i].Data()),"frx; Position (cm); Events",100,-0.5,0.5);
-    comp_fry[i] =  new TH1F(Form("comp_fry_%s",comp[i].Data()),"fry; Position (cm); Events",100,-0.5,0.5);
+    comp_frx_raw_adc[i] =  new TH1F(Form("comp_frx_raw_adc_%s",comp[i].Data()),"frx_raw_adc; Raw ADC value; Events",200,3200,4400);
+    comp_fry_raw_adc[i] =  new TH1F(Form("comp_fry_raw_adc_%s",comp[i].Data()),"fry_raw_adc; Raw ADC value; Events",200,3200,4400);
+    comp_frx_adc[i] =  new TH1F(Form("comp_frx_adc_%s",comp[i].Data()),"frx_adc; ADC value; Events",100,-500,500);
+    comp_fry_adc[i] =  new TH1F(Form("comp_fry_adc_%s",comp[i].Data()),"fry_adc; ADC value; Events",100,-500,500);
+    comp_frx[i] =  new TH1F(Form("comp_frx_%s",comp[i].Data()),"frx; Position (cm); Events",100,-0.2,0.2);
+    comp_fry[i] =  new TH1F(Form("comp_fry_%s",comp[i].Data()),"fry; Position (cm); Events",100,-0.2,0.2);
 
-    pos_diff[i] =  new TH1F(Form("pos_diff_%d",i),"Differences in reconstructed position; Difference (cm); Events",100,-0.5,0.5);
-    raw_adc_diff[i] =  new TH1F(Form("raw_adc_dif_%d",i),"Differences in raw ADC values; Difference ; Events",1200,3200,4400);
-    adc_diff[i] =  new TH1F(Form("adc_diff_%d",i),"Differences in pedestal corrected ADC values; Difference; Events",1000,-500,500);
   }
-
+  TString comp2[2] = {"x","y"};
+  for (i=0 ; i<2 ;i++) {
+    pos_diff[i] =  new TH1F(Form("pos_diff_%s",comp2[i].Data()),"Differences in reconstructed position; Difference (cm); Events",100,-0.0005,0.0005);
+    raw_adc_diff[i] =  new TH1F(Form("raw_adc_dif_%s",comp2[i].Data()),"Differences in raw ADC values; Difference ; Events",100,-.001,.001);
+    adc_diff[i] =  new TH1F(Form("adc_diff_%s",comp2[i].Data()),"Differences in pedestal corrected ADC values; Difference; Events",100,-.001,.001);
+  }
   //
   char *s = new char[1];
   Long64_t engine_ent=0;
@@ -54,6 +56,12 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
       if (myhcana->fEvtHdr_fEvtType==1&& myengine->evtype==1 && myhcana->g_evnum==myengine->evnum) {
 	comp_frx_raw_adc[0]->Fill(myengine->frx_raw_adc);
 	comp_frx_raw_adc[1]->Fill(myhcana->RB_raster_frx_raw_adc);
+	raw_adc_diff[0]->Fill(myhcana->RB_raster_frx_raw_adc-myengine->frx_raw_adc);
+	raw_adc_diff[1]->Fill(myhcana->RB_raster_fry_raw_adc-myengine->fry_raw_adc);
+	adc_diff[0]->Fill(myhcana->RB_raster_frx_adc-myengine->frx_adc);
+	adc_diff[1]->Fill(myhcana->RB_raster_fry_adc-myengine->fry_adc);
+	pos_diff[0]->Fill(myhcana->RB_raster_frx-myengine->frx);
+	pos_diff[1]->Fill(myhcana->RB_raster_fry-myengine->fry);
 
 	comp_frx_adc[0]->Fill(myengine->frx_adc);
 	comp_frx_adc[1]->Fill(myhcana->RB_raster_frx_adc);
@@ -105,9 +113,7 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   legx->Draw();
 
   cx->cd(2);
-  raw_adc_diff[0]->Add(comp_frx_raw_adc[1],comp_frx_raw_adc[0],-1);
   raw_adc_diff[0]->Draw();
-  raw_adc_diff[0]->SetLineColor(kGreen-2);
 
   cx->cd(3);
   comp_frx_adc[0]->Draw();
@@ -115,9 +121,7 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   comp_frx_adc[1]->Draw("same");
 
   cx->cd(4);
-  adc_diff[0]->Add(comp_frx_adc[1],comp_frx_adc[0],-1);
   adc_diff[0]->Draw();
-  adc_diff[0]->SetLineColor(kGreen-2);
 
   cx->cd(5);
   comp_frx[0]->Draw();
@@ -125,9 +129,7 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   comp_frx[1]->Draw("same");
 
   cx->cd(6);
-  pos_diff[0]->Add(comp_frx[1],comp_frx[0],-1);
   pos_diff[0]->Draw();
-  pos_diff[0]->SetLineColor(kGreen-2);
 
   // draw Y signals
   TCanvas * cy = new TCanvas("cy","Compare Raster Y Signals",1000,1200);
@@ -143,9 +145,7 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   legy->Draw();
 
   cy->cd(2);
-  raw_adc_diff[1]->Add(comp_fry_raw_adc[1],comp_fry_raw_adc[0],-1);
   raw_adc_diff[1]->Draw();
-  raw_adc_diff[1]->SetLineColor(kGreen-2);
 
   cy->cd(3);
   comp_fry_adc[0]->Draw();
@@ -153,9 +153,7 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   comp_fry_adc[1]->Draw("same");
 
   cy->cd(4);
-  adc_diff[1]->Add(comp_fry_adc[1],comp_fry_adc[0],-1);
   adc_diff[1]->Draw();
-  adc_diff[1]->SetLineColor(kGreen-2);
 
   cy->cd(5);
   comp_fry[0]->Draw();
@@ -163,9 +161,6 @@ void comp_beam_engine_hcana( TString hcana_file, TString engine_file) {
   comp_fry[1]->Draw("same");
 
   cy->cd(6);
-  pos_diff[1]->Add(comp_fry[1],comp_fry[0],-1);
   pos_diff[1]->Draw();
-  pos_diff[1]->SetLineColor(kGreen-2);
-
   
 }
