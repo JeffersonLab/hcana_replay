@@ -1,3849 +1,3849 @@
 50017
-g_ctp_parm_filename ="PARAM/50017/general.param"
+g_ctp_parm_filename ="50017_general.param"
 g_decode_map_filename ="MAPS/jan03.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 52426
 g_ctp_parm_filename ="DBASE/52426.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52427
 g_ctp_parm_filename ="DBASE/52427.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52428
 g_ctp_parm_filename ="DBASE/52428.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52429
 g_ctp_parm_filename ="DBASE/52429.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52430
 g_ctp_parm_filename ="DBASE/52430.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52431
 g_ctp_parm_filename ="DBASE/52431.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52432
 g_ctp_parm_filename ="DBASE/52432.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52433
 g_ctp_parm_filename ="DBASE/52433.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52434
 g_ctp_parm_filename ="DBASE/52434.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52435
 g_ctp_parm_filename ="DBASE/52435.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52436
 g_ctp_parm_filename ="DBASE/52436.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52437
 g_ctp_parm_filename ="DBASE/52437.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52438
 g_ctp_parm_filename ="DBASE/52438.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52439
 g_ctp_parm_filename ="DBASE/52439.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52440
 g_ctp_parm_filename ="DBASE/52440.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52441
 g_ctp_parm_filename ="DBASE/52441.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52442
 g_ctp_parm_filename ="DBASE/52442.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52443
 g_ctp_parm_filename ="DBASE/52443.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52444
 g_ctp_parm_filename ="DBASE/52444.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52445
 g_ctp_parm_filename ="DBASE/52445.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52446
 g_ctp_parm_filename ="DBASE/52446.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52447
 g_ctp_parm_filename ="DBASE/52447.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52448
 g_ctp_parm_filename ="DBASE/52448.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52449
 g_ctp_parm_filename ="DBASE/52449.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52450
 g_ctp_parm_filename ="DBASE/52531.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52451
 g_ctp_parm_filename ="DBASE/52441.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52452
 g_ctp_parm_filename ="DBASE/52440.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52453
 g_ctp_parm_filename ="DBASE/52439.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52454
 g_ctp_parm_filename ="DBASE/52438.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52455
 g_ctp_parm_filename ="DBASE/52445.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52456
 g_ctp_parm_filename ="DBASE/52444.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52457
 g_ctp_parm_filename ="DBASE/52443.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52458
 g_ctp_parm_filename ="DBASE/52442.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52459
 g_ctp_parm_filename ="DBASE/52449.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52460
 g_ctp_parm_filename ="DBASE/52448.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52461
 g_ctp_parm_filename ="DBASE/52447.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52462
 g_ctp_parm_filename ="DBASE/52446.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52463
 g_ctp_parm_filename ="DBASE/52531.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52464
 g_ctp_parm_filename ="DBASE/52429.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52465
 g_ctp_parm_filename ="DBASE/52428.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52466
 g_ctp_parm_filename ="DBASE/52427.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52467
 g_ctp_parm_filename ="DBASE/52426.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52531
 g_ctp_parm_filename ="DBASE/52531.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52532
 g_ctp_parm_filename ="DBASE/52532.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52533
 g_ctp_parm_filename ="DBASE/52533.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52535
 g_ctp_parm_filename ="DBASE/52535.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52536
 g_ctp_parm_filename ="DBASE/52536.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52537
 g_ctp_parm_filename ="DBASE/52537.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52538
 g_ctp_parm_filename ="DBASE/52538.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52539
 g_ctp_parm_filename ="DBASE/52539.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52540
 g_ctp_parm_filename ="DBASE/52540.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52541
 g_ctp_parm_filename ="DBASE/52541.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52542
 g_ctp_parm_filename ="DBASE/52542.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52544
 g_ctp_parm_filename ="DBASE/52544.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52545
 g_ctp_parm_filename ="DBASE/52545.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52546
 g_ctp_parm_filename ="DBASE/52546.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52547
 g_ctp_parm_filename ="DBASE/52547.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52548
 g_ctp_parm_filename ="DBASE/52548.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52549
 g_ctp_parm_filename ="DBASE/52549.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52550
 g_ctp_parm_filename ="DBASE/52550.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52551
 g_ctp_parm_filename ="DBASE/52551.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52552
 g_ctp_parm_filename ="DBASE/52552.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52553
 g_ctp_parm_filename ="DBASE/52553.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52554
 g_ctp_parm_filename ="DBASE/52554.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52555
 g_ctp_parm_filename ="DBASE/52555.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52556
 g_ctp_parm_filename ="DBASE/52556.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52557
 g_ctp_parm_filename ="DBASE/52557.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52558
 g_ctp_parm_filename ="DBASE/52558.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52559
 g_ctp_parm_filename ="DBASE/52559.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52560
 g_ctp_parm_filename ="DBASE/52560.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52562
 g_ctp_parm_filename ="DBASE/52562.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52563
 g_ctp_parm_filename ="DBASE/52563.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52564
 g_ctp_parm_filename ="DBASE/52564.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52565
 g_ctp_parm_filename ="DBASE/52565.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52566
 g_ctp_parm_filename ="DBASE/52566.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52567
 g_ctp_parm_filename ="DBASE/52567.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52568
 g_ctp_parm_filename ="DBASE/52568.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52569
 g_ctp_parm_filename ="DBASE/52569.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52570
 g_ctp_parm_filename ="DBASE/52570.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52571
 g_ctp_parm_filename ="DBASE/52571.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52572
 g_ctp_parm_filename ="DBASE/52572.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52573
 g_ctp_parm_filename ="DBASE/52573.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52574
 g_ctp_parm_filename ="DBASE/52574.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52575
 g_ctp_parm_filename ="DBASE/52575.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52576
 g_ctp_parm_filename ="DBASE/52576.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52577
 g_ctp_parm_filename ="DBASE/52577.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52578
 g_ctp_parm_filename ="DBASE/52578.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52579
 g_ctp_parm_filename ="DBASE/52579.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52580
 g_ctp_parm_filename ="DBASE/52580.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52581
 g_ctp_parm_filename ="DBASE/52581.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52582
 g_ctp_parm_filename ="DBASE/52582.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52583
 g_ctp_parm_filename ="DBASE/52583.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52584
 g_ctp_parm_filename ="DBASE/52584.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52585
 g_ctp_parm_filename ="DBASE/52585.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52586
 g_ctp_parm_filename ="DBASE/52586.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52587
 g_ctp_parm_filename ="DBASE/52587.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52588
 g_ctp_parm_filename ="DBASE/52588.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52589
 g_ctp_parm_filename ="DBASE/52589.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52593
 g_ctp_parm_filename ="DBASE/52593.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52594
 g_ctp_parm_filename ="DBASE/52594.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52595
 g_ctp_parm_filename ="DBASE/52595.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52596
 g_ctp_parm_filename ="DBASE/52596.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52598
 g_ctp_parm_filename ="DBASE/52598.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52599
 g_ctp_parm_filename ="DBASE/52599.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52602
 g_ctp_parm_filename ="DBASE/52602.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52603
 g_ctp_parm_filename ="DBASE/52603.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52605
 g_ctp_parm_filename ="DBASE/52605.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52606
 g_ctp_parm_filename ="DBASE/52606.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52607
 g_ctp_parm_filename ="DBASE/52607.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52608
 g_ctp_parm_filename ="DBASE/52608.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52609
 g_ctp_parm_filename ="DBASE/52609.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52610
 g_ctp_parm_filename ="DBASE/52610.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52611
 g_ctp_parm_filename ="DBASE/52611.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52612
 g_ctp_parm_filename ="DBASE/52612.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52613
 g_ctp_parm_filename ="DBASE/52613.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52614
 g_ctp_parm_filename ="DBASE/52614.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52617
 g_ctp_parm_filename ="DBASE/52617.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52618
 g_ctp_parm_filename ="DBASE/52618.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52619
 g_ctp_parm_filename ="DBASE/52619.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52620
 g_ctp_parm_filename ="DBASE/52620.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52621
 g_ctp_parm_filename ="DBASE/52621.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52622
 g_ctp_parm_filename ="DBASE/52622.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52623
 g_ctp_parm_filename ="DBASE/52623.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52624
 g_ctp_parm_filename ="DBASE/52624.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52625
 g_ctp_parm_filename ="DBASE/52625.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52626
 g_ctp_parm_filename ="DBASE/52626.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52627
 g_ctp_parm_filename ="DBASE/52627.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52629
 g_ctp_parm_filename ="DBASE/52629.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52630
 g_ctp_parm_filename ="DBASE/52630.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52631
 g_ctp_parm_filename ="DBASE/52631.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52632
 g_ctp_parm_filename ="DBASE/52632.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52633
 g_ctp_parm_filename ="DBASE/52633.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52634
 g_ctp_parm_filename ="DBASE/52634.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52635
 g_ctp_parm_filename ="DBASE/52635.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52636
 g_ctp_parm_filename ="DBASE/52636.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52637
 g_ctp_parm_filename ="DBASE/52637.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52638
 g_ctp_parm_filename ="DBASE/52638.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52639
 g_ctp_parm_filename ="DBASE/52639.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52640
 g_ctp_parm_filename ="DBASE/52640.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52641
 g_ctp_parm_filename ="DBASE/52641.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52642
 g_ctp_parm_filename ="DBASE/52642.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52643
 g_ctp_parm_filename ="DBASE/52643.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52644
 g_ctp_parm_filename ="DBASE/52644.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52656
 g_ctp_parm_filename ="DBASE/52656.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52657
 g_ctp_parm_filename ="DBASE/52657.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52658
 g_ctp_parm_filename ="DBASE/52658.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52659
 g_ctp_parm_filename ="DBASE/52659.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52660
 g_ctp_parm_filename ="DBASE/52660.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52661
 g_ctp_parm_filename ="DBASE/52661.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52662
 g_ctp_parm_filename ="DBASE/52662.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52663
 g_ctp_parm_filename ="DBASE/52663.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52664
 g_ctp_parm_filename ="DBASE/52664.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52665
 g_ctp_parm_filename ="DBASE/52665.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52666
 g_ctp_parm_filename ="DBASE/52666.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52667
 g_ctp_parm_filename ="DBASE/52667.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52668
 g_ctp_parm_filename ="DBASE/52668.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52669
 g_ctp_parm_filename ="DBASE/52669.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52670
 g_ctp_parm_filename ="DBASE/52670.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52671
 g_ctp_parm_filename ="DBASE/52671.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52672
 g_ctp_parm_filename ="DBASE/52672.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52673
 g_ctp_parm_filename ="DBASE/52673.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52674
 g_ctp_parm_filename ="DBASE/52674.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52675
 g_ctp_parm_filename ="DBASE/52675.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52676
 g_ctp_parm_filename ="DBASE/52676.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52677
 g_ctp_parm_filename ="DBASE/52677.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52678
 g_ctp_parm_filename ="DBASE/52678.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52679
 g_ctp_parm_filename ="DBASE/52679.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52680
 g_ctp_parm_filename ="DBASE/52680.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52681
 g_ctp_parm_filename ="DBASE/52681.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52682
 g_ctp_parm_filename ="DBASE/52682.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52683
 g_ctp_parm_filename ="DBASE/52683.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52684
 g_ctp_parm_filename ="DBASE/52684.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52685
 g_ctp_parm_filename ="DBASE/52685.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52686
 g_ctp_parm_filename ="DBASE/52686.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52687
 g_ctp_parm_filename ="DBASE/52687.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52688
 g_ctp_parm_filename ="DBASE/52688.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52689
 g_ctp_parm_filename ="DBASE/52689.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52690
 g_ctp_parm_filename ="DBASE/52690.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52691
 g_ctp_parm_filename ="DBASE/52691.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52692
 g_ctp_parm_filename ="DBASE/52692.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52694
 g_ctp_parm_filename ="DBASE/52694.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52695
 g_ctp_parm_filename ="DBASE/52695.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52696
 g_ctp_parm_filename ="DBASE/52696.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52697
 g_ctp_parm_filename ="DBASE/52697.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52698
 g_ctp_parm_filename ="DBASE/52698.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52699
 g_ctp_parm_filename ="DBASE/52699.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52700
 g_ctp_parm_filename ="DBASE/52700.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52701
 g_ctp_parm_filename ="DBASE/52701.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52702
 g_ctp_parm_filename ="DBASE/52702.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52703
 g_ctp_parm_filename ="DBASE/52703.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52704
 g_ctp_parm_filename ="DBASE/52704.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52705
 g_ctp_parm_filename ="DBASE/52705.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52706
 g_ctp_parm_filename ="DBASE/52706.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52710
 g_ctp_parm_filename ="DBASE/52710.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52711
 g_ctp_parm_filename ="DBASE/52711.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52714
 g_ctp_parm_filename ="DBASE/52714.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52715
 g_ctp_parm_filename ="DBASE/52715.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52716
 g_ctp_parm_filename ="DBASE/52716.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52718
 g_ctp_parm_filename ="DBASE/52718.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52719
 g_ctp_parm_filename ="DBASE/52719.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52720
 g_ctp_parm_filename ="DBASE/52720.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52721
 g_ctp_parm_filename ="DBASE/52721.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52722
 g_ctp_parm_filename ="DBASE/52722.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52723
 g_ctp_parm_filename ="DBASE/52723.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52726
 g_ctp_parm_filename ="DBASE/52726.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52727
 g_ctp_parm_filename ="DBASE/52727.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52731
 g_ctp_parm_filename ="DBASE/52731.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52732
 g_ctp_parm_filename ="DBASE/52732.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52733
 g_ctp_parm_filename ="DBASE/52733.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52734
 g_ctp_parm_filename ="DBASE/52734.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52735
 g_ctp_parm_filename ="DBASE/52735.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52736
 g_ctp_parm_filename ="DBASE/52736.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52737
 g_ctp_parm_filename ="DBASE/52737.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52738
 g_ctp_parm_filename ="DBASE/52738.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52739
 g_ctp_parm_filename ="DBASE/52739.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52740
 g_ctp_parm_filename ="DBASE/52740.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52741
 g_ctp_parm_filename ="DBASE/52741.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52742
 g_ctp_parm_filename ="DBASE/52742.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52743
 g_ctp_parm_filename ="DBASE/52743.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52744
 g_ctp_parm_filename ="DBASE/52744.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52745
 g_ctp_parm_filename ="DBASE/52745.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52747
 g_ctp_parm_filename ="DBASE/52747.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52748
 g_ctp_parm_filename ="DBASE/52748.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52749
 g_ctp_parm_filename ="DBASE/52749.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52750
 g_ctp_parm_filename ="DBASE/52750.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52751
 g_ctp_parm_filename ="DBASE/52751.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52752
 g_ctp_parm_filename ="DBASE/52752.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52753
 g_ctp_parm_filename ="DBASE/52753.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52754
 g_ctp_parm_filename ="DBASE/52754.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52755
 g_ctp_parm_filename ="DBASE/52755.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52756
 g_ctp_parm_filename ="DBASE/52756.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52757
 g_ctp_parm_filename ="DBASE/52757.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52758
 g_ctp_parm_filename ="DBASE/52758.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52759
 g_ctp_parm_filename ="DBASE/52759.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52760
 g_ctp_parm_filename ="DBASE/52760.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52761
 g_ctp_parm_filename ="DBASE/52761.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52762
 g_ctp_parm_filename ="DBASE/52762.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52763
 g_ctp_parm_filename ="DBASE/52763.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52764
 g_ctp_parm_filename ="DBASE/52764.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52765
 g_ctp_parm_filename ="DBASE/52765.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52766
 g_ctp_parm_filename ="DBASE/52766.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52767
 g_ctp_parm_filename ="DBASE/52767.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52768
 g_ctp_parm_filename ="DBASE/52768.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52770
 g_ctp_parm_filename ="DBASE/52770.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52771
 g_ctp_parm_filename ="DBASE/52771.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52772
 g_ctp_parm_filename ="DBASE/52772.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52774
 g_ctp_parm_filename ="DBASE/52774.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52777
 g_ctp_parm_filename ="DBASE/52777.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52779
 g_ctp_parm_filename ="DBASE/52779.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52781
 g_ctp_parm_filename ="DBASE/52781.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52782
 g_ctp_parm_filename ="DBASE/52782.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52783
 g_ctp_parm_filename ="DBASE/52783.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52784
 g_ctp_parm_filename ="DBASE/52784.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52785
 g_ctp_parm_filename ="DBASE/52785.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52787
 g_ctp_parm_filename ="DBASE/52787.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52788
 g_ctp_parm_filename ="DBASE/52788.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52789
 g_ctp_parm_filename ="DBASE/52789.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52790
 g_ctp_parm_filename ="DBASE/52790.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52794
 g_ctp_parm_filename ="DBASE/52794.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52796
 g_ctp_parm_filename ="DBASE/52796.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52798
 g_ctp_parm_filename ="DBASE/52798.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52799
 g_ctp_parm_filename ="DBASE/52799.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52801
 g_ctp_parm_filename ="DBASE/52801.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52804
 g_ctp_parm_filename ="DBASE/52804.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52805
 g_ctp_parm_filename ="DBASE/52805.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52806
 g_ctp_parm_filename ="DBASE/52806.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52807
 g_ctp_parm_filename ="DBASE/52807.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52808
 g_ctp_parm_filename ="DBASE/52808.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52809
 g_ctp_parm_filename ="DBASE/52809.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52810
 g_ctp_parm_filename ="DBASE/52810.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52811
 g_ctp_parm_filename ="DBASE/52811.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52813
 g_ctp_parm_filename ="DBASE/52813.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52814
 g_ctp_parm_filename ="DBASE/52814.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52815
 g_ctp_parm_filename ="DBASE/52815.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52816
 g_ctp_parm_filename ="DBASE/52816.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52817
 g_ctp_parm_filename ="DBASE/52817.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52818
 g_ctp_parm_filename ="DBASE/52818.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52819
 g_ctp_parm_filename ="DBASE/52819.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52820
 g_ctp_parm_filename ="DBASE/52820.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52822
 g_ctp_parm_filename ="DBASE/52822.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52823
 g_ctp_parm_filename ="DBASE/52823.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52824
 g_ctp_parm_filename ="DBASE/52824.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52825
 g_ctp_parm_filename ="DBASE/52825.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52826
 g_ctp_parm_filename ="DBASE/52826.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52827
 g_ctp_parm_filename ="DBASE/52827.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52829
 g_ctp_parm_filename ="DBASE/52829.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52830
 g_ctp_parm_filename ="DBASE/52830.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52832
 g_ctp_parm_filename ="DBASE/52832.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52833
 g_ctp_parm_filename ="DBASE/52833.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52834
 g_ctp_parm_filename ="DBASE/52834.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52835
 g_ctp_parm_filename ="DBASE/52835.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52836
 g_ctp_parm_filename ="DBASE/52836.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52837
 g_ctp_parm_filename ="DBASE/52837.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52840
 g_ctp_parm_filename ="DBASE/52840.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52841
 g_ctp_parm_filename ="DBASE/52841.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52843
 g_ctp_parm_filename ="DBASE/52843.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52844
 g_ctp_parm_filename ="DBASE/52844.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52845
 g_ctp_parm_filename ="DBASE/52845.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52846
 g_ctp_parm_filename ="DBASE/52846.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52847
 g_ctp_parm_filename ="DBASE/52847.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52848
 g_ctp_parm_filename ="DBASE/52848.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52849
 g_ctp_parm_filename ="DBASE/52849.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52850
 g_ctp_parm_filename ="DBASE/52850.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52851
 g_ctp_parm_filename ="DBASE/52851.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52852
 g_ctp_parm_filename ="DBASE/52852.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52853
 g_ctp_parm_filename ="DBASE/52853.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52855
 g_ctp_parm_filename ="DBASE/52855.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52857
 g_ctp_parm_filename ="DBASE/52857.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52858
 g_ctp_parm_filename ="DBASE/52858.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52859
 g_ctp_parm_filename ="DBASE/52859.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52860
 g_ctp_parm_filename ="DBASE/52860.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52861
 g_ctp_parm_filename ="DBASE/52861.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52862
 g_ctp_parm_filename ="DBASE/52862.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52863
 g_ctp_parm_filename ="DBASE/52863.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52864
 g_ctp_parm_filename ="DBASE/52864.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52866
 g_ctp_parm_filename ="DBASE/52866.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52867
 g_ctp_parm_filename ="DBASE/52867.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52868
 g_ctp_parm_filename ="DBASE/52868.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52869
 g_ctp_parm_filename ="DBASE/52869.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52870
 g_ctp_parm_filename ="DBASE/52870.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52871
 g_ctp_parm_filename ="DBASE/52871.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52872
 g_ctp_parm_filename ="DBASE/52872.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52873
 g_ctp_parm_filename ="DBASE/52873.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52874
 g_ctp_parm_filename ="DBASE/52874.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52875
 g_ctp_parm_filename ="DBASE/52875.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52876
 g_ctp_parm_filename ="DBASE/52876.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52877
 g_ctp_parm_filename ="DBASE/52877.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52878
 g_ctp_parm_filename ="DBASE/52878.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52879
 g_ctp_parm_filename ="DBASE/52879.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52880
 g_ctp_parm_filename ="DBASE/52880.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52881
 g_ctp_parm_filename ="DBASE/52881.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52882
 g_ctp_parm_filename ="DBASE/52882.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52883
 g_ctp_parm_filename ="DBASE/52883.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52884
 g_ctp_parm_filename ="DBASE/52884.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52888
 g_ctp_parm_filename ="DBASE/52888.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52889
 g_ctp_parm_filename ="DBASE/52889.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52890
 g_ctp_parm_filename ="DBASE/52890.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52891
 g_ctp_parm_filename ="DBASE/52891.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52892
 g_ctp_parm_filename ="DBASE/52892.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52896
 g_ctp_parm_filename ="DBASE/52896.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52897
 g_ctp_parm_filename ="DBASE/52897.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52898
 g_ctp_parm_filename ="DBASE/52898.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52899
 g_ctp_parm_filename ="DBASE/52899.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52900
 g_ctp_parm_filename ="DBASE/52900.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52901
 g_ctp_parm_filename ="DBASE/52901.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52902
 g_ctp_parm_filename ="DBASE/52902.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52905
 g_ctp_parm_filename ="DBASE/52905.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52906
 g_ctp_parm_filename ="DBASE/52906.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52908
 g_ctp_parm_filename ="DBASE/52908.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52909
 g_ctp_parm_filename ="DBASE/52909.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52910
 g_ctp_parm_filename ="DBASE/52910.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52911
 g_ctp_parm_filename ="DBASE/52911.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52912
 g_ctp_parm_filename ="DBASE/52912.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52913
 g_ctp_parm_filename ="DBASE/52913.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52914
 g_ctp_parm_filename ="DBASE/52914.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52915
 g_ctp_parm_filename ="DBASE/52915.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52916
 g_ctp_parm_filename ="DBASE/52916.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52917
 g_ctp_parm_filename ="DBASE/52917.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52918
 g_ctp_parm_filename ="DBASE/52918.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52919
 g_ctp_parm_filename ="DBASE/52919.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52920
 g_ctp_parm_filename ="DBASE/52920.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52921
 g_ctp_parm_filename ="DBASE/52921.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52922
 g_ctp_parm_filename ="DBASE/52922.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52923
 g_ctp_parm_filename ="DBASE/52923.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52924
 g_ctp_parm_filename ="DBASE/52924.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52925
 g_ctp_parm_filename ="DBASE/52925.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52926
 g_ctp_parm_filename ="DBASE/52926.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52927
 g_ctp_parm_filename ="DBASE/52927.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52928
 g_ctp_parm_filename ="DBASE/52928.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52929
 g_ctp_parm_filename ="DBASE/52929.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52930
 g_ctp_parm_filename ="DBASE/52930.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52931
 g_ctp_parm_filename ="DBASE/52931.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52932
 g_ctp_parm_filename ="DBASE/52932.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52933
 g_ctp_parm_filename ="DBASE/52933.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52934
 g_ctp_parm_filename ="DBASE/52934.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52935
 g_ctp_parm_filename ="DBASE/52935.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52936
 g_ctp_parm_filename ="DBASE/52936.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52937
 g_ctp_parm_filename ="DBASE/52937.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52938
 g_ctp_parm_filename ="DBASE/52938.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52939
 g_ctp_parm_filename ="DBASE/52939.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52940
 g_ctp_parm_filename ="DBASE/52940.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52941
 g_ctp_parm_filename ="DBASE/52941.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52942
 g_ctp_parm_filename ="DBASE/52942.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52943
 g_ctp_parm_filename ="DBASE/52943.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52944
 g_ctp_parm_filename ="DBASE/52944.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52945
 g_ctp_parm_filename ="DBASE/52945.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52946
 g_ctp_parm_filename ="DBASE/52946.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52947
 g_ctp_parm_filename ="DBASE/52947.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52948
 g_ctp_parm_filename ="DBASE/52948.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52949
 g_ctp_parm_filename ="DBASE/52949.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52951
 g_ctp_parm_filename ="DBASE/52951.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52953
 g_ctp_parm_filename ="DBASE/52953.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52954
 g_ctp_parm_filename ="DBASE/52954.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52955
 g_ctp_parm_filename ="DBASE/52955.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52956
 g_ctp_parm_filename ="DBASE/52956.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52957
 g_ctp_parm_filename ="DBASE/52957.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52958
 g_ctp_parm_filename ="DBASE/52958.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52959
 g_ctp_parm_filename ="DBASE/52959.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52960
 g_ctp_parm_filename ="DBASE/52960.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52961
 g_ctp_parm_filename ="DBASE/52961.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52962
 g_ctp_parm_filename ="DBASE/52962.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52963
 g_ctp_parm_filename ="DBASE/52963.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52964
 g_ctp_parm_filename ="DBASE/52964.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52965
 g_ctp_parm_filename ="DBASE/52965.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52966
 g_ctp_parm_filename ="DBASE/52966.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52967
 g_ctp_parm_filename ="DBASE/52967.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52968
 g_ctp_parm_filename ="DBASE/52968.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52969
 g_ctp_parm_filename ="DBASE/52969.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52970
 g_ctp_parm_filename ="DBASE/52970.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52971
 g_ctp_parm_filename ="DBASE/52971.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52973
 g_ctp_parm_filename ="DBASE/52973.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52974
 g_ctp_parm_filename ="DBASE/52974.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52975
 g_ctp_parm_filename ="DBASE/52975.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52976
 g_ctp_parm_filename ="DBASE/52976.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52977
 g_ctp_parm_filename ="DBASE/52977.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52979
 g_ctp_parm_filename ="DBASE/52979.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52986
 g_ctp_parm_filename ="DBASE/52986.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52988
 g_ctp_parm_filename ="DBASE/52988.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52989
 g_ctp_parm_filename ="DBASE/52989.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52990
 g_ctp_parm_filename ="DBASE/52990.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52991
 g_ctp_parm_filename ="DBASE/52991.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52992
 g_ctp_parm_filename ="DBASE/52992.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52993
 g_ctp_parm_filename ="DBASE/52993.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52995
 g_ctp_parm_filename ="DBASE/52995.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52996
 g_ctp_parm_filename ="DBASE/52996.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52997
 g_ctp_parm_filename ="DBASE/52997.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52998
 g_ctp_parm_filename ="DBASE/52998.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 52999
 g_ctp_parm_filename ="DBASE/52999.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53000
 g_ctp_parm_filename ="DBASE/53000.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53001
 g_ctp_parm_filename ="DBASE/53001.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53002
 g_ctp_parm_filename ="DBASE/53002.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53003
 g_ctp_parm_filename ="DBASE/53003.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53004
 g_ctp_parm_filename ="DBASE/53004.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53005
 g_ctp_parm_filename ="DBASE/53005.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53006
 g_ctp_parm_filename ="DBASE/53006.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53007
 g_ctp_parm_filename ="DBASE/53007.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53008
 g_ctp_parm_filename ="DBASE/53008.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53009
 g_ctp_parm_filename ="DBASE/53009.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53010
 g_ctp_parm_filename ="DBASE/53010.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53011
 g_ctp_parm_filename ="DBASE/53011.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53013
 g_ctp_parm_filename ="DBASE/53013.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53014
 g_ctp_parm_filename ="DBASE/53014.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53015
 g_ctp_parm_filename ="DBASE/53015.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53016
 g_ctp_parm_filename ="DBASE/53016.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53017
 g_ctp_parm_filename ="DBASE/53017.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53018
 g_ctp_parm_filename ="DBASE/53018.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53019
 g_ctp_parm_filename ="DBASE/53019.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53020
 g_ctp_parm_filename ="DBASE/53020.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53021
 g_ctp_parm_filename ="DBASE/53021.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53022
 g_ctp_parm_filename ="DBASE/53022.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53023
 g_ctp_parm_filename ="DBASE/53023.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53024
 g_ctp_parm_filename ="DBASE/53024.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53025
 g_ctp_parm_filename ="DBASE/53025.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53026
 g_ctp_parm_filename ="DBASE/53026.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53027
 g_ctp_parm_filename ="DBASE/53027.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53028
 g_ctp_parm_filename ="DBASE/53028.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53029
 g_ctp_parm_filename ="DBASE/53029.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53030
 g_ctp_parm_filename ="DBASE/53030.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53031
 g_ctp_parm_filename ="DBASE/53031.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53032
 g_ctp_parm_filename ="DBASE/53032.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53033
 g_ctp_parm_filename ="DBASE/53033.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53034
 g_ctp_parm_filename ="DBASE/53034.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53035
 g_ctp_parm_filename ="DBASE/53035.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53037
 g_ctp_parm_filename ="DBASE/53037.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53038
 g_ctp_parm_filename ="DBASE/53038.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53039
 g_ctp_parm_filename ="DBASE/53039.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53040
 g_ctp_parm_filename ="DBASE/53040.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53041
 g_ctp_parm_filename ="DBASE/53041.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53042
 g_ctp_parm_filename ="DBASE/53042.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53044
 g_ctp_parm_filename ="DBASE/53044.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53045
 g_ctp_parm_filename ="DBASE/53045.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53046
 g_ctp_parm_filename ="DBASE/53046.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53047
 g_ctp_parm_filename ="DBASE/53047.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53048
 g_ctp_parm_filename ="DBASE/53048.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53049
 g_ctp_parm_filename ="DBASE/53049.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53050
 g_ctp_parm_filename ="DBASE/53050.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53051
 g_ctp_parm_filename ="DBASE/53051.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53052
 g_ctp_parm_filename ="DBASE/53052.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53053
 g_ctp_parm_filename ="DBASE/53053.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53054
 g_ctp_parm_filename ="DBASE/53054.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53055
 g_ctp_parm_filename ="DBASE/53055.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53056
 g_ctp_parm_filename ="DBASE/53056.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53057
 g_ctp_parm_filename ="DBASE/53057.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53058
 g_ctp_parm_filename ="DBASE/53058.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53059
 g_ctp_parm_filename ="DBASE/53059.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53060
 g_ctp_parm_filename ="DBASE/53060.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53061
 g_ctp_parm_filename ="DBASE/53061.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53062
 g_ctp_parm_filename ="DBASE/53062.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53063
 g_ctp_parm_filename ="DBASE/53063.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53064
 g_ctp_parm_filename ="DBASE/53064.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53065
 g_ctp_parm_filename ="DBASE/53065.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53066
 g_ctp_parm_filename ="DBASE/53066.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53067
 g_ctp_parm_filename ="DBASE/53067.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53068
 g_ctp_parm_filename ="DBASE/53068.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53069
 g_ctp_parm_filename ="DBASE/53069.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53070
 g_ctp_parm_filename ="DBASE/53070.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53071
 g_ctp_parm_filename ="DBASE/53071.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53072
 g_ctp_parm_filename ="DBASE/53072.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53073
 g_ctp_parm_filename ="DBASE/53073.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53074
 g_ctp_parm_filename ="DBASE/53074.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53075
 g_ctp_parm_filename ="DBASE/53075.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53076
 g_ctp_parm_filename ="DBASE/53076.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53077
 g_ctp_parm_filename ="DBASE/53077.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53078
 g_ctp_parm_filename ="DBASE/53078.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53079
 g_ctp_parm_filename ="DBASE/53079.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53080
 g_ctp_parm_filename ="DBASE/53080.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53081
 g_ctp_parm_filename ="DBASE/53081.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53082
 g_ctp_parm_filename ="DBASE/53082.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53084
 g_ctp_parm_filename ="DBASE/53084.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53085
 g_ctp_parm_filename ="DBASE/53085.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53086
 g_ctp_parm_filename ="DBASE/53086.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53087
 g_ctp_parm_filename ="DBASE/53087.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53088
 g_ctp_parm_filename ="DBASE/53088.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53089
 g_ctp_parm_filename ="DBASE/53089.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53090
 g_ctp_parm_filename ="DBASE/53090.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53091
 g_ctp_parm_filename ="DBASE/53091.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53092
 g_ctp_parm_filename ="DBASE/53092.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53093
 g_ctp_parm_filename ="DBASE/53093.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53094
 g_ctp_parm_filename ="DBASE/53094.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53095
 g_ctp_parm_filename ="DBASE/53095.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53096
 g_ctp_parm_filename ="DBASE/53096.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53098
 g_ctp_parm_filename ="DBASE/53098.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53100
 g_ctp_parm_filename ="DBASE/53100.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53101
 g_ctp_parm_filename ="DBASE/53101.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53103
 g_ctp_parm_filename ="DBASE/53103.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53104
 g_ctp_parm_filename ="DBASE/53104.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53105
 g_ctp_parm_filename ="DBASE/53105.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53106
 g_ctp_parm_filename ="DBASE/53106.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53107
 g_ctp_parm_filename ="DBASE/53107.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53108
 g_ctp_parm_filename ="DBASE/53108.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53109
 g_ctp_parm_filename ="DBASE/53109.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53110
 g_ctp_parm_filename ="DBASE/53110.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53111
 g_ctp_parm_filename ="DBASE/53111.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53112
 g_ctp_parm_filename ="DBASE/53112.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53136
 g_ctp_parm_filename ="DBASE/53136.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53138
 g_ctp_parm_filename ="DBASE/53138.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53139
 g_ctp_parm_filename ="DBASE/53139.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53140
 g_ctp_parm_filename ="DBASE/53140.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53142
 g_ctp_parm_filename ="DBASE/53142.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53143
 g_ctp_parm_filename ="DBASE/53143.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53144
 g_ctp_parm_filename ="DBASE/53144.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53153
 g_ctp_parm_filename ="DBASE/53153.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53154
 g_ctp_parm_filename ="DBASE/53154.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53155
 g_ctp_parm_filename ="DBASE/53155.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53156
 g_ctp_parm_filename ="DBASE/53156.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53157
 g_ctp_parm_filename ="DBASE/53157.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53165
 g_ctp_parm_filename ="DBASE/53165.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53166
 g_ctp_parm_filename ="DBASE/53166.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53167
 g_ctp_parm_filename ="DBASE/53167.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53168
 g_ctp_parm_filename ="DBASE/53168.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53169
 g_ctp_parm_filename ="DBASE/53169.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53170
 g_ctp_parm_filename ="DBASE/53170.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53171
 g_ctp_parm_filename ="DBASE/53171.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53172
 g_ctp_parm_filename ="DBASE/53172.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53174
 g_ctp_parm_filename ="DBASE/53174.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53176
 g_ctp_parm_filename ="DBASE/53176.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53177
 g_ctp_parm_filename ="DBASE/53177.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53178
 g_ctp_parm_filename ="DBASE/53178.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53180
 g_ctp_parm_filename ="DBASE/53180.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53181
 g_ctp_parm_filename ="DBASE/53181.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53182
 g_ctp_parm_filename ="DBASE/53182.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53183
 g_ctp_parm_filename ="DBASE/53183.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53184
 g_ctp_parm_filename ="DBASE/53184.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53185
 g_ctp_parm_filename ="DBASE/53185.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53186
 g_ctp_parm_filename ="DBASE/53186.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53187
 g_ctp_parm_filename ="DBASE/53187.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53188
 g_ctp_parm_filename ="DBASE/53188.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53189
 g_ctp_parm_filename ="DBASE/53189.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53190
 g_ctp_parm_filename ="DBASE/53190.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53191
 g_ctp_parm_filename ="DBASE/53191.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53192
 g_ctp_parm_filename ="DBASE/53192.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53193
 g_ctp_parm_filename ="DBASE/53193.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53194
 g_ctp_parm_filename ="DBASE/53194.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53195
 g_ctp_parm_filename ="DBASE/53195.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53196
 g_ctp_parm_filename ="DBASE/53196.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53197
 g_ctp_parm_filename ="DBASE/53197.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53198
 g_ctp_parm_filename ="DBASE/53198.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53199
 g_ctp_parm_filename ="DBASE/53199.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53200
 g_ctp_parm_filename ="DBASE/53200.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53201
 g_ctp_parm_filename ="DBASE/53201.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53202
 g_ctp_parm_filename ="DBASE/53202.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53203
 g_ctp_parm_filename ="DBASE/53203.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53204
 g_ctp_parm_filename ="DBASE/53204.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53205
 g_ctp_parm_filename ="DBASE/53205.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53207
 g_ctp_parm_filename ="DBASE/53207.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53208
 g_ctp_parm_filename ="DBASE/53208.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53209
 g_ctp_parm_filename ="DBASE/53209.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53210
 g_ctp_parm_filename ="DBASE/53210.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53211
 g_ctp_parm_filename ="DBASE/53211.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53212
 g_ctp_parm_filename ="DBASE/53212.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53213
 g_ctp_parm_filename ="DBASE/53213.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53214
 g_ctp_parm_filename ="DBASE/53214.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53215
 g_ctp_parm_filename ="DBASE/53215.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53216
 g_ctp_parm_filename ="DBASE/53216.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53217
 g_ctp_parm_filename ="DBASE/53217.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53218
 g_ctp_parm_filename ="DBASE/53218.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53219
 g_ctp_parm_filename ="DBASE/53219.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53220
 g_ctp_parm_filename ="DBASE/53220.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53221
 g_ctp_parm_filename ="DBASE/53221.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53222
 g_ctp_parm_filename ="DBASE/53222.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53223
 g_ctp_parm_filename ="DBASE/53223.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53224
 g_ctp_parm_filename ="DBASE/53224.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53225
 g_ctp_parm_filename ="DBASE/53225.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53226
 g_ctp_parm_filename ="DBASE/53226.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53227
 g_ctp_parm_filename ="DBASE/53227.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53228
 g_ctp_parm_filename ="DBASE/53228.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53229
 g_ctp_parm_filename ="DBASE/53229.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53230
 g_ctp_parm_filename ="DBASE/53230.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53231
 g_ctp_parm_filename ="DBASE/53231.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53232
 g_ctp_parm_filename ="DBASE/53232.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53233
 g_ctp_parm_filename ="DBASE/53233.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53234
 g_ctp_parm_filename ="DBASE/53234.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53235
 g_ctp_parm_filename ="DBASE/53235.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53236
 g_ctp_parm_filename ="DBASE/53236.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53237
 g_ctp_parm_filename ="DBASE/53237.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53238
 g_ctp_parm_filename ="DBASE/53238.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53239
 g_ctp_parm_filename ="DBASE/53239.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53240
 g_ctp_parm_filename ="DBASE/53240.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53241
 g_ctp_parm_filename ="DBASE/53241.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53242
 g_ctp_parm_filename ="DBASE/53242.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53243
 g_ctp_parm_filename ="DBASE/53243.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53244
 g_ctp_parm_filename ="DBASE/53244.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53245
 g_ctp_parm_filename ="DBASE/53245.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53246
 g_ctp_parm_filename ="DBASE/53246.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53247
 g_ctp_parm_filename ="DBASE/53247.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53248
 g_ctp_parm_filename ="DBASE/53248.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53249
 g_ctp_parm_filename ="DBASE/53249.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53250
 g_ctp_parm_filename ="DBASE/53250.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53251
 g_ctp_parm_filename ="DBASE/53251.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53252
 g_ctp_parm_filename ="DBASE/53252.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53254
 g_ctp_parm_filename ="DBASE/53254.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53255
 g_ctp_parm_filename ="DBASE/53255.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53256
 g_ctp_parm_filename ="DBASE/53256.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53257
 g_ctp_parm_filename ="DBASE/53257.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53258
 g_ctp_parm_filename ="DBASE/53258.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53259
 g_ctp_parm_filename ="DBASE/53259.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53260
 g_ctp_parm_filename ="DBASE/53260.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53261
 g_ctp_parm_filename ="DBASE/53261.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53262
 g_ctp_parm_filename ="DBASE/53262.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53263
 g_ctp_parm_filename ="DBASE/53263.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53264
 g_ctp_parm_filename ="DBASE/53264.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53265
 g_ctp_parm_filename ="DBASE/53265.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53266
 g_ctp_parm_filename ="DBASE/53266.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53267
 g_ctp_parm_filename ="DBASE/53267.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53269
 g_ctp_parm_filename ="DBASE/53269.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53270
 g_ctp_parm_filename ="DBASE/53270.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53271
 g_ctp_parm_filename ="DBASE/53271.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53272
 g_ctp_parm_filename ="DBASE/53272.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53273
 g_ctp_parm_filename ="DBASE/53273.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53275
 g_ctp_parm_filename ="DBASE/53275.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53278
 g_ctp_parm_filename ="DBASE/53278.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53279
 g_ctp_parm_filename ="DBASE/53279.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53280
 g_ctp_parm_filename ="DBASE/53280.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53281
 g_ctp_parm_filename ="DBASE/53281.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53282
 g_ctp_parm_filename ="DBASE/53282.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53283
 g_ctp_parm_filename ="DBASE/53283.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53284
 g_ctp_parm_filename ="DBASE/53284.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53287
 g_ctp_parm_filename ="DBASE/53287.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53288
 g_ctp_parm_filename ="DBASE/53288.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53290
 g_ctp_parm_filename ="DBASE/53290.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53291
 g_ctp_parm_filename ="DBASE/53291.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53292
 g_ctp_parm_filename ="DBASE/53292.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53294
 g_ctp_parm_filename ="DBASE/53294.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53295
 g_ctp_parm_filename ="DBASE/53295.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53296
 g_ctp_parm_filename ="DBASE/53296.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53297
 g_ctp_parm_filename ="DBASE/53297.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53298
 g_ctp_parm_filename ="DBASE/53298.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53299
 g_ctp_parm_filename ="DBASE/53299.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53300
 g_ctp_parm_filename ="DBASE/53300.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53301
 g_ctp_parm_filename ="DBASE/53301.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53302
 g_ctp_parm_filename ="DBASE/53302.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53303
 g_ctp_parm_filename ="DBASE/53303.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53304
 g_ctp_parm_filename ="DBASE/53304.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53305
 g_ctp_parm_filename ="DBASE/53305.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53307
 g_ctp_parm_filename ="DBASE/53307.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53308
 g_ctp_parm_filename ="DBASE/53308.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53309
 g_ctp_parm_filename ="DBASE/53309.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53310
 g_ctp_parm_filename ="DBASE/53310.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53311
 g_ctp_parm_filename ="DBASE/53311.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53312
 g_ctp_parm_filename ="DBASE/53312.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53313
 g_ctp_parm_filename ="DBASE/53313.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53314
 g_ctp_parm_filename ="DBASE/53314.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53315
 g_ctp_parm_filename ="DBASE/53315.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53316
 g_ctp_parm_filename ="DBASE/53316.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53317
 g_ctp_parm_filename ="DBASE/53317.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53318
 g_ctp_parm_filename ="DBASE/53318.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53320
 g_ctp_parm_filename ="DBASE/53320.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53321
 g_ctp_parm_filename ="DBASE/53321.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53322
 g_ctp_parm_filename ="DBASE/53321.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53324
 g_ctp_parm_filename ="DBASE/53324.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53325
 g_ctp_parm_filename ="DBASE/53325.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53326
 g_ctp_parm_filename ="DBASE/53326.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53327
 g_ctp_parm_filename ="DBASE/53327.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53330
 g_ctp_parm_filename ="DBASE/53330.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53331
 g_ctp_parm_filename ="DBASE/53331.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53333
 g_ctp_parm_filename ="DBASE/53333.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53335
 g_ctp_parm_filename ="DBASE/53335.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53336
 g_ctp_parm_filename ="DBASE/53336.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53337
 g_ctp_parm_filename ="DBASE/53337.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53338
 g_ctp_parm_filename ="DBASE/53338.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53339
 g_ctp_parm_filename ="DBASE/53339.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53340
 g_ctp_parm_filename ="DBASE/53340.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53341
 g_ctp_parm_filename ="DBASE/53341.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53342
 g_ctp_parm_filename ="DBASE/53342.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53344
 g_ctp_parm_filename ="DBASE/53344.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53345
 g_ctp_parm_filename ="DBASE/53345.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53346
 g_ctp_parm_filename ="DBASE/53346.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53347
 g_ctp_parm_filename ="DBASE/53347.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53348
 g_ctp_parm_filename ="DBASE/53348.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53349
 g_ctp_parm_filename ="DBASE/53349.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53353
 g_ctp_parm_filename ="DBASE/53353.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53354
 g_ctp_parm_filename ="DBASE/53354.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53355
 g_ctp_parm_filename ="DBASE/53355.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53356
 g_ctp_parm_filename ="DBASE/53356.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53357
 g_ctp_parm_filename ="DBASE/53357.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53358
 g_ctp_parm_filename ="DBASE/53358.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53359
 g_ctp_parm_filename ="DBASE/53359.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53360
 g_ctp_parm_filename ="DBASE/53360.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53361
 g_ctp_parm_filename ="DBASE/53361.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53362
 g_ctp_parm_filename ="DBASE/53362.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53363
 g_ctp_parm_filename ="DBASE/53363.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53364
 g_ctp_parm_filename ="DBASE/53364.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53365
 g_ctp_parm_filename ="DBASE/53365.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53366
 g_ctp_parm_filename ="DBASE/53366.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53367
 g_ctp_parm_filename ="DBASE/53367.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53368
 g_ctp_parm_filename ="DBASE/53368.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53369
 g_ctp_parm_filename ="DBASE/53369.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53370
 g_ctp_parm_filename ="DBASE/53370.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53371
 g_ctp_parm_filename ="DBASE/53371.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53372
 g_ctp_parm_filename ="DBASE/53372.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53373
 g_ctp_parm_filename ="DBASE/53373.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53374
 g_ctp_parm_filename ="DBASE/53374.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53375
 g_ctp_parm_filename ="DBASE/53375.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53376
 g_ctp_parm_filename ="DBASE/53376.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53377
 g_ctp_parm_filename ="DBASE/53377.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53378
 g_ctp_parm_filename ="DBASE/53378.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53379
 g_ctp_parm_filename ="DBASE/53379.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53380
 g_ctp_parm_filename ="DBASE/53380.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53381
 g_ctp_parm_filename ="DBASE/53381.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53382
 g_ctp_parm_filename ="DBASE/53382.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53385
 g_ctp_parm_filename ="DBASE/53385.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53386
 g_ctp_parm_filename ="DBASE/53386.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53387
 g_ctp_parm_filename ="DBASE/53387.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53388
 g_ctp_parm_filename ="DBASE/53388.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53389
 g_ctp_parm_filename ="DBASE/53389.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53390
 g_ctp_parm_filename ="DBASE/53390.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53391
 g_ctp_parm_filename ="DBASE/53391.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53392
 g_ctp_parm_filename ="DBASE/53392.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53393
 g_ctp_parm_filename ="DBASE/53393.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53394
 g_ctp_parm_filename ="DBASE/53394.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53395
 g_ctp_parm_filename ="DBASE/53395.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53396
 g_ctp_parm_filename ="DBASE/53396.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53397
 g_ctp_parm_filename ="DBASE/53397.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53398
 g_ctp_parm_filename ="DBASE/53398.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53399
 g_ctp_parm_filename ="DBASE/53399.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53400
 g_ctp_parm_filename ="DBASE/53400.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53401
 g_ctp_parm_filename ="DBASE/53401.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53402
 g_ctp_parm_filename ="DBASE/53402.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53403
 g_ctp_parm_filename ="DBASE/53403.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53404
 g_ctp_parm_filename ="DBASE/53404.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53405
 g_ctp_parm_filename ="DBASE/53405.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53406
 g_ctp_parm_filename ="DBASE/53406.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53407
 g_ctp_parm_filename ="DBASE/53407.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53408
 g_ctp_parm_filename ="DBASE/53408.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53409
 g_ctp_parm_filename ="DBASE/53409.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53410
 g_ctp_parm_filename ="DBASE/53410.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53411
 g_ctp_parm_filename ="DBASE/53411.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53412
 g_ctp_parm_filename ="DBASE/53412.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
 53414
 g_ctp_parm_filename ="DBASE/53414.param"
-g_decode_map_filename ="MAPS/july04.map"
+g_decode_map_filename ="july04_hcana.map"
 g_ctp_kinematics_filename ="DBASE/jan05.kinematics"
 
