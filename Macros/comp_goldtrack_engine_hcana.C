@@ -17,10 +17,18 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
   Long64_t nb_hcana = 0,nb_engine = 0;
 
   TH1F *comp_xtar[2],*comp_ytar[2],*comp_xptar[2],*comp_yptar[2],*comp_delta[2],*comp_mom[2],*comp_goldt[2],*comp_chimin[2];
+  TH1F *diff_delta[1],*diff_mom[1],*diff_goldt[1],*diff_chi2[1];
+  
   TH1F *pos_diff[2],*ang_diff[2],*del_diff[2]; 
 
   TString comp[2] = {"eng","hcana"};
+  TString diff[1] = {"difference"};
   Int_t i;
+
+  diff_chi2[0]  =  new TH1F(Form("diff_chi2_%s",  comp[i].Data()), Form("Differences in chimin  %s ;       Difference (#);   Events", diff[0].Data()),2000,-6.0,6.0);
+  diff_goldt[0] =  new TH1F(Form("diff_goldt_%s", comp[i].Data()), Form("Differences in golden track  %s ; Difference (#);   Events", diff[0].Data()),2000,-10.0,10.0);
+  diff_delta[0] =  new TH1F(Form("diff_delta_%s", comp[i].Data()), Form("Differences in delta  %s ;        Difference (%);   Events", diff[0].Data()),2000,-0.005,0.005);
+  diff_mom[0]   =  new TH1F(Form("diff_mom_%s",   comp[i].Data()), Form("Differences in momentum  %s ;     Difference (GeV); Events", diff[0].Data()),2000,-0.005,0.005);
 
   for (i=0 ; i<2 ;i++) {
     comp_chimin[i] =  new TH1F(Form("comp_chimin_%s", comp[i].Data()), "Golden Track chi2/ndf; Golden Track chi2/ndf; Events",  100,0.,1000);
@@ -36,9 +44,9 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
   TString comp3[2] = {"dx","dy"};
   TString comp4[2] = {"delta","mom"};
   for (i=0 ; i<2 ;i++) {
-    pos_diff[i] =  new TH1F(Form("pos_diff_%s",comp2[i].Data()),Form("Differences in reconstructed  %s ; Difference (cm); Events",comp2[i].Data()),2000,-0.005,0.005);
-    ang_diff[i] =  new TH1F(Form("ang_diff_%s",comp2[i].Data()),Form("Differences in reconstructed  %s ; Difference (mr); Events",comp2[i].Data()),2000,-0.00005,0.00005);
-    del_diff[i] =  new TH1F(Form("del_diff_%s",comp2[i].Data()),Form("Differences in reconstructed  %s ; Difference ; Events",comp2[i].Data()),2000,-0.0005,0.0005);
+    pos_diff[i] =  new TH1F(Form("pos_diff_%s",comp2[i].Data()), Form("Differences in reconstructed  %s ; Difference (cm);  Events", comp2[i].Data()),2000,-0.005,0.005);
+    ang_diff[i] =  new TH1F(Form("ang_diff_%s",comp2[i].Data()), Form("Differences in reconstructed  %s ; Difference (mr);  Events", comp2[i].Data()),2000,-0.00005,0.00005);
+    del_diff[i] =  new TH1F(Form("del_diff_%s",comp2[i].Data()), Form("Differences in reconstructed  %s ; Difference ;      Events", comp2[i].Data()),2000,-0.0005,0.0005);
   }
   //
   char *s = new char[1];
@@ -76,6 +84,11 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
 	comp_delta[1]->Fill(myhcana->H_gold_dp);
 	comp_mom[1]->Fill(myhcana->H_gold_p);
 
+	diff_chi2[0]->Fill(myengine->hdc_chi2min-( myhcana->H_tr_chi2[hca_hdc_ngoodtr] / myhcana->H_tr_ndof[hca_hdc_ngoodtr] ));
+	diff_goldt[0]->Fill(eng_hdc_ngoodtr - hca_hdc_ngoodtr);
+	diff_delta[0]->Fill(myengine->hdc_delta[eng_hdc_ngoodtr]-myhcana->H_gold_dp);
+	diff_mom[0]->Fill(myengine->hdc_ptar[eng_hdc_ngoodtr]-myhcana->H_gold_p);
+
         pos_diff[0]->Fill(myengine->frx-myhcana->H_gold_x);
         pos_diff[1]->Fill(myengine->hdc_ytg[eng_hdc_ngoodtr]-myhcana->H_gold_y);
 
@@ -95,6 +108,8 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
   cout << " Hcana File= " << hcana_file << endl;
   cout << " Engine File= " << engine_file << endl;
   gStyle->Reset();
+
+  //  return 0;
 
   TStyle *MyStyle = new TStyle("MyStyle"," My Style");
   //  MyStyle->SetOptStat(10000010);
@@ -214,5 +229,23 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
 
   cy->cd(0);
   cy->Update();
+
+  TCanvas * cz = new TCanvas("cz","Differences Delta, mom, golden tracka and chimin",1000,1200);
+  cz->Divide(2,2);
+
+  cz->cd(1)->SetLogy();
+  diff_delta[0]->Draw();
+
+  cz->cd(2)->SetLogy();
+  diff_mom[0]->Draw();
+
+  cz->cd(3)->SetLogy();
+  diff_goldt[0]->Draw();
+
+  cz->cd(4)->SetLogy();
+  diff_chi2[0]->Draw();
+
+  cz->cd(0);
+  cz->Update();
   
 }
