@@ -43,6 +43,15 @@ void compare_dc(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToRe
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
 
+  // setup physics
+  gHaPhysics->Add( new THaGoldenTrack( "H.gold", "HMS Golden Track", "H" ));
+  // Set up the analyzer - we use the standard one,
+  // but this could be an experiment-specific one as well.
+  // The Analyzer controls the reading of the data, executes
+  // tests/cuts, loops over Acpparatus's and PhysicsModules,
+  // and executes the output routines.
+  
+
   // Set up the analyzer - we use the standard one,
   // but this could be an experiment-specific one as well.
   // The Analyzer controls the reading of the data, executes

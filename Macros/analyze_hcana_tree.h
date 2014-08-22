@@ -648,6 +648,7 @@ public :
    Double_t        H_dc_ntrack;
    Double_t        H_dc_tnhit;
    Double_t        H_dc_trawhit;
+
    Double_t        H_gold_dp;
    Double_t        H_gold_index;
    Double_t        H_gold_ok;
@@ -659,6 +660,7 @@ public :
    Double_t        H_gold_th;
    Double_t        H_gold_x;
    Double_t        H_gold_y;
+
    Double_t        H_hod_1x_fptime;
    Double_t        H_hod_1y_fptime;
    Double_t        H_hod_2x_fptime;
@@ -719,17 +721,19 @@ public :
    Double_t        RB_raster_fry_adc;
    Double_t        RB_raster_frx;
    Double_t        RB_raster_fry;
+
    Double_t        g_evnum;
  //THaEvent        *Event_Branch;
    ULong64_t       fEvtHdr_fEvtTime;
    UInt_t          fEvtHdr_fEvtNum;
    Int_t           fEvtHdr_fEvtType;
+
    Int_t           fEvtHdr_fEvtLen;
    Int_t           fEvtHdr_fHelicity;
    Int_t           fEvtHdr_fTargetPol;
    Int_t           fEvtHdr_fRun;
 
-   // List of branches
+   //   List of branches
    TBranch        *b_Ndata_S_tr_beta;   //!
    TBranch        *b_S_tr_beta;   //!
    TBranch        *b_Ndata_S_tr_chi2;   //!
@@ -1356,6 +1360,7 @@ public :
    TBranch        *b_H_dc_ntrack;   //!
    TBranch        *b_H_dc_tnhit;   //!
    TBranch        *b_H_dc_trawhit;   //!
+
    TBranch        *b_H_gold_dp;   //!
    TBranch        *b_H_gold_index;   //!
    TBranch        *b_H_gold_ok;   //!
@@ -1367,6 +1372,7 @@ public :
    TBranch        *b_H_gold_th;   //!
    TBranch        *b_H_gold_x;   //!
    TBranch        *b_H_gold_y;   //!
+
    TBranch        *b_H_hod_1x_fptime;   //!
    TBranch        *b_H_hod_1y_fptime;   //!
    TBranch        *b_H_hod_2x_fptime;   //!
@@ -1420,11 +1426,13 @@ public :
    TBranch        *b_S_hod_2y_fptime;   //!
    TBranch        *b_S_hod_hgoodstarttime;   //!
    TBranch        *b_S_hod_starttime;   //!
+
    TBranch        *b_S_tr_n;   //!
    TBranch        *b_g_evnum;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fEvtTime;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fEvtNum;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fEvtType;   //!
+
    TBranch        *b_Event_Branch_fEvtHdr_fEvtLen;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fHelicity;   //!
    TBranch        *b_Event_Branch_fEvtHdr_fTargetPol;   //!
@@ -2133,6 +2141,7 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("H.dc.ntrack", &H_dc_ntrack, &b_H_dc_ntrack);
    fChain->SetBranchAddress("H.dc.tnhit", &H_dc_tnhit, &b_H_dc_tnhit);
    fChain->SetBranchAddress("H.dc.trawhit", &H_dc_trawhit, &b_H_dc_trawhit);
+
    fChain->SetBranchAddress("H.gold.dp", &H_gold_dp, &b_H_gold_dp);
    fChain->SetBranchAddress("H.gold.index", &H_gold_index, &b_H_gold_index);
    fChain->SetBranchAddress("H.gold.ok", &H_gold_ok, &b_H_gold_ok);
@@ -2144,6 +2153,7 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("H.gold.th", &H_gold_th, &b_H_gold_th);
    fChain->SetBranchAddress("H.gold.x", &H_gold_x, &b_H_gold_x);
    fChain->SetBranchAddress("H.gold.y", &H_gold_y, &b_H_gold_y);
+
    fChain->SetBranchAddress("H.hod.1x.fptime", &H_hod_1x_fptime, &b_H_hod_1x_fptime);
    fChain->SetBranchAddress("H.hod.1y.fptime", &H_hod_1y_fptime, &b_H_hod_1y_fptime);
    fChain->SetBranchAddress("H.hod.2x.fptime", &H_hod_2x_fptime, &b_H_hod_2x_fptime);
@@ -2197,11 +2207,13 @@ void analyze_hcana_tree::Init(TTree *tree)
    fChain->SetBranchAddress("S.hod.2y.fptime", &S_hod_2y_fptime, &b_S_hod_2y_fptime);
    fChain->SetBranchAddress("S.hod.hgoodstarttime", &S_hod_hgoodstarttime, &b_S_hod_hgoodstarttime);
    fChain->SetBranchAddress("S.hod.starttime", &S_hod_starttime, &b_S_hod_starttime);
+
    fChain->SetBranchAddress("S.tr.n", &S_tr_n, &b_S_tr_n);
    fChain->SetBranchAddress("g.evnum", &g_evnum, &b_g_evnum);
    fChain->SetBranchAddress("fEvtHdr.fEvtTime", &fEvtHdr_fEvtTime, &b_Event_Branch_fEvtHdr_fEvtTime);
    fChain->SetBranchAddress("fEvtHdr.fEvtNum", &fEvtHdr_fEvtNum, &b_Event_Branch_fEvtHdr_fEvtNum);
    fChain->SetBranchAddress("fEvtHdr.fEvtType", &fEvtHdr_fEvtType, &b_Event_Branch_fEvtHdr_fEvtType);
+
    fChain->SetBranchAddress("fEvtHdr.fEvtLen", &fEvtHdr_fEvtLen, &b_Event_Branch_fEvtHdr_fEvtLen);
    fChain->SetBranchAddress("fEvtHdr.fHelicity", &fEvtHdr_fHelicity, &b_Event_Branch_fEvtHdr_fHelicity);
    fChain->SetBranchAddress("fEvtHdr.fTargetPol", &fEvtHdr_fTargetPol, &b_Event_Branch_fEvtHdr_fTargetPol);
