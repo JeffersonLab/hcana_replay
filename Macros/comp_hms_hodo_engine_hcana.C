@@ -37,11 +37,21 @@ void comp_hms_hodo_engine_hcana( TString hcana_file, TString engine_file) {
   //
   char *s = new char[1];
   Long64_t engine_ent=0;
+  Long64_t hcana_ent=0;
   for (Long64_t ni=0 ; ni<nent_loop ;ni++) {
-      nb_hcana = myhcana->fChain->GetEntry(ni);
+      nb_hcana = myhcana->fChain->GetEntry(hcana_ent++);
       nb_engine = myengine->fChain->GetEntry(engine_ent++);
+            if (ni%10000 == 0) cout << "event = " << ni << endl;
+	    // cout << "event = " << ni << " " << myhcana->g_evnum << " " << myengine->evnum << endl;
+      if (myhcana->g_evnum > myengine->evnum) {
       while (myhcana->g_evnum!=myengine->evnum) {
          nb_engine = myengine->fChain->GetEntry(engine_ent++);
+      }
+      }
+      if (myhcana->g_evnum < myengine->evnum) {
+      while (myhcana->g_evnum!=myengine->evnum) {
+         nb_hcana = myhcana->fChain->GetEntry(hcana_ent++);
+      }
       }
       if (myhcana->fEvtHdr_fEvtType==1&& myengine->evtype==1 && myhcana->g_evnum==myengine->evnum) {
 	hfptime_hcana[0]->Fill(myhcana->H_hod_1x_fptime);		       
@@ -59,7 +69,7 @@ void comp_hms_hodo_engine_hcana( TString hcana_file, TString engine_file) {
 	hfptime_diff[1]->Fill(myengine->hscin_rfptime[1]-myhcana->H_hod_1y_fptime);		       
 	hfptime_diff[2]->Fill(myengine->hscin_rfptime[2]-myhcana->H_hod_2x_fptime);		       
 	hfptime_diff[3]->Fill(myengine->hscin_rfptime[3]-myhcana->H_hod_2y_fptime);
-        if (TMath::Abs(myengine->hscin_rfptime[3]-myhcana->H_hod_2y_fptime) > 0.01) {
+        if (TMath::Abs(myengine->hscin_rfptime[3]-myhcana->H_hod_2y_fptime) > 0.01 && 1==-1) {
 	  cout << " Event  number = " <<  myhcana->g_evnum << " " << myengine->evnum << endl ;
           cout << " Engine fptimes = " << myengine->hscin_rfptime[0] << " "<< myengine->hscin_rfptime[1] << " " << myengine->hscin_rfptime[2] << " "<< myengine->hscin_rfptime[3] << " " << myengine->hscin_starttime << endl ;
           cout << " HCANA fptimes = " << myhcana->H_hod_1x_fptime << " "<< myhcana->H_hod_1y_fptime << " " << myhcana->H_hod_2x_fptime << " "<< myhcana->H_hod_2y_fptime << " " << myhcana->H_hod_starttime << " " << myhcana->H_hod_hgoodstarttime << endl ;

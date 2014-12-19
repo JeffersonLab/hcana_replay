@@ -8,7 +8,7 @@ hhodo_num_planes = 4
 hcal_num_layers = 4
 # Exclusion band width for the calorimeter's fiducial volume.
 hcal_fv_delta = 5.
-
+hdbg_init_cal = 0
 # Constants for the coordiante correction of the calorimeter energy depositions
 hcal_a_cor = 200.
 hcal_b_cor = 8000.
@@ -41,6 +41,7 @@ shodo_num_planes = 4
 shodo_plane_names = "1x 1y 2x 2y"
 
 scal_num_layers = 4
+sdbg_init_cal = 0
 
 # Exclusion band width for the calorimeter's fiducial volume.
 # (saw) Don't know what this should be.  Copied it from HMS.

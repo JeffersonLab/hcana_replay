@@ -16,7 +16,7 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
   cout << " hcana entries = " << nent_hcana << " engine entries = " << nent_engine  << endl;
   Long64_t nb_hcana = 0,nb_engine = 0;
 
-  TH1F *comp_xtar[2],*comp_ytar[2],*comp_xptar[2],*comp_yptar[2],*comp_delta[2],*comp_mom[2],*comp_goldt[2],*comp_chimin[2];
+  TH1F *comp_xtar[2],*comp_ytar[2],*comp_xptar[2],*comp_yptar[2],*comp_delta[2],*comp_mom[2],*comp_goldt[2],*comp_ntr[2],*comp_chimin[2];
   TH1F *diff_delta[1],*diff_mom[1],*diff_goldt[1],*diff_chi2[1];
   
   TH1F *pos_diff[2],*ang_diff[2],*del_diff[2]; 
@@ -32,7 +32,8 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
 
   for (i=0 ; i<2 ;i++) {
     comp_chimin[i] =  new TH1F(Form("comp_chimin_%s", comp[i].Data()), "Golden Track chi2/ndf; Golden Track chi2/ndf; Events",  100,0.,1000);
-    comp_goldt[i]  =  new TH1F(Form("comp_goldt_%s",  comp[i].Data()), "Golden Track; Golden Track number; Events",             100,-1.,10);
+    comp_goldt[i]  =  new TH1F(Form("comp_goldt_%s",  comp[i].Data()), "Golden Track; Golden Track number; Events",             11,-1,10);
+    comp_ntr[i]    =  new TH1F(Form("comp_ntr_%s",  comp[i].Data()), "Number of Tracls; Number of Tracks; Events",             11,-1,10);
     comp_xtar[i]   =  new TH1F(Form("comp_xtar_%s",   comp[i].Data()), "Xtar; Xtar (cm); Events",                               200,-10.,10);
     comp_ytar[i]   =  new TH1F(Form("comp_ytar_%s",   comp[i].Data()), "Ytar; Ytar (cm); Events",                               200,-10,10);
     comp_xptar[i]  =  new TH1F(Form("comp_xptar_%s",  comp[i].Data()), "XPtar; Xptar (mr); Events",                             100,-100,100);
@@ -55,17 +56,33 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
   Int_t hca_hdc_ngoodtr;
 
   Long64_t engine_ent=0;
+  Long64_t hcana_ent=0;
   for (Long64_t ni=0 ; ni<nent_loop ;ni++) {
-      nb_hcana = myhcana->fChain->GetEntry(ni);
+      nb_hcana = myhcana->fChain->GetEntry(hcana_ent++);
       nb_engine = myengine->fChain->GetEntry(engine_ent++);
+            if (ni%10000 == 0) cout << "event = " << ni << endl;
+	    // cout << "event = " << ni << " " << myhcana->g_evnum << " " << myengine->evnum << endl;
+      if (myhcana->g_evnum > myengine->evnum) {
       while (myhcana->g_evnum!=myengine->evnum) {
-	nb_engine = myengine->fChain->GetEntry(engine_ent++);
+         nb_engine = myengine->fChain->GetEntry(engine_ent++);
       }
-      if (myhcana->fEvtHdr_fEvtType==1&& myengine->evtype==1 && myhcana->g_evnum==myengine->evnum && myengine->hdc_ntr !=0 ) {
+      }
+      if (myhcana->g_evnum < myengine->evnum) {
+      while (myhcana->g_evnum!=myengine->evnum) {
+         nb_hcana = myhcana->fChain->GetEntry(hcana_ent++);
+      }
+      }
+      if (myhcana->fEvtHdr_fEvtType==1&& myengine->evtype==1 && myhcana->g_evnum==myengine->evnum && myengine->hdc_ngoodtr >0  &&  myhcana->H_gold_index >-1 ) {
 
 	eng_hdc_ngoodtr = myengine->hdc_ngoodtr - 1;
 	hca_hdc_ngoodtr = myhcana->H_gold_index;
-
+        // if (myengine->hdc_ntr ==2) {
+        //    myengine->PrintTrack(ni);
+        //    myhcana->PrintTrack(ni);
+        //   cout << " Hit return to see next event " << endl;
+        //   gets(s);
+	// }
+	comp_ntr[0]->Fill(myengine->hdc_ntr);
 	comp_goldt[0]->Fill(eng_hdc_ngoodtr);
 	comp_chimin[0]->Fill(myengine->hdc_chi2min);
 	comp_xtar[0]->Fill(myengine->frx);
@@ -75,6 +92,7 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
 	comp_delta[0]->Fill(myengine->hdc_delta[eng_hdc_ngoodtr]);
 	comp_mom[0]->Fill(myengine->hdc_ptar[eng_hdc_ngoodtr]);
 
+	comp_ntr[1]->Fill(myhcana->H_dc_ntrack);
 	comp_goldt[1]->Fill(hca_hdc_ngoodtr);
 	comp_chimin[1]->Fill( myhcana->H_tr_chi2[hca_hdc_ngoodtr] / myhcana->H_tr_ndof[hca_hdc_ngoodtr]);
 	comp_xtar[1]->Fill(myhcana->H_gold_x);
@@ -94,7 +112,7 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
 
         ang_diff[0]->Fill(myengine->hdc_xptg[eng_hdc_ngoodtr]-myhcana->H_gold_th);
         ang_diff[1]->Fill(myengine->hdc_yptg[eng_hdc_ngoodtr]-myhcana->H_gold_ph);
-        if (1 == -1 &&TMath::Abs(myengine->hdc_ytg[eng_hdc_ngoodtr]-myhcana->H_gold_y) > 1.) {
+        if (1 == -1 &&myengine->hdc_ngoodtr ==1 ) {
           myhcana->PrintTrack(ni);
           myengine->PrintTrack(ni);
           cout << " Hit return to see next event " << endl;
@@ -102,7 +120,6 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
           if ( s == "q") return;
 	}          
       } // if
-
   } // for loop
 
   cout << " Hcana File= " << hcana_file << endl;
@@ -209,13 +226,22 @@ void comp_goldtrack_engine_hcana( TString hcana_file, TString engine_file) {
 
   //  gStyle->Reset();
 
+  // cy->cd(2)->SetLogy();
+  // comp_goldt[0]->Draw();
+  // comp_goldt[0]->SetLineColor(2);
+  // comp_goldt[1]->Draw("same");
+  // legx = new TLegend(0.15,0.8,0.30,0.88);
+  // legx->AddEntry(comp_goldt[0],"ENGINE","l");
+  // legx->AddEntry(comp_goldt[1],"HCANA","l");
+  // legx->Draw();
+
   cy->cd(2)->SetLogy();
-  comp_goldt[0]->Draw();
-  comp_goldt[0]->SetLineColor(2);
-  comp_goldt[1]->Draw("same");
+  comp_ntr[0]->Draw();
+  comp_ntr[0]->SetLineColor(2);
+  comp_ntr[1]->Draw("same");
   legx = new TLegend(0.15,0.8,0.30,0.88);
-  legx->AddEntry(comp_goldt[0],"ENGINE","l");
-  legx->AddEntry(comp_goldt[1],"HCANA","l");
+  legx->AddEntry(comp_ntr[0],"ENGINE","l");
+  legx->AddEntry(comp_ntr[1],"HCANA","l");
   legx->Draw();
 
   cy->cd(4)->SetLogy();
