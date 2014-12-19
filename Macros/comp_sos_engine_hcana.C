@@ -83,11 +83,21 @@ void comp_sos_engine_hcana( TString hcana_file, TString engine_file) {
   //
 char *s = new char[1];
   Long64_t engine_ent=0;
+  Long64_t hcana_ent=0;
   for (Long64_t ni=0 ; ni<nent_loop ;ni++) {
-      nb_hcana = myhcana->fChain->GetEntry(ni);
+      nb_hcana = myhcana->fChain->GetEntry(hcana_ent++);
       nb_engine = myengine->fChain->GetEntry(engine_ent++);
+            if (ni%10000 == 0) cout << "event = " << ni << endl;
+	    // cout << "event = " << ni << " " << myhcana->g_evnum << " " << myengine->evnum << endl;
+      if (myhcana->g_evnum > myengine->evnum) {
       while (myhcana->g_evnum!=myengine->evnum) {
          nb_engine = myengine->fChain->GetEntry(engine_ent++);
+      }
+      }
+      if (myhcana->g_evnum < myengine->evnum) {
+      while (myhcana->g_evnum!=myengine->evnum) {
+         nb_hcana = myhcana->fChain->GetEntry(hcana_ent++);
+      }
       }
       if (myhcana->fEvtHdr_fEvtType==2&& myengine->evtype==2 && myhcana->g_evnum==myengine->evnum) {
       hntr_hcana->Fill(myhcana->S_dc_ntrack);
