@@ -1,4 +1,4 @@
-
+  THcAnalyzer* analyzer = new THcAnalyzer;
 void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=11000) {
 
   //
@@ -9,7 +9,8 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   if (RunNumber == 50017) {
   char* RunFileNamePattern="daq04_%d.log.0";
   } else {
-  char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
+    // char* RunFileNamePattern="/group/hallc/gabriel/work/daq03_%d.log.0";
+      char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
   }
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
   gHcParms->AddString("g_ctp_database_filename", "jan05.database");
@@ -43,7 +44,7 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   HMS->AddDetector( new THcHodoscope("hod", "Hodoscope" ));
   HMS->AddDetector( new THcShower("cal", "Shower" ));
   THcCherenkov* cherenkov = new THcCherenkov("cher", "Gas Cerenkov" );
-  HMS->AddDetector( cherenkov );
+   HMS->AddDetector( cherenkov );
   HMS->AddDetector( new THcDC("dc", "Drift Chambers" ));
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
@@ -66,8 +67,8 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   // The Analyzer controls the reading of the data, executes
   // tests/cuts, loops over Acpparatus's and PhysicsModules,
   // and executes the output routines.
-  THaAnalyzer* analyzer = new THcAnalyzer;
-  
+  //  THcAnalyzer* analyzer = new THcAnalyzer;
+   
 
   // A simple event class to be output to the resulting tree.
   // Creating your own descendant of THaEvent is one way of
@@ -98,4 +99,5 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   //  analyzer->SetSummaryFile("summary_example.log"); // optional
   
   analyzer->Process(run);     // start the actual analysis
+  analyzer->PrintReport("report.template",Form("replay_both_%05d.report",RunNumber)); 
 }
