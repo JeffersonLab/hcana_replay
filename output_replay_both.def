@@ -11,13 +11,14 @@ block S.tr.*
 block S.dc.*
 block S.hod.*
 block S.cal.*
+block S.cher.*
 block g.evnum
 block RB.*
 
 # cuts
-cut hfoundtrack   H.dc.ntrack>0
-cut hfound1track   H.dc.ntrack==1
-cut hmscoin_event     g.evtyp==1||g.evtyp==3
+#cut hfoundtrack   H.dc.ntrack>0
+#cut hfound1track   H.dc.ntrack==1
+#cut hmscoin_event     g.evtyp==1||g.evtyp==3
 # TDC spectra
 TH1F hfptime1x ' HMS s1x fptime' H.hod.1x.fptime 80 0. 80. hfoundtrack
 TH1F hfptime1y ' HMS s1y fptime' H.hod.1y.fptime 80 0. 80. hfoundtrack 

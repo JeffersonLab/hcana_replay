@@ -19,6 +19,8 @@ Decode_master     all_event
 
 Block: CoarseTracking
 CoarseTracking_master !Pedestal_event
+hfoundtrack   H.dc.ntrack>0&&hmscoin_event
+hfound1track   H.dc.ntrack==1&&hmscoin_event
 
 Block: CoarseReconstruct
 RawCoarseReconstruct !Pedestal_event
