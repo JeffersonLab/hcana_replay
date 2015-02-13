@@ -23,6 +23,14 @@ Number of scalar   events:  {scalar_event.npassed}  {scalar_event.ncalled}
 Number of hfoundtrack  events:  {hfoundtrack.npassed}  
  hfoundtrack/Number of HMS events: {hfoundtrack.npassed/HMS_event.npassed:%.5f}
 
+
+*****************************
+* HMS TRACKING EFFICIENCIES *
+*****************************
+hscinshould:  {HMSScinShould.npassed}
+hscindid:     {HMSScinDid.npassed}
+SING FID TRACK EFFIC: {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001)} +- {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
+
 Horizontal drift chamber z positions:
 Chamber 1: {hdc_zpos[0]:%6.2f} {hdc_zpos[1]:%6.2f} {hdc_zpos[2]:%6.2f} {hdc_zpos[3]:%6.2f} {hdc_zpos[4]:%6.2f} {hdc_zpos[5]:%6.2f} 
 Chamber 2: {hdc_zpos[6]:%6.2f} {hdc_zpos[7]:%6.2f} {hdc_zpos[8]:%6.2f} {hdc_zpos[9]:%6.2f} {hdc_zpos[10]:%6.2f} {hdc_zpos[11]:%6.2f} 

@@ -10,7 +10,8 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   char* RunFileNamePattern="daq04_%d.log.0";
   } else {
     // char* RunFileNamePattern="/group/hallc/gabriel/work/daq03_%d.log.0";
-      char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
+    char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
+    //      char* RunFileNamePattern="/home/zahmed/fAnalyzer/analysis/replay/RawData/daq04_%d.log.0";
   }
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
   gHcParms->AddString("g_ctp_database_filename", "jan05.database");
