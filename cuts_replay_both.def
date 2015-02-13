@@ -21,6 +21,14 @@ Block: CoarseTracking
 CoarseTracking_master !Pedestal_event
 hfoundtrack   H.dc.ntrack>0&&hmscoin_event
 hfound1track   H.dc.ntrack==1&&hmscoin_event
+HMSScinShould  H.hod.scinshould==1
+HMSScinDid  H.hod.scindid==1
+
+Block: FineProcess
+
+
+Block: DefineVariables
+
 
 Block: CoarseReconstruct
 RawCoarseReconstruct !Pedestal_event
