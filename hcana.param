@@ -8,12 +8,12 @@ hhodo_num_planes = 4
 hcal_num_layers = 4
 # Exclusion band width for the calorimeter's fiducial volume.
 hcal_fv_delta = 5.
-hdbg_init_cal = 0
+hdbg_init_cal = 1
 # Constants for the coordiante correction of the calorimeter energy depositions
 hcal_a_cor = 200.
 hcal_b_cor = 8000.
-hcal_c_cor = 64.36
-hcal_d_cor = 1.66
+hcal_c_cor = 64.36, 64.36	# for postive and negative side PMTs
+hcal_d_cor =  1.66,  1.66
 
 # Total number of PMTs in Gas Cherenkov detector.
 hcer_tot_pmts = 2
@@ -41,18 +41,17 @@ shodo_num_planes = 4
 shodo_plane_names = "1x 1y 2x 2y"
 
 scal_num_layers = 4
-sdbg_init_cal = 0
+sdbg_init_cal = 1
 
 # Exclusion band width for the calorimeter's fiducial volume.
 # (saw) Don't know what this should be.  Copied it from HMS.
 scal_fv_delta = 5.
 
-# Constants for the coordiante correction of the calorimeter energy depositions
-# (saw) Copied from HMS
-scal_a_cor = 200.
-scal_b_cor = 8000.
-scal_c_cor = 64.36
-scal_d_cor = 1.66
+# Constants for the coordinate correction of the calorimeter energy depositions
+scal_a_cor = 400.
+scal_b_cor = 12000.
+scal_c_cor = -87.1628, -100.	# The positive side constants reproduce
+scal_d_cor =  1.65054,    3.	# correction in Engine to accuracy better 0.005.
 
 scal_layer_names = "1pr 2ta 3ta 4ta"
 
