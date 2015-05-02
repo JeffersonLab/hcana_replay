@@ -21,8 +21,8 @@ percentage of events that were pedestal events.
 Number of pedestal events:  {Pedestal_event.npassed}  {Pedestal_event.ncalled}
 Number of HMS events:  {HMS_event.npassed}  {HMS_event.ncalled}
 Number of scalar   events:  {scalar_event.npassed}  {scalar_event.ncalled}
-Number of hfoundtrack  events:  {hfoundtrack.npassed}  
- hfoundtrack/Number of HMS events: {hfoundtrack.npassed/HMS_event.npassed:%.5f}
+Number of hfoundtrack  events:  {hFoundTrack.npassed}  
+ hFoundTrack/Number of HMS events: {hFoundTrack.npassed/HMS_event.npassed:%.5f}
 
 
 *****************************
@@ -33,7 +33,7 @@ hhitslt = passed hits/cham     :   {hmsHitsLt.npassed}
 hhitsplanes = +planes >= 5/6   :   {hmsHitsPlanes.npassed}
 hhitsplanessps = + sps         :   {hSpacePoints.npassed}
 hhitsplanesspsstubs +stub      :   {hSpacePointsStub.npassed}
-hsfoundtrack                   :   {hfoundtrack.npassed}
+hsfoundtrack                   :   {hFoundTrack.npassed}
 hstublt = passed stub tests    :   {hStubLT.npassed}
 h1hitslt                       :   {hms1HitsLt.npassed}
 h2hitslt                       :   {hms2HitsLt.npassed}
@@ -53,16 +53,128 @@ hscinshould                    :   {HMSScinShould.npassed}
 hscinshoulde                   :   {HMSScinShoulde.npassed}
 hscinshouldh                   :   {HMSScinShouldh.npassed}
 
-hscinthtis                     :   {HMSScintHits.npassed}
+SING FID TRACK EFFIC           : {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001):%8.4f} +- 
+                                 {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
 
-SING FID TRACK EFFIC           :   {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001):%8.4f} +- 
-                                   {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
+E SING FID TRACK EFFIC         : {HMSScinDide.npassed/(HMSScinShoulde.npassed+0.0001):%8.4f} +- 
+                                 {(sqrt(HMSScinShoulde.npassed-HMSScinDide.npassed)/(HMSScinShoulde.npassed+.0001)):%8.4f}
 
-E SING FID TRACK EFFIC         :   {HMSScinDide.npassed/(HMSScinShoulde.npassed+0.0001):%8.4f} +- 
-                                   {(sqrt(HMSScinShoulde.npassed-HMSScinDide.npassed)/(HMSScinShoulde.npassed+.0001)):%8.4f}
+HADRON SING FID TRACK EFFIC    : {HMSScinDidh.npassed/(HMSScinShouldh.npassed+0.0001):%8.4f} +- 
+                                 {(sqrt(HMSScinShouldh.npassed-HMSScinDidh.npassed)/(HMSScinShouldh.npassed+.0001)):%8.4f}
 
-HADRON SING FID TRACK EFFIC    :   {HMSScinDidh.npassed/(HMSScinShouldh.npassed+0.0001):%8.4f} +- 
-                                   {(sqrt(HMSScinShouldh.npassed-HMSScinDidh.npassed)/(HMSScinShouldh.npassed+.0001)):%8.4f}
+* hms coincidences...
+ctrig                          :   {coin_event.npassed}
+********************************************************************
+
+
+*****************************
+* RAW SOFTWARE EFFICIENCIES *
+*****************************
+"raw"  means one or more hits per dc plane.
+"Good" means one or two  hits per dc plane.
+
+rawhdc1x1   =    {h1hit1.npassed}   eff = {(h1hit1.npassed/hmsCham1Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc1y1   =    {h1hit2.npassed}   eff = {(h1hit2.npassed/hmsCham1Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc1u1   =    {h1hit3.npassed}   eff = {(h1hit3.npassed/hmsCham1Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc1v1   =    {h1hit4.npassed}   eff = {(h1hit4.npassed/hmsCham1Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc1y2   =    {h1hit5.npassed}   eff = {(h1hit5.npassed/hmsCham1Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc1x2   =    {h1hit6.npassed}   eff = {(h1hit6.npassed/hmsCham1Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc1     =    {hmsCham1Hits.npassed}   eff = {(hdc_cham_hits[0]/hmsCham1Hits.npassed):%5.3f}  BAD = 0.99
+rawhdc2x1   =    {h2hit1.npassed}   eff = {(h2hit1.npassed/hmsCham2Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc2y1   =    {h2hit2.npassed}   eff = {(h2hit2.npassed/hmsCham2Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc2y1   =    {h2hit3.npassed}   eff = {(h2hit3.npassed/hmsCham2Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc2v1   =    {h2hit4.npassed}   eff = {(h2hit4.npassed/hmsCham2Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc2y2   =    {h2hit5.npassed}   eff = {(h2hit5.npassed/hmsCham2Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc2x2   =    {h2hit6.npassed}   eff = {(h2hit6.npassed/hmsCham2Hits.npassed):%5.3f}  BAD = 0.95
+rawhdc2     =    {hmsCham2Hits.npassed}   eff = {(hdc_cham_hits[1]/hmsCham2Hits.npassed):%5.3f}  BAD = 0.99
+
+goodhdc1x1  =   {goodHDC1x1.npassed}   eff = {(goodHDC1x1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc1y1  =   {goodHDC1y1.npassed}   eff = {(goodHDC1y1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc1u1  =   {goodHDC1u1.npassed}   eff = {(goodHDC1u1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc1v1  =   {goodHDC1v1.npassed}   eff = {(goodHDC1v1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc1y2  =   {goodHDC1y2.npassed}   eff = {(goodHDC1y2.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc1x2  =   {goodHDC1x2.npassed}   eff = {(goodHDC1x2.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc1    =   {goodHDC1.npassed}   eff = {(goodHDC1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.90
+goodhdc2x1  =   {goodHDC2x1.npassed}   eff = {(goodHDC2x1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc2x1  =   {goodHDC2y1.npassed}   eff = {(goodHDC2y1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc2x1  =   {goodHDC2u1.npassed}   eff = {(goodHDC2u1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc2x1  =   {goodHDC2v1.npassed}   eff = {(goodHDC2v1.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc2x1  =   {goodHDC2y2.npassed}   eff = {(goodHDC2y2.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc2x1  =   {goodHDC2x2.npassed}   eff = {(goodHDC2x2.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.95
+goodhdc2    =   {goodHDC2.npassed}   eff = {(goodHDC2.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.90
+bothgoodhdc =   {bothGood.npassed}   eff = {(bothGood.npassed/(hmscoin_event.npassed+0.0001)):%5.3f}  BAD = 0.80
+
+"hfoundtrack" based on analyzer variable HNTRACKS_FP.
+"hcleantrack" based on analyzer variable HSNUM_FPTRACK (=foundtrack+chi2+PID).
+
+hfoundtrack = {hFoundTrack.npassed:%7d}   eff = {hFoundTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}  BAD = .95
+hfound1track= {hFound1Track.npassed:%7d}   eff = {hFound1Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfound2track= {hFound2Track.npassed:%7d}   eff = {hFound2Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfound3track= {hFound3Track.npassed:%7d}   eff = {hFound3Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfound4track= {hFound4Track.npassed:%7d}   eff = {hFound4Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+
+hcleantrack = {hCleanTrack.npassed:%7d}   eff = {hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}  BAD = .95
+1hcleantrack= {1hCleanTrack.npassed:%7d}   eff = {1hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+2hcleantrack= {2hCleanTrack.npassed:%7d}   eff = {2hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+3hcleantrack= {3hCleanTrack.npassed:%7d}   eff = {3hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+4hcleantrack= {4hCleanTrack.npassed:%7d}   eff = {4hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+
+"Any"  means one or more hits per scint plane.
+"Good" means one or two  hits per scint plane.
+
+anyhs1x     = {anyhs1x.npassed:%7d}   eff = {anyhs1x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+anyhs1y     = {anyhs1y.npassed:%7d}   eff = {anyhs1y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+anyhs2x     = {anyhs2x.npassed:%7d}   eff = {anyhs2x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+anyhs2y     = {anyhs2y.npassed:%7d}   eff = {anyhs2y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+
+goodhs1x    = {goodhs1x.npassed:%7d}   eff = {goodhs1x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .98
+goodhs1y    = {goodhs1y.npassed:%7d}   eff = {goodhs1y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .98
+goodhs1     = {goodhs1.npassed:%7d}   eff = {goodhs1.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .96
+goodhs2x    = {goodhs2x.npassed:%7d}   eff = {goodhs2x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .98
+goodhs2y    = {goodhs2y.npassed:%7d}   eff = {goodhs2y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .98
+goodhs2     = {goodhs2.npassed:%7d}   eff = {goodhs2.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .96
+goodhs1s2   = {goodhs1s2.npassed:%7d}   eff = {goodhs1s2.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .95
+
+
+********************
+* HARDWARE SCALERS *
+********************
+
+
+
+**********
+*SUMMARY *
+**********
+time        = ???
+
+hdc1 6/6 eff = {(hdc_cham_hits[0]/hmsCham1Hits.npassed):%5.3f}  BAD = 0.99
+hdc2 6/6 eff = {(hdc_cham_hits[1]/hmsCham1Hits.npassed):%5.3f}  BAD = 0.99
+anyhs1x  eff = {anyhs1x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+anyhs1y  eff = {anyhs1y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+anyhs2x  eff = {anyhs2x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+anyhs2y  eff = {anyhs2y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
+
+
+
+**************************
+* Hodoscope Efficiencies *
+**************************
+Efficiencies for hodoscopes is the fraction of times scin. was hit when track
+with chisquared/dof < {hstat_maxchisq:%5.1f} came within {hstat_slop:%4.1f} cm of the center.
+
+Events examined = htrig       = {hmscoin_event.npassed:%7d}
+Tracks found    = hcleantrack = {hCleanTrack.npassed:%7d}
+Tracks passing chisquared cut = {HstatNumevents.npassed:%7d}
+
+
+--------------------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------------
+
+
+General Format
+signal   =   counts (  rate-Hz )
+
 
 Horizontal drift chamber z positions:
 Chamber 1: {hdc_zpos[0]:%6.2f} {hdc_zpos[1]:%6.2f} {hdc_zpos[2]:%6.2f} 
@@ -74,7 +186,8 @@ The expression result can be formatted by putting a ":" followed by
 a c-style format after the expression.
 
 The HMS reconstruction coefficient file name is {h_recon_coeff_filename}
-The names of the HMS drift chamber planes are: {hdc_plane_names}
+The names of the HMS drift chamber planes are: 
+{hdc_plane_names}
 
 DC Events: {hdc_tot_events}
 Hit in chamber: {hdc_cham_hits[0]/hdc_tot_events:%.3f} {hdc_cham_hits[1]/hdc_tot_events:%.3f}
