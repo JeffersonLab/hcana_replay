@@ -16,7 +16,8 @@ in the braces is evaluated as an expression.  Currently the expression can be
 composed of Hall C style parameter variables, cut results (not really too usefull)
 and cut statistics.  (Number of times called and number of times passed.)
 
-For example, {100*Pedestal_event.npassed/Pedestal_event.ncalled:%.2f}% is the percentage of events that were pedestal events.
+For example, {100*Pedestal_event.npassed/Pedestal_event.ncalled:%.2f}% is the 
+percentage of events that were pedestal events.
 Number of pedestal events:  {Pedestal_event.npassed}  {Pedestal_event.ncalled}
 Number of HMS events:  {HMS_event.npassed}  {HMS_event.ncalled}
 Number of scalar   events:  {scalar_event.npassed}  {scalar_event.ncalled}
@@ -27,13 +28,47 @@ Number of hfoundtrack  events:  {hfoundtrack.npassed}
 *****************************
 * HMS TRACKING EFFICIENCIES *
 *****************************
-hscinshould:  {HMSScinShould.npassed}
-hscindid:     {HMSScinDid.npassed}
-SING FID TRACK EFFIC: {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001)} +- {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
+htrig                          :   {hmscoin_event.npassed}
+hhitslt = passed hits/cham     :   {hmsHitsLt.npassed}
+hhitsplanes = +planes >= 5/6   :   {hmsHitsPlanes.npassed}
+hhitsplanessps = + sps         :   {hSpacePoints.npassed}
+hhitsplanesspsstubs +stub      :   {hSpacePointsStub.npassed}
+hsfoundtrack                   :   {hfoundtrack.npassed}
+hstublt = passed stub tests    :   {hStubLT.npassed}
+h1hitslt                       :   {hms1HitsLt.npassed}
+h2hitslt                       :   {hms2HitsLt.npassed}
+h1planesgt                     :   {hmsDC1PlanesGT.npassed}
+h2planesgt                     :   {hmsDC2PlanesGT.npassed}
+hplanesgt = gt 5 planes/cham   :   {hmsPlanseGT.npassed}
+f1hspacepoints                 :   {f1HSpacePoints.npassed}
+f2hspacepoints                 :   {f2HSpacePoints.npassed}
+htest1=p hits/planes, f sp     :   {hTest1.npassed}
+htest2=p sp, f stubs           :   {hTest2.npassed}
+
+hdid                           :   {HMSScinDid.npassed}
+hdide                          :   {HMSScinDide.npassed}
+hdidh                          :   {HMSScinDidh.npassed}
+
+hscinshould                    :   {HMSScinShould.npassed}
+hscinshoulde                   :   {HMSScinShoulde.npassed}
+hscinshouldh                   :   {HMSScinShouldh.npassed}
+
+hscinthtis                     :   {HMSScintHits.npassed}
+
+SING FID TRACK EFFIC           :   {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001):%8.4f} +- 
+                                   {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
+
+E SING FID TRACK EFFIC         :   {HMSScinDide.npassed/(HMSScinShoulde.npassed+0.0001):%8.4f} +- 
+                                   {(sqrt(HMSScinShoulde.npassed-HMSScinDide.npassed)/(HMSScinShoulde.npassed+.0001)):%8.4f}
+
+HADRON SING FID TRACK EFFIC    :   {HMSScinDidh.npassed/(HMSScinShouldh.npassed+0.0001):%8.4f} +- 
+                                   {(sqrt(HMSScinShouldh.npassed-HMSScinDidh.npassed)/(HMSScinShouldh.npassed+.0001)):%8.4f}
 
 Horizontal drift chamber z positions:
-Chamber 1: {hdc_zpos[0]:%6.2f} {hdc_zpos[1]:%6.2f} {hdc_zpos[2]:%6.2f} {hdc_zpos[3]:%6.2f} {hdc_zpos[4]:%6.2f} {hdc_zpos[5]:%6.2f} 
-Chamber 2: {hdc_zpos[6]:%6.2f} {hdc_zpos[7]:%6.2f} {hdc_zpos[8]:%6.2f} {hdc_zpos[9]:%6.2f} {hdc_zpos[10]:%6.2f} {hdc_zpos[11]:%6.2f} 
+Chamber 1: {hdc_zpos[0]:%6.2f} {hdc_zpos[1]:%6.2f} {hdc_zpos[2]:%6.2f} 
+	   {hdc_zpos[3]:%6.2f} {hdc_zpos[4]:%6.2f} {hdc_zpos[5]:%6.2f} 
+Chamber 2: {hdc_zpos[6]:%6.2f} {hdc_zpos[7]:%6.2f} {hdc_zpos[8]:%6.2f} 
+           {hdc_zpos[9]:%6.2f} {hdc_zpos[10]:%6.2f} {hdc_zpos[11]:%6.2f} 
 
 The expression result can be formatted by putting a ":" followed by
 a c-style format after the expression.
@@ -43,7 +78,12 @@ The names of the HMS drift chamber planes are: {hdc_plane_names}
 
 DC Events: {hdc_tot_events}
 Hit in chamber: {hdc_cham_hits[0]/hdc_tot_events:%.3f} {hdc_cham_hits[1]/hdc_tot_events:%.3f}
-Hit in plane: {hdc_events[0]/hdc_tot_events:%.3f} {hdc_events[1]/hdc_tot_events:%.3f} {hdc_events[2]/hdc_tot_events:%.3f} {hdc_events[3]/hdc_tot_events:%.3f} {hdc_events[4]/hdc_tot_events:%.3f} {hdc_events[5]/hdc_tot_events:%.3f} {hdc_events[6]/hdc_tot_events:%.3f} {hdc_events[7]/hdc_tot_events:%.3f} {hdc_events[8]/hdc_tot_events:%.3f} {hdc_events[9]/hdc_tot_events:%.3f} {hdc_events[10]/hdc_tot_events:%.3f} {hdc_events[11]/hdc_tot_events:%.3f}
+Hit in plane: {hdc_events[0]/hdc_tot_events:%.3f}  {hdc_events[1]/hdc_tot_events:%.3f} 
+              {hdc_events[2]/hdc_tot_events:%.3f}  {hdc_events[3]/hdc_tot_events:%.3f} 
+              {hdc_events[4]/hdc_tot_events:%.3f}  {hdc_events[5]/hdc_tot_events:%.3f} 
+              {hdc_events[6]/hdc_tot_events:%.3f}  {hdc_events[7]/hdc_tot_events:%.3f} 
+              {hdc_events[8]/hdc_tot_events:%.3f}  {hdc_events[9]/hdc_tot_events:%.3f} 
+              {hdc_events[10]/hdc_tot_events:%.3f} {hdc_events[11]/hdc_tot_events:%.3f}
 
 Run #{gen_run_number}
 first event = {gen_run_starting_event:%7d}

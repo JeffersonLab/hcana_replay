@@ -19,10 +19,55 @@ Decode_master     all_event
 
 Block: CoarseTracking
 CoarseTracking_master !Pedestal_event
-hfoundtrack   H.dc.ntrack>0&&hmscoin_event
-hfound1track   H.dc.ntrack==1&&hmscoin_event
-HMSScinShould  H.hod.scinshould==1
-HMSScinDid  H.hod.scindid==1
+all_trigs             g.evtyp==1 || g.evtyp==2 || g.evtyp==3
+hms_sos_trig          g.evtyp==1 || g.evtyp==2
+hms_coin_trig         g.evtyp==1 || g.evtyp==3
+
+hms1HitsLt            H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && g.evtyp==1
+hms2HitsLt            H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && g.evtyp==1
+hmsHitsLt             H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && g.evtyp==1
+
+h1hit1                H.dc.1x1.nhit >= 1
+h1hit2                H.dc.1y1.nhit >= 1
+h1hit3                H.dc.1u1.nhit >= 1
+h1hit4                H.dc.1v1.nhit >= 1
+h1hit5                H.dc.1y2.nhit >= 1
+h1hit6                H.dc.1x2.nhit >= 1
+
+h2hit1                H.dc.2x1.nhit >= 1
+h2hit2                H.dc.2y1.nhit >= 1
+h2hit3                H.dc.2u1.nhit >= 1
+h2hit4                H.dc.2v1.nhit >= 1
+h2hit5                H.dc.2y2.nhit >= 1
+h2hit6                H.dc.2x2.nhit >= 1
+
+hmsDC1PlanesGT        (h1hit1 + h1hit2 + h1hit3 + h1hit4 + h1hit5 + h1hit6 )>=5
+hmsDC2PlanesGT        (h2hit1 + h2hit2 + h2hit3 + h2hit4 + h2hit5 + h2hit6 )>=5
+
+hmsPlanseGT           hmsDC1PlanesGT && hmsDC2PlanesGT
+hmsHitsPlanes         H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && hmsPlanseGT
+hSpacePoints          H.dc.Ch1.spacepoints >= 1 && H.dc.Ch2.spacepoints >=1
+hSpacePointsStub      H.dc.stubtest==1 && H.dc.Ch1.spacepoints >=1 && H.dc.Ch2.spacepoints >=1
+hfoundtrack           H.dc.ntrack>0 && hmscoin_event
+hfound1track          H.dc.ntrack==1 && hmscoin_event
+
+hStubLT               H.dc.stubtest==1
+
+hms1HitsLt            H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && g.evtyp==1
+hms2HitsLt            H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && g.evtyp==1
+hmsDC1PlanesGT        (h1hit1 + h1hit2 + h1hit3 + h1hit4 + h1hit5 + h1hit6 )>=5
+hmsDC2PlanesGT        (h2hit1 + h2hit2 + h2hit3 + h2hit4 + h2hit5 + h2hit6 )>=5
+hmsPlanseGT           hmsDC1PlanesGT && hmsDC2PlanesGT
+
+f1HSpacePoints        hms1HitsLt && hmsDC1PlanesGT && H.dc.Ch1.spacepoints==0 && g.evtyp==1
+f2HSpacePoints        hms2HitsLt && hmsDC2PlanesGT && H.dc.Ch2.spacepoints==0 && g.evtyp==1
+hTest1                hmsHitsPlanes && (!hSpacePoints)
+hTest2                hSpacePoints && (!hStubLT)
+
+
+CoarseTracking_master !Pedestal_event
+hfoundtrack           H.dc.ntrack>0&&hmscoin_event
+hfound1track          H.dc.ntrack==1&&hmscoin_event
 
 Block: FineProcess
 
@@ -32,3 +77,16 @@ Block: DefineVariables
 
 Block: CoarseReconstruct
 RawCoarseReconstruct !Pedestal_event
+
+Block: Physics
+HMSScinGood           H.hod.goodscinhit == 1
+
+HMSScinShould         HMSScinGood && H.cal.etotnorm > 0.7 && H.cher.npesum > 2.0
+HMSScinShoulde        HMSScinGood && H.cher.npesum > 2.0
+HMSScinShouldh        H.hod.goodscinhit == 1 
+
+HMSScintHits          H.hod.scinthits < 1 && g.evtyp == 3
+
+HMSScinDid            HMSScinShould && H.dc.ntrack > 0
+HMSScinDide           HMSScinShoulde && H.dc.ntrack > 0
+HMSScinDidh           HMSScinShouldh && H.dc.ntrack 
