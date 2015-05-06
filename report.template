@@ -44,26 +44,44 @@ f1hspacepoints                 :   {f1HSpacePoints.npassed}
 f2hspacepoints                 :   {f2HSpacePoints.npassed}
 htest1=p hits/planes, f sp     :   {hTest1.npassed}
 htest2=p sp, f stubs           :   {hTest2.npassed}
-
 hdid                           :   {HMSScinDid.npassed}
 hdide                          :   {HMSScinDide.npassed}
 hdidh                          :   {HMSScinDidh.npassed}
-
 hscinshould                    :   {HMSScinShould.npassed}
 hscinshoulde                   :   {HMSScinShoulde.npassed}
 hscinshouldh                   :   {HMSScinShouldh.npassed}
-
-SING FID TRACK EFFIC           : {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001):%8.4f} +- 
-                                 {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
-
-E SING FID TRACK EFFIC         : {HMSScinDide.npassed/(HMSScinShoulde.npassed+0.0001):%8.4f} +- 
-                                 {(sqrt(HMSScinShoulde.npassed-HMSScinDide.npassed)/(HMSScinShoulde.npassed+.0001)):%8.4f}
-
-HADRON SING FID TRACK EFFIC    : {HMSScinDidh.npassed/(HMSScinShouldh.npassed+0.0001):%8.4f} +- 
-                                 {(sqrt(HMSScinShouldh.npassed-HMSScinDidh.npassed)/(HMSScinShouldh.npassed+.0001)):%8.4f}
+SING FID TRACK EFFIC           : {HMSScinDid.npassed/(HMSScinShould.npassed+0.0001):%8.4f} +- {(sqrt(HMSScinShould.npassed-HMSScinDid.npassed)/(HMSScinShould.npassed+.0001)):%8.4f}
+E SING FID TRACK EFFIC         : {HMSScinDide.npassed/(HMSScinShoulde.npassed+0.0001):%8.4f} +- {(sqrt(HMSScinShoulde.npassed-HMSScinDide.npassed)/(HMSScinShoulde.npassed+.0001)):%8.4f}
+HADRON SING FID TRACK EFFIC    : {HMSScinDidh.npassed/(HMSScinShouldh.npassed+0.0001):%8.4f} +- {(sqrt(HMSScinShouldh.npassed-HMSScinDidh.npassed)/(HMSScinShouldh.npassed+.0001)):%8.4f}
 
 * hms coincidences...
 ctrig                          :   {coin_event.npassed}
+bhhitslt = passed hits/cham    :   {bhmsHitsLt.npassed}
+bhhitsplanes = +planes >= 5/6  :   {bhmsHitsPlanes.npassed}
+bhhitsplanessps = + sps        :   {bhmsHitsPlanesSps.npassed}
+bhhitsplanesspsstubs +stub     :   {bhmsHitsPlanesSpsStubs.npassed}
+found track and ctrig          :   {bhmsFoundTrack.npassed}
+bhstublt = passed stub tests   :   {bhmsStubLt.npassed}
+bh1hitslt                      :   {bhms1HitsLt.npassed}
+bh2hitslt                      :   {bhms2HitsLt.npassed}
+bh1planesgt                    :   {bhmsDC1PlanesGT.npassed}
+bh2planesgt                    :   {bhmsDC2PlanesGT.npassed}
+bhplanesgt = gt 5 planes/cham  :   {bhmsPlanesGt.npassed}
+f1bhspacepoints                :   {f1bhmsSpacepoints.npassed}
+f2bhspacepoints                :   {f2bhmsSpacepoints.npassed}
+bhtest1=p hits/planes, f sp    :   {bhmsTest1.npassed}
+bhtest2=p sp, f stubs          :   {bhmsTest2.npassed}
+bhdid			       :   {.npassed}
+bhdide			       :   {.npassed}
+bhdidh			       :   {.npassed}
+bhscinshould		       :   {.npassed}
+bhscinshoulde		       :   {.npassed}
+bhscinshouldh		       :   {.npassed}
+
+
+
+
+
 ********************************************************************
 
 

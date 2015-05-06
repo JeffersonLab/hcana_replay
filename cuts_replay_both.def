@@ -49,19 +49,56 @@ hmsHitsPlanes         H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && H.dc.Ch2.nhit <= H.dc
 hSpacePoints          H.dc.Ch1.spacepoints >= 1 && H.dc.Ch2.spacepoints >=1
 hSpacePointsStub      H.dc.stubtest==1 && H.dc.Ch1.spacepoints >=1 && H.dc.Ch2.spacepoints >=1
 hFoundTrack           H.dc.ntrack>0 && hmscoin_event
-
 hStubLT               H.dc.stubtest==1
-
 hms1HitsLt            H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && g.evtyp==1
 hms2HitsLt            H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && g.evtyp==1
 hmsDC1PlanesGT        (h1hit1 + h1hit2 + h1hit3 + h1hit4 + h1hit5 + h1hit6 )>=5
 hmsDC2PlanesGT        (h2hit1 + h2hit2 + h2hit3 + h2hit4 + h2hit5 + h2hit6 )>=5
 hmsPlanseGT           hmsDC1PlanesGT && hmsDC2PlanesGT
-
 f1HSpacePoints        hms1HitsLt && hmsDC1PlanesGT && H.dc.Ch1.spacepoints==0 && g.evtyp==1
 f2HSpacePoints        hms2HitsLt && hmsDC2PlanesGT && H.dc.Ch2.spacepoints==0 && g.evtyp==1
 hTest1                hmsHitsPlanes && (!hSpacePoints)
 hTest2                hSpacePoints && (!hStubLT)
+
+#
+# Coinccidence events
+#
+
+bh1hit1               H.dc.1x1.nhit >= 1 && g.evtyp==3
+bh1hit2               H.dc.1y1.nhit >= 1 && g.evtyp==3
+bh1hit3               H.dc.1u1.nhit >= 1 && g.evtyp==3
+bh1hit4               H.dc.1v1.nhit >= 1 && g.evtyp==3
+bh1hit5               H.dc.1y2.nhit >= 1 && g.evtyp==3
+bh1hit6               H.dc.1x2.nhit >= 1 && g.evtyp==3
+
+bh2hit1               H.dc.2x1.nhit >= 1 && g.evtyp==3
+bh2hit2               H.dc.2y1.nhit >= 1 && g.evtyp==3
+bh2hit3               H.dc.2u1.nhit >= 1 && g.evtyp==3
+bh2hit4               H.dc.2v1.nhit >= 1 && g.evtyp==3
+bh2hit5               H.dc.2y2.nhit >= 1 && g.evtyp==3
+bh2hit6               H.dc.2x2.nhit >= 1 && g.evtyp==3
+
+bhmsDC1PlanesGT       ( (bh1hit1 && bh1hit2 && bh1hit3 && bh1hit4 && bh1hit5 ) || (bh1hit1 && bh1hit2 && bh1hit3 && bh1hit4 && bh1hit6 ) || (bh1hit1 && bh1hit2 && bh1hit3 && bh1hit5 && bh1hit6 ) || (bh1hit1 && bh1hit2 && bh1hit4 && bh1hit5 && bh1hit6 ) || (bh1hit2 && bh1hit3 && bh1hit4 && bh1hit5 && bh1hit6 ) ) && g.evtyp==3
+
+bhmsDC2PlanesGT       ( (bh2hit1 && bh2hit2 && bh2hit3 && bh2hit4 && bh2hit5 ) || (bh2hit1 && bh2hit2 && bh2hit3 && bh2hit4 && bh2hit6 ) || (bh2hit1 && bh2hit2 && bh2hit3 && bh2hit5 && bh2hit6 ) || (bh2hit1 && bh2hit2 && bh2hit4 && bh2hit5 && bh2hit6 ) || (bh2hit2 && bh2hit3 && bh2hit4 && bh2hit5 && bh2hit6 ) ) && g.evtyp==3
+
+bhms1HitsLt               H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && g.evtyp==3
+bhms2HitsLt               H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && g.evtyp==3
+bhmsHitsLt                bhms1HitsLt && bhms2HitsLt
+bhmsPlanesGt              bhmsDC1PlanesGT && bhmsDC2PlanesGT
+bhmsSpacePoints           hSpacePoints && g.evtyp==3
+bhmsStubLt                hStubLT && g.evtyp==3
+bhmsHitsPlanes            bhmsHitsLt && bhmsPlanesGt
+bhmsHitsPlanesSps         bhmsHitsPlanes && bhmsSpacePoints && g.evtyp==3
+bhmsHitsPlanesSpsStubs    bhmsHitsPlanesSps && bhmsStubLt &&  g.evtyp==3
+f1bhmsSpacepoints         bhms1HitsLt && bhmsDC1PlanesGT && (H.dc.Ch1.spacepoints == 0) && g.evtyp==3
+f2bhmsSpacepoints         bhms2HitsLt && bhmsDC2PlanesGT && (H.dc.Ch2.spacepoints == 0) && g.evtyp==3
+fbhmsSpacePoints          f1bhmsSpacepoints || f2bhmsSpacepoints && g.evtyp==3
+bhmsTest1                 bhmsHitsPlanes && !bhmsSpacePoints && g.evtyp==3
+bhmsTest2                 bhmsSpacePoints && !bhmsStubLt && g.evtyp==3
+bhmsFoundTrack            (H.dc.ntrack > 0) && g.evtyp==3
+bhmsGoodBeta              hbeta_notrk > 0.7 &&  g.evtyp==3
+
 
 
 CoarseTracking_master !Pedestal_event
@@ -85,6 +122,11 @@ HMSScinShouldh        H.hod.goodscinhit == 1 && g.evtyp == 1
 HMSScinDid            HMSScinShould && H.dc.ntrack > 0
 HMSScinDide           HMSScinShoulde && H.dc.ntrack > 0
 HMSScinDidh           HMSScinShouldh && H.dc.ntrack > 0
+
+BHMSScinShould        HMSScinShould && H.gold.index > -1 && H.tr.beta >= 0.1 && g.evtyp==3
+BHMSScinShoulde       HMSScinShould && H.cher.npesum > 2.0 && 
+
+bhscinshoulde = bhscinshould && (hcer_npe_sum > 0.2) && (hbeta> (hbeta_pcent-.05)) && (hbeta< (hbeta_pcent+.05))
 
 hmsCham1Hits          (h1hit1 + h1hit2 + h1hit3 + h1hit4 + h1hit5 + h1hit6 )>0
 hmsCham2Hits          (h2hit1 + h2hit2 + h2hit3 + h2hit4 + h2hit5 + h2hit6 )>0
