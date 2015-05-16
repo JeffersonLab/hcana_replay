@@ -78,9 +78,22 @@ bh2hit4               H.dc.2v1.nhit >= 1 && g.evtyp==3
 bh2hit5               H.dc.2y2.nhit >= 1 && g.evtyp==3
 bh2hit6               H.dc.2x2.nhit >= 1 && g.evtyp==3
 
-bhmsDC1PlanesGT       ( (bh1hit1 && bh1hit2 && bh1hit3 && bh1hit4 && bh1hit5 ) || (bh1hit1 && bh1hit2 && bh1hit3 && bh1hit4 && bh1hit6 ) || (bh1hit1 && bh1hit2 && bh1hit3 && bh1hit5 && bh1hit6 ) || (bh1hit1 && bh1hit2 && bh1hit4 && bh1hit5 && bh1hit6 ) || (bh1hit2 && bh1hit3 && bh1hit4 && bh1hit5 && bh1hit6 ) ) && g.evtyp==3
+bhdc1gt1               bh1hit1 && bh1hit2 && bh1hit3 && bh1hit4 && bh1hit5
+bhdc1gt2               bh1hit1 && bh1hit2 && bh1hit3 && bh1hit4 && bh1hit6
+bhdc1gt3               bh1hit1 && bh1hit2 && bh1hit3 && bh1hit5 && bh1hit6
+bhdc1gt4               bh1hit1 && bh1hit2 && bh1hit4 && bh1hit5 && bh1hit6
+bhdc1gt5               bh1hit2 && bh1hit3 && bh1hit4 && bh1hit5 && bh1hit6
 
-bhmsDC2PlanesGT       ( (bh2hit1 && bh2hit2 && bh2hit3 && bh2hit4 && bh2hit5 ) || (bh2hit1 && bh2hit2 && bh2hit3 && bh2hit4 && bh2hit6 ) || (bh2hit1 && bh2hit2 && bh2hit3 && bh2hit5 && bh2hit6 ) || (bh2hit1 && bh2hit2 && bh2hit4 && bh2hit5 && bh2hit6 ) || (bh2hit2 && bh2hit3 && bh2hit4 && bh2hit5 && bh2hit6 ) ) && g.evtyp==3
+bhdc2gt1               bh2hit1 && bh2hit2 && bh2hit3 && bh2hit4 && bh2hit5
+bhdc2gt2               bh2hit1 && bh2hit2 && bh2hit3 && bh2hit4 && bh2hit6
+bhdc2gt3               bh2hit1 && bh2hit2 && bh2hit3 && bh2hit5 && bh2hit6
+bhdc2gt4               bh2hit1 && bh2hit2 && bh2hit4 && bh2hit5 && bh2hit6
+bhdc2gt5               bh2hit2 && bh2hit3 && bh2hit4 && bh2hit5 && bh2hit6
+
+
+bhmsDC1PlanesGT       ( bhdc1gt1 || bhdc1gt2 || bhdc1gt3 || bhdc1gt4 || bhdc1gt5 ) && g.evtyp==3
+bhmsDC2PlanesGT       ( bhdc2gt1 || bhdc2gt2 || bhdc2gt3 || bhdc2gt4 || bhdc2gt5 ) && g.evtyp==3
+
 
 bhms1HitsLt               H.dc.Ch1.nhit <= H.dc.Ch1.maxhits && g.evtyp==3
 bhms2HitsLt               H.dc.Ch2.nhit <= H.dc.Ch2.maxhits && g.evtyp==3
@@ -124,7 +137,7 @@ HMSScinDide           HMSScinShoulde && H.dc.ntrack > 0
 HMSScinDidh           HMSScinShouldh && H.dc.ntrack > 0
 
 BHMSScinShould        HMSScinShould && H.gold.index > -1 && H.tr.beta >= 0.1 && g.evtyp==3
-BHMSScinShoulde       HMSScinShould && H.cher.npesum > 2.0 && 
+
 
 bhscinshoulde = bhscinshould && (hcer_npe_sum > 0.2) && (hbeta> (hbeta_pcent-.05)) && (hbeta< (hbeta_pcent+.05))
 

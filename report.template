@@ -71,13 +71,6 @@ f1bhspacepoints                :   {f1bhmsSpacepoints.npassed}
 f2bhspacepoints                :   {f2bhmsSpacepoints.npassed}
 bhtest1=p hits/planes, f sp    :   {bhmsTest1.npassed}
 bhtest2=p sp, f stubs          :   {bhmsTest2.npassed}
-bhdid			       :   {.npassed}
-bhdide			       :   {.npassed}
-bhdidh			       :   {.npassed}
-bhscinshould		       :   {.npassed}
-bhscinshoulde		       :   {.npassed}
-bhscinshouldh		       :   {.npassed}
-
 
 
 
@@ -183,6 +176,10 @@ with chisquared/dof < {hstat_maxchisq:%5.1f} came within {hstat_slop:%4.1f} cm o
 Events examined = htrig       = {hmscoin_event.npassed:%7d}
 Tracks found    = hcleantrack = {hCleanTrack.npassed:%7d}
 Tracks passing chisquared cut = {HstatNumevents.npassed:%7d}
+
+Scint  POS eff NEG eff  OR eff AND eff  Hits
+-----  ------- ------- ------- -------  ----
+
 
 
 --------------------------------------------------------------------------------------
