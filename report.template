@@ -72,7 +72,15 @@ f2bhspacepoints                :   {f2bhmsSpacepoints.npassed}
 bhtest1=p hits/planes, f sp    :   {bhmsTest1.npassed}
 bhtest2=p sp, f stubs          :   {bhmsTest2.npassed}
 
-
+bhdid                           :   {BHMSScinDid.npassed}
+bhdide                          :   {BHMSScinDide.npassed}
+bhdidh                          :   {BHMSScinDidh.npassed}
+bhscinshould                    :   {BHMSScinShould.npassed}
+bhscinshoulde                   :   {BHMSScinShoulde.npassed}
+bhscinshouldh                   :   {BHMSScinShouldh.npassed}
+COIN FID TRACK EFFIC            : {BHMSScinDid.npassed/(BHMSScinShould.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShould.npassed-BHMSScinDid.npassed)/(BHMSScinShould.npassed+.0001)):%8.4f}
+E COIN FID TRACK EFFIC          : {BHMSScinDide.npassed/(BHMSScinShoulde.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShoulde.npassed-BHMSScinDide.npassed)/(BHMSScinShoulde.npassed+.0001)):%8.4f}
+HADRON COIN FID TRACK EFFIC     : {BHMSScinDidh.npassed/(BHMSScinShouldh.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShouldh.npassed-BHMSScinDidh.npassed)/(BHMSScinShouldh.npassed+.0001)):%8.4f}
 
 
 ********************************************************************

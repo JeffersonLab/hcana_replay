@@ -136,8 +136,13 @@ HMSScinDid            HMSScinShould && H.dc.ntrack > 0
 HMSScinDide           HMSScinShoulde && H.dc.ntrack > 0
 HMSScinDidh           HMSScinShouldh && H.dc.ntrack > 0
 
-BHMSScinShould        HMSScinShould && H.gold.index > -1 && H.tr.beta >= 0.1 && g.evtyp==3
+BHMSScinShould        HMSScinShould && H.hod.betanotrack >= 0.1 && g.evtyp==3
+BHMSScinShoulde       BHMSScinShould && H.cher.npesum > 0.2 && ( H.gold.beta > ( H.hod.betap - 0.5 ) ) && ( H.gold.beta < ( H.hod.betap - 0.5 ) )
+BHMSScinShouldh       BHMSScinShould && H.cher.npesum > 0.2 
 
+BHMSScinDid           BHMSScinShould && H.dc.ntrack > 0
+BHMSScinDide          BHMSScinShoulde && H.dc.ntrack > 0
+BHMSScinDidh          BHMSScinShouldh && H.dc.ntrack > 0
 
 bhscinshoulde = bhscinshould && (hcer_npe_sum > 0.2) && (hbeta> (hbeta_pcent-.05)) && (hbeta< (hbeta_pcent+.05))
 
