@@ -8,6 +8,7 @@ block H.cal.*
 block H.aero.*
 block H.cher.*
 block S.tr.*
+block S.gold.*
 block S.dc.*
 block S.hod.*
 block S.cal.*

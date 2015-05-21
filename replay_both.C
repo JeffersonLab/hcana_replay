@@ -50,11 +50,12 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
   //
-  THaApparatus* SOS = new THcHallCSpectrometer("S","SOS");
-  gHaApps->Add( SOS );
+    THaApparatus* SOS = new THcHallCSpectrometer("S","SOS");
+   gHaApps->Add( SOS );
   // Add detectors
   SOS->AddDetector( new THcHodoscope("hod", "Hodoscope" ));
   SOS->AddDetector( new THcShower("cal", "Shower" ));
+  SOS->AddDetector( new THcCherenkov("cher", "Gas Cerenkov" ));
   SOS->AddDetector( new THcDC("dc", "Drift Chambers" ));
 
   // Beamline and its detectors
@@ -63,6 +64,7 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
 
   // setup physics
   gHaPhysics->Add( new THaGoldenTrack( "H.gold", "HMS Golden Track", "H" ));
+  gHaPhysics->Add( new THaGoldenTrack( "S.gold", "SOSS Golden Track", "S" ));
   // Set up the analyzer - we use the standard one,
   // but this could be an experiment-specific one as well.
   // The Analyzer controls the reading of the data, executes
