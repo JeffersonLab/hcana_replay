@@ -71,18 +71,15 @@ f1bhspacepoints                :   {f1bhmsSpacepoints.npassed}
 f2bhspacepoints                :   {f2bhmsSpacepoints.npassed}
 bhtest1=p hits/planes, f sp    :   {bhmsTest1.npassed}
 bhtest2=p sp, f stubs          :   {bhmsTest2.npassed}
-
-bhdid                           :   {BHMSScinDid.npassed}
-bhdide                          :   {BHMSScinDide.npassed}
-bhdidh                          :   {BHMSScinDidh.npassed}
-bhscinshould                    :   {BHMSScinShould.npassed}
-bhscinshoulde                   :   {BHMSScinShoulde.npassed}
-bhscinshouldh                   :   {BHMSScinShouldh.npassed}
-COIN FID TRACK EFFIC            : {BHMSScinDid.npassed/(BHMSScinShould.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShould.npassed-BHMSScinDid.npassed)/(BHMSScinShould.npassed+.0001)):%8.4f}
-E COIN FID TRACK EFFIC          : {BHMSScinDide.npassed/(BHMSScinShoulde.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShoulde.npassed-BHMSScinDide.npassed)/(BHMSScinShoulde.npassed+.0001)):%8.4f}
-HADRON COIN FID TRACK EFFIC     : {BHMSScinDidh.npassed/(BHMSScinShouldh.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShouldh.npassed-BHMSScinDidh.npassed)/(BHMSScinShouldh.npassed+.0001)):%8.4f}
-
-
+bhdid                          :   {BHMSScinDid.npassed}
+bhdide                         :   {BHMSScinDide.npassed}
+bhdidh                         :   {BHMSScinDidh.npassed}
+bhscinshould                   :   {BHMSScinShould.npassed}
+bhscinshoulde                  :   {BHMSScinShoulde.npassed}
+bhscinshouldh                  :   {BHMSScinShouldh.npassed}
+COIN FID TRACK EFFIC           : {BHMSScinDid.npassed/(BHMSScinShould.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShould.npassed-BHMSScinDid.npassed)/(BHMSScinShould.npassed+.0001)):%8.4f}
+E COIN FID TRACK EFFIC         : {BHMSScinDide.npassed/(BHMSScinShoulde.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShoulde.npassed-BHMSScinDide.npassed)/(BHMSScinShoulde.npassed+.0001)):%8.4f}
+HADRON COIN FID TRACK EFFIC    : {BHMSScinDidh.npassed/(BHMSScinShouldh.npassed+0.0001):%8.4f} +- {(sqrt(BHMSScinShouldh.npassed-BHMSScinDidh.npassed)/(BHMSScinShouldh.npassed+.0001)):%8.4f}
 ********************************************************************
 
 
@@ -174,6 +171,17 @@ anyhs2x  eff = {anyhs2x.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
 anyhs2y  eff = {anyhs2y.npassed/(hmscoin_event.npassed+.0001):%5.3f}  BAD = .99
 
 
+         I_avg           Q_tot             Q_tot
+      (microAmps)   (microCoulombs)   (microAmp-hours)
+BCM1 
+BCM2 
+BCM3 
+
+hpretriggers  = 
+htriggers     = 
+hadcgates     = 
+Computer D.T. = 
+Elec. D.T.    = 
 
 **************************
 * Hodoscope Efficiencies *
@@ -188,6 +196,95 @@ Tracks passing chisquared cut = {HstatNumevents.npassed:%7d}
 Scint  POS eff NEG eff  OR eff AND eff  Hits
 -----  ------- ------- ------- -------  ----
 
+
+*************************
+* Cerenkov Efficiencies *
+*************************
+Good Track Requirements:
+   1. Only one track found in the focal plane
+   2. chisq/dof <  {hcer_chi2max:%6.2f}
+   3. {hcer_beta_min:%6.2f} < beta < {hcer_beta_max:%6.2f}
+   4. {hcer_et_min:%6.2f} < calorimeter energy < {hcer_et_max:%6.2f}
+Threshold set at  {hcer_threshold:%6.2f}
+
+Mirror 1 Efficiency = ??? =    {H.cher.cerfiredcounter[0]:%6.2f} of   {hcher_fired_counter[0]:%6.2f} good tracks.
+Mirror 2 Efficiency = ??? =    {H.cher.cerfiredcounter[1]:%6.2f} of   {hcher_fired_counter[1]:%6.2f} good tracks.
+Overall  Efficiency = ??? =    {H.cher.cerfiredcounter[2]:%6.2f} of   {hcher_fired_counter[2]:%6.2f} good tracks.
+
+****************************
+* Calorimeter Efficiencies *
+****************************
+Efficiencies for calorimeter is the fraction of times block was hit when track
+with chisquared/dof < hstat_cal_maxchisq  which came within hstat_cal_slop cm of the center.
+and hcer_npe_sum > 3.0 (hardwired).
+
+Events examined = htrig       = 
+Tracks found    = hcleantrack = 
+Tracks passing chisquared cut = 
+
+Block   eff    Hits
+-----   ---    ----
+hA1   
+hA2   
+hA3   
+hA4   
+hA5   
+hA6   
+hA7   
+hA8   
+hA9   
+hA10  
+hA11  
+hA12  
+hA13  
+
+hB1   
+hB2   
+hB3   
+hB4   
+hB5   
+hB6   
+hB7   
+hB8   
+hB9   
+hB10  
+hB11  
+hB12  
+hB13  
+
+hC1   
+hC2   
+hC3   
+hC4   
+hC5   
+hC6   
+hC7   
+hC8   
+hC9   
+hC10  
+hC11  
+hC12  
+hC13  
+
+hD1   
+hD2   
+hD3   
+hD4   
+hD5   
+hD6   
+hD7   
+hD8   
+hD9   
+hD10  
+hD11  
+hD12  
+hD13  
+
+hA    
+hB    
+hC    
+hD    
+end report hrep
 
 
 --------------------------------------------------------------------------------------
