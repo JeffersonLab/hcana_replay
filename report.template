@@ -123,17 +123,17 @@ bothgoodhdc =   {bothGood.npassed}   eff = {(bothGood.npassed/(hmscoin_event.npa
 "hfoundtrack" based on analyzer variable HNTRACKS_FP.
 "hcleantrack" based on analyzer variable HSNUM_FPTRACK (=foundtrack+chi2+PID).
 
-hfoundtrack = {hFoundTrack.npassed:%7d}   eff = {hFoundTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}  BAD = .95
-hfound1track= {hFound1Track.npassed:%7d}   eff = {hFound1Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
-hfound2track= {hFound2Track.npassed:%7d}   eff = {hFound2Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
-hfound3track= {hFound3Track.npassed:%7d}   eff = {hFound3Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
-hfound4track= {hFound4Track.npassed:%7d}   eff = {hFound4Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfoundtrack  = {hFoundTrack.npassed:%7d}   eff = {hFoundTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}  BAD = .95
+hfound1track = {hFound1Track.npassed:%7d}   eff = {hFound1Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfound2track = {hFound2Track.npassed:%7d}   eff = {hFound2Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfound3track = {hFound3Track.npassed:%7d}   eff = {hFound3Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
+hfound4track = {hFound4Track.npassed:%7d}   eff = {hFound4Track.npassed/(hmscoin_event.npassed+.0001):%5.3f}
 
-hcleantrack = {hCleanTrack.npassed:%7d}   eff = {hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}  BAD = .95
-1hcleantrack= {1hCleanTrack.npassed:%7d}   eff = {1hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
-2hcleantrack= {2hCleanTrack.npassed:%7d}   eff = {2hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
-3hcleantrack= {3hCleanTrack.npassed:%7d}   eff = {3hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
-4hcleantrack= {4hCleanTrack.npassed:%7d}   eff = {4hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+hcleantrack  = {hCleanTrack.npassed:%7d}   eff = {hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}  BAD = .95
+1hcleantrack = {1hCleanTrack.npassed:%7d}   eff = {1hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+2hcleantrack = {2hCleanTrack.npassed:%7d}   eff = {2hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+3hcleantrack = {3hCleanTrack.npassed:%7d}   eff = {3hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
+4hcleantrack = {4hCleanTrack.npassed:%7d}   eff = {4hCleanTrack.npassed/(hmscoin_event.npassed+0.0001):%5.3f}
 
 "Any"  means one or more hits per scint plane.
 "Good" means one or two  hits per scint plane.
@@ -207,9 +207,12 @@ Good Track Requirements:
    4. {hcer_et_min:%6.2f} < calorimeter energy < {hcer_et_max:%6.2f}
 Threshold set at  {hcer_threshold:%6.2f}
 
-Mirror 1 Efficiency = ??? =    {H.cher.cerfiredcounter[0]:%6.2f} of   {hcher_fired_counter[0]:%6.2f} good tracks.
-Mirror 2 Efficiency = ??? =    {H.cher.cerfiredcounter[1]:%6.2f} of   {hcher_fired_counter[1]:%6.2f} good tracks.
-Overall  Efficiency = ??? =    {H.cher.cerfiredcounter[2]:%6.2f} of   {hcher_fired_counter[2]:%6.2f} good tracks.
+Mirror 1 Efficiency = {H.cher.cerfiredcounter[0]/( H.cher.certrackcounter[0] + 0.0001 ):%5.3f}  
+Mirror 1 {H.cher.cerfiredcounter[0]:%6d} of {H.cher.certrackcounter[0]:%6d} good tracks.
+Mirror 2 Efficiency = {H.cher.cerfiredcounter[1]/( H.cher.certrackcounter[1] + 0.0001 ):%5.3f}  
+Mirror 2 {H.cher.cerfiredcounter[1]:%6d} of {H.cher.certrackcounter[1]:%6d} good tracks.
+Overall  Efficiency = {H.cher.cerfiredcounter[2]/( H.cher.certrackcounter[2] + 0.0001 ):%5.3f}  
+Overall  {H.cher.cerfiredcounter[2]:%6d} of {H.cher.certrackcounter[2]:%6d} good tracks.
 
 ****************************
 * Calorimeter Efficiencies *
