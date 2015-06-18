@@ -5,48 +5,48 @@
 # scaler, type, crate, slot, header, mask, norm slot#
 # after the norm slot#:  clock chan# and clock frequency
 
-#scaler #0
-map 1151 1 1 100000 ff00000 1 
-#scaler #1
-map 1151 1 2 200000 ff00000 1 
-#scaler #2
-map 1151 1 3 300000 ff00000 1
-#scaler #3
-map 1151 1 4 400000 ff00000 1
-#scaler #4
-map 1151 1 5 500000 ff00000 1
-#scaler #5
-map 1151 1 6 600000 ff00000 1
-#scaler #6
-map 1151 1 7 700000 ff00000 1
-#scaler #7
-map 1151 1 8 800000 ff00000 1
-#scaler #8
-map 1151 1 9 900000 ff00000 1
-#scaler #9
-map 1151 1 10 a00000 ff00000 1
-#scaler #10
-map 1151 1 11 b00000 ff00000 1
-#scaler #11
-map 1151 1 12 c00000 ff00000 1
-#scaler #12
-map 1151 1 13 d00000 ff00000 1
-#scaler #13
-map 1151 1 14 e00000 ff00000 1 
-#scaler #14
-map 1151 1 15 f00000 ff00000 1
-#scaler #15
-map 1151 1 16 1000000 ff00000 1
-#scaler #16
-map 1151 1 17 1100000 ff00000 1
-#scaler #17
-map 1151 1 18 1200000 ff00000 1
-#scaler #18
-map 1151 1 19 1300000 ff00000 1 
-#scaler #19
-map 1151 1 20 1400000 ff00000 1
-#scaler #20
-map 1151 1 21 1500000 ff00000 1
+#scaler #0 ... HMS S1 X+
+map 1151 1 1 100000 ff00000 19 
+#scaler #1 ... HMS S1 X-
+map 1151 1 2 200000 ff00000 19 
+#scaler #2 ... HMS S1 Y+
+map 1151 1 3 300000 ff00000 19
+#scaler #3 ... HMS S1 Y-
+map 1151 1 4 400000 ff00000 19
+#scaler #4 ... HMS S2 X+
+map 1151 1 5 500000 ff00000 19
+#scaler #5 ... HMS S2 X-
+map 1151 1 6 600000 ff00000 19
+#scaler #6 ... HMS S2 Y+
+map 1151 1 7 700000 ff00000 19
+#scaler #7 ... HMS S2 Y-
+map 1151 1 8 800000 ff00000 19
+#scaler #8 ... HMS TRIG 1
+map 1151 1 9 900000 ff00000 19
+#scaler #9 ... HMS TRIG 2
+map 1151 1 10 a00000 ff00000 19
+#scaler #10 ... HMS HODO
+map 1151 1 11 b00000 ff00000 19
+#scaler #11 ... HMS CAL
+map 1151 1 12 c00000 ff00000 19
+#scaler #12 ... SOS S1X
+map 1151 1 13 d00000 ff00000 19
+#scaler #13 ... SOS S1Y
+map 1151 1 14 e00000 ff00000 19 
+#scaler #14 ... SOS S2X+
+map 1151 1 15 f00000 ff00000 19
+#scaler #15 ... SOS S2X-
+map 1151 1 16 1000000 ff00000 19
+#scaler #16 ... SOS S2Y
+map 1151 1 17 1100000 ff00000 19
+#scaler #17 ... SOS HODO Spare
+map 1151 1 18 1200000 ff00000 19
+#scaler #18 ... SOS TRIG 1
+map 1151 1 19 1300000 ff00000 19
+#scaler #19 ... SOS TRIG 2 ... clock scaler is in channel 4 (first channel is zero) and is 1MHz
+map 1151 1 20 1400000 ff00000 19 4 1000000
+#scaler #20 ... SOS HODO
+map 1151 1 21 1500000 ff00000 19
 
 # variable syntax
 # scaler#, chan#, (1=cnt, 2=rate), var name, description string
