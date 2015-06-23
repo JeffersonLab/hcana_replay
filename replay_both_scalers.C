@@ -1,5 +1,5 @@
   THcAnalyzer* analyzer = new THcAnalyzer;
-void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=10000000) {
+void replay_both_scalers(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=10000000) {
 
   //
   //  Steering script to test hodoscope decoding

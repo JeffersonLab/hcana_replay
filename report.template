@@ -155,13 +155,136 @@ goodhs1s2   = {goodhs1s2.npassed:%7d}   eff = {goodhs1s2.npassed/(hmscoin_event.
 ********************
 * HARDWARE SCALERS *
 ********************
+General Format:
+signal   =   counts (  rate-Hz )
 
+S1       = {HSS1:%15.1f} [ {HSS1/HShCLOCK*1.0e6:%9.1f} ]
+S2       = {HSS2:%15.1f} [ {HSS2/HShCLOCK*1.0e6:%9.1f} ]
+S1X      = {HSS1X:%15.1f} [ {HSS1X/HShCLOCK*1.0e6:%9.1f} ]
+S1Y      = {HSS1Y:%15.1f} [ {HSS1Y/HShCLOCK*1.0e6:%9.1f} ]
+S2X      = {HSS2X:%15.1f} [ {HSS2X/HShCLOCK*1.0e6:%9.1f} ]
+S2Y      = {HSS2Y:%15.1f} [ {HSS2Y/HShCLOCK*1.0e6:%9.1f} ]
 
+hS1X     = {HShS1X:%15.1f} [ {HShS1X/HShCLOCK*1.0e6:%9.1f} ]
+hS1Y     = {HShS1Y:%15.1f} [ {HShS1Y/HShCLOCK*1.0e6:%9.1f} ]
+hS2X     = {HShS2X:%15.1f} [ {HShS2X/HShCLOCK*1.0e6:%9.1f} ]
+hS2Y     = {HShS2Y:%15.1f} [ {HShS2Y/HShCLOCK*1.0e6:%9.1f} ]
+hS1      = {HShS1:%15.1f} [ {HShS1/HShCLOCK*1.0e6:%9.1f} ]
+hS2      = {HShS2:%15.1f} [ {HShS2/HShCLOCK*1.0e6:%9.1f} ]
+hSTOF    = {HShSTOF:%15.1f} [ {HShSTOF/HShCLOCK*1.0e6:%9.1f} ]
+hSCIN    = {HShSCIN:%15.1f} [ {HShSCIN/HShCLOCK*1.0e6:%9.1f} ]
+hPRHI    = {HShPRHI:%15.1f} [ {HShPRHI/HShCLOCK*1.0e6:%9.1f} ]
+hPRLO    = {HShPRLO:%15.1f} [ {HShPRLO/HShCLOCK*1.0e6:%9.1f} ]
+hSHLO    = {HShSHLO:%15.1f} [ {HShSHLO/HShCLOCK*1.0e6:%9.1f} ]
+hCER     = {HShCER:%15.1f} [ {HShCER/HShCLOCK*1.0e6:%9.1f} ]
+hELHI    = {HShELHI:%15.1f} [ {HShELHI/HShCLOCK*1.0e6:%9.1f} ]
+hELLO    = {HShELLO:%15.1f} [ {HShELLO/HShCLOCK*1.0e6:%9.1f} ]
+hPION    = {HShPION:%15.1f} [ {HShPION/HShCLOCK*1.0e6:%9.1f} ]
+hPIPRE   = {HShPIPRE:%15.1f} [ {HShPIPRE/HShCLOCK*1.0e6:%9.1f} ]
+hELREAL  = {HShELREAL:%15.1f} [ {HShELREAL/HShCLOCK*1.0e6:%9.1f} ]
+hELCLEAN = {HShELCLEAN:%15.1f} [ {HShELCLEAN/HShCLOCK*1.0e6:%9.1f} ]
+hPRETRG  = {HShPRETRG:%15.1f} [ {HShPRETRG/HShCLOCK*1.0e6:%9.1f} ]
+hPIONHI  = {HShPIONHI:%15.1f} [ {HShPIONHI/HShCLOCK*1.0e6:%9.1f} ]
+hCERHI   = {HShCERHI:%15.1f} [ {HShCERHI/HShCLOCK*1.0e6:%9.1f} ]
+HMSPRE   = {HSHMSPRE:%15.1f} [ {HSHMSPRE/HShCLOCK*1.0e6:%9.1f} ]
+HMSTRG   = {HSHMSTRG:%15.1f} [ {HSHMSTRG/HShCLOCK*1.0e6:%9.1f} ]
+hADCGATES= {HShADCGATES:%15.1f} [ {HShADCGATES/HShCLOCK*1.0e6:%9.1f} ]
+hPRE50   = {HShPRE50:%15.1f} [ {HShPRE50/HShCLOCK*1.0e6:%9.1f} ]
+hPRE100  = {HShPRE100:%15.1f} [ {HShPRE100/HShCLOCK*1.0e6:%9.1f} ]
+hPRE150  = {HShPRE150:%15.1f} [ {HShPRE150/HShCLOCK*1.0e6:%9.1f} ]
+hPRE200  = {HShPRE200:%15.1f} [ {HShPRE200/HShCLOCK*1.0e6:%9.1f} ]
+UNSER    = {HShUNSER:%15.1f} [ {HShUNSER/HShCLOCK*1.0e6:%9.1f} ]
+BCM1     = {HShBCM1:%15.1f} [ {HShBCM1/HShCLOCK*1.0e6:%9.1f} ]
+BCM2     = {HShBCM2:%15.1f} [ {HShBCM2/HShCLOCK*1.0e6:%9.1f} ]
+CLOCK    = {HShCLOCK:%15.1f} [ {HShCLOCK/HShCLOCK*1.0e6:%9.1f} ]
+BEAMGATES= {HShBEAMGATES:%15.1f} [ {HShBEAMGATES/HShCLOCK*1.0e6:%9.1f} ]
+
+hcomp L.T= {100*(HSHMSTRG/(HSHMSPRE+.0001)):%9.2f} %
+helec.D.T= {100*(60/50)*(HShPRE100-HShPRE150)/(HShPRE100+.0001):%9.2f} %
+
+sS1X     = {HSsS1X:%15.1f} [ {HSsS1X/HSsCLOCK*1.0e6:%9.1f} ]
+sS1Y     = {HSsS1Y:%15.1f} [ {HSsS1Y/HSsCLOCK*1.0e6:%9.1f} ]
+sS2X     = {HSsS2X:%15.1f} [ {HSsS2X/HSsCLOCK*1.0e6:%9.1f} ]
+sS2Y     = {HSsS2Y:%15.1f} [ {HSsS2Y/HSsCLOCK*1.0e6:%9.1f} ]
+sS1      = {HSsS1:%15.1f} [ {HSsS1/HSsCLOCK*1.0e6:%9.1f} ]
+sS2      = {HSsS2:%15.1f} [ {HSsS2/HSsCLOCK*1.0e6:%9.1f} ]
+sSTOF    = {HSsSTOF:%15.1f} [ {HSsSTOF/HSsCLOCK*1.0e6:%9.1f} ]
+sSCIN    = {HSsSCIN:%15.1f} [ {HSsSCIN/HSsCLOCK*1.0e6:%9.1f} ]
+sPRHI    = {HSsPRHI:%15.1f} [ {HSsPRHI/HSsCLOCK*1.0e6:%9.1f} ]
+sPRLO    = {HSsPRLO:%15.1f} [ {HSsPRLO/HSsCLOCK*1.0e6:%9.1f} ]
+sSHLO    = {HSsSHLO:%15.1f} [ {HSsSHLO/HSsCLOCK*1.0e6:%9.1f} ]
+sCER     = {HSsCER:%15.1f} [ {HSsCER/HSsCLOCK*1.0e6:%9.1f} ]
+sELHI    = {HSsELHI:%15.1f} [ {HSsELHI/HSsCLOCK*1.0e6:%9.1f} ]
+sELLO    = {HSsELLO:%15.1f} [ {HSsELLO/HSsCLOCK*1.0e6:%9.1f} ]
+sPION    = {HSsPION:%15.1f} [ {HSsPION/HSsCLOCK*1.0e6:%9.1f} ]
+sPIPRE   = {HSsPIPRE:%15.1f} [ {HSsPIPRE/HSsCLOCK*1.0e6:%9.1f} ]
+sELREAL  = {HSsELREAL:%15.1f} [ {HSsELREAL/HSsCLOCK*1.0e6:%9.1f} ]
+sELCLEAN = {HSsELCLEAN:%15.1f} [ {HSsELCLEAN/HSsCLOCK*1.0e6:%9.1f} ]
+sPRETRG  = {HSsPRETRG:%15.1f} [ {HSsPRETRG/HSsCLOCK*1.0e6:%9.1f} ]
+SOSPRE   = {HSSOSPRE:%15.1f} [ {HSSOSPRE/HSsCLOCK*1.0e6:%9.1f} ]
+SOSTRG   = {HSSOSTRG:%15.1f} [ {HSSOSTRG/HSsCLOCK*1.0e6:%9.1f} ]
+sADCGATES= {HSsADCGATES:%15.1f} [ {HSsADCGATES/HSsCLOCK*1.0e6:%9.1f} ]
+sPRE50   = {HSsPRE50:%15.1f} [ {HSsPRE150/HSsCLOCK*1.0e6:%9.1f} ]
+sPRE100  = {HSsPRE100:%15.1f} [ {HSsPRE100/HSsCLOCK*1.0e6:%9.1f} ]
+sPRE150  = {HSsPRE150:%15.1f} [ {HSsPRE150/HSsCLOCK*1.0e6:%9.1f} ]
+sPRE200  = {HSsPRE200:%15.1f} [ {HSsPRE200/HSsCLOCK*1.0e6:%9.1f} ]
+BCM1     = {HSsBCM1:%15.1f} [ {HSsBCM1/HSsCLOCK*1.0e6:%9.1f} ]
+BCM2     = {HSsBCM2:%15.1f} [ {HSsBCM2/HSsCLOCK*1.0e6:%9.1f} ]
+CLOCK    = {HSsCLOCK:%15.1f} [ {HSsCLOCK/HSsCLOCK*1.0e6:%9.1f} ]
+
+scomp D.T= {100*(HSSOSTRG/(HSSOSPRE+.0001)):%9.2f} %
+selec.D.T= {100*(60/50)*(HSsPRE100-HSsPRE150)/(HSsPRE100+.0001):%9.2f} %
+
+COINPRE  = {HSCOINPRE:%15.1f} [ {HSCOINPRE/HSsCLOCK*1.0e6:%9.1f} ]
+PEDPRE   = {HSPEDPRE:%15.1f} [ {HSPEDPRE/HSsCLOCK*1.0e6:%9.1f} ]
+COINTRG  = {HSCOINTRG:%15.1f} [ {HSCOINTRG/HSsCLOCK*1.0e6:%9.1f} ]
+PEDTRG   = {HSPEDTRG:%15.1f} [ {HSPEDTRG/HSsCLOCK*1.0e6:%9.1f} ]
+
+***************************
+*OTHER SCALER INFORMATION *
+***************************
+
+all adcgates= {HShBEAMGATES:%8d} [ {HShBEAMGATES/HSsCLOCK*1.0e6:%7.1f} ]
+hms adcgates= {HShADCGATES:%8d} [ {HShADCGATES/HSsCLOCK*1.0e6:%7.1f} ]
+sos adcgates= {HSsADCGATES:%8d} [ {HSsADCGATES/HSsCLOCK*1.0e6:%7.1f} ]
+==> coin adc= {(HShADCGATES+HSsADCGATES-HShBEAMGATES):%8d} [ {(HShADCGATES+HSsADCGATES-HShBEAMGATES)/HSsCLOCK*1.0e6:%7.1f} ]
+
+hPRE      = {HSHMSPRE:%15.1f} [ {HSHMSPRE/HSsCLOCK*1.0e6:%7.1f} ]
+hPRE2     = {HSSHODO9:%15.1f} [ {HSSHODO9/HSsCLOCK*1.0e6:%7.1f} ] (from SOS scaler)
+hPRE3     = {HShPRETRG:%15.1f} [ {HShPRETRG/HSsCLOCK*1.0e6:%7.1f} ] (HShPRETRG)
+hTRG      = {HSHMSTRG:%15.1f} [ {HSHMSTRG/HSsCLOCK*1.0e6:%7.1f} ]
+hTRG2     = {HSSHODO13:%15.1f} [ {HSSHODO13/HSsCLOCK*1.0e6:%7.1f} ] (from SOS scaler)
+
+aadc-sadc = {(HShBEAMGATES-HSsADCGATES):%15.1f} [ {(HShBEAMGATES-HSsADCGATES)/HSsCLOCK*1.0e6:%7.1f} ]
+
+*hcomputer D.T. = {100*(1-HSHMSTRG/(HSHMSPRE+.0001)):%9.2f} % ( {100*(1-HSSHODO13/(HSSHODO9+.0001)):%6.2f} % from SOS scaler)
+*helect.  D.T.  = {100*(60/50)*(HShPRE100-HShPRE150)/(HShPRE100+.0001):%9.2f} %
+ PS1(calc)      = {((HSHMSTRG-HSCOINTRG)/(HShBEAMGATES-HSsADCGATES+.00001)):%9.1f}
+
+sPSR      = {HSSOSPRE:%15.1f} [ {HSSOSPRE/HSsCLOCK*1.0e6:%7.1f} ]
+sPSR2     = {HShUNUSED4:%15.1f} [ {HShUNUSED4/HSsCLOCK*1.0e6:%7.1f} ] (from HMS scaler)
+sTRG      = {HSSOSTRG:%15.1f} [ {HSSOSTRG/HSsCLOCK*1.0e6:%7.1f} ]
+sTRG2     = {HShUNUSED5:%15.1f} [ {HShUNUSED5/HSsCLOCK*1.0e6:%7.1f} ] (from HMS scaler)
+
+aadc-hadc = {(HShBEAMGATES-HShADCGATES):%15.1f} [ {(HShBEAMGATES-HShADCGATES)/HSsCLOCK*1.0e6:%7.1f} ]
+
+*scomputer D.T. = {100*(1-HSSOSTRG/(HSSOSPRE+.0001)):%9.2f} % ( {100*(1-HShUNUSED5/(HShUNUSED4+.0001)):%9.2f} % from HMS scaler)
+*select    D.T. = {100*(60/50)*(HSsPRE100-HSsPRE150)/(HSsPRE100+.0001):%9.2f} %
+ PS2(calc)      = {((HSSOSTRG-HSSHODO15)/(HShBEAMGATES-HShADCGATES+.00001)):%9.1f}
+
+cPRE       = {HSCOINPRE:%15.1f} [ {HSCOINPRE/HSsCLOCK*1.0e6:%7.1f} ]
+cPRE2      = {HSSHODO11:%15.1f} [ {HSSHODO11/HSsCLOCK*1.0e6:%7.1f} ] (from SOS scaler)
+cTRG       = {HSCOINTRG:%15.1f} [ {HSCOINTRG/HSsCLOCK*1.0e6:%7.1f} ]
+cTRG2      = {HSSHODO15:%15.1f} [ {HSSHODO15/HSsCLOCK*1.0e6:%7.1f} ] (from SOS scaler)
+
+hms coin  D.T. = {100*(1-HSCOINTRG/(HSCOINPRE+.0001)):%9.2f} %
+sos coin  D.T. = {100*(1-HSSHODO15/(HSSHODO11+.0001)):%9.2f} %
+NEW coin  D.T. = {100*(1-HShPRE200/(HShPIONHI+.0001)):%9.2f} %
 
 **********
 *SUMMARY *
 **********
-time        = ???
+Time of run        = {HShCLOCK/1.0e6:%8.2f} sec.
 
 hdc1 6/6 eff = {(hdc_cham_hits[0]/hmsCham1Hits.npassed):%5.3f}  BAD = 0.99
 hdc2 6/6 eff = {(hdc_cham_hits[1]/hmsCham1Hits.npassed):%5.3f}  BAD = 0.99
