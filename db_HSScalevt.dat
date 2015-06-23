@@ -718,63 +718,63 @@ variable 19 0 1  sBCM1   sBCM1 counts
 variable 19 0 2  sBCM1r  sBCM1 rate
 variable 19 1 1  sBCM2   sBCM2 counts
 variable 19 1 2  sBCM2r  sBCM2 rate
-variable 19 2 1  S2TRIG3   S2TRIG3 chan 3 counts
-variable 19 2 2  S2TRIG3r  S2TRIG3 chan 3 rate
-variable 19 3 1  S2TRIG4   STRIG2 chan 4 counts
-variable 19 3 2  S2TRIG4r  STRIG2 chan 4 rate
+variable 19 2 1  sUNUSED7   sUNUSED7 counts
+variable 19 2 2  sUNUSED7r  sUNUSED7 rate
+variable 19 3 1  sUNUSED8   sUNUSED8 counts
+variable 19 3 2  sUNUSED8r  sUNUSED8 rate
 variable 19 4 1  sCLOCK   sCLOCK counts
 variable 19 4 2  sCLOCKr  sCLOCK rate
-variable 19 5 1  S2TRIG6   STRIG2 chan 6 counts
-variable 19 5 2  S2TRIG6r  STRIG2 chan 6 rate
-variable 19 6 1  S2TRIG7   STRIG2 chan 7 counts
-variable 19 6 2  S2TRIG7r  STRIG2 chan 7 rate
-variable 19 7 1  S2TRIG8   STRIG2 chan 8 counts
-variable 19 7 2  S2TRIG8r  STRIG2 chan 8 rate
-variable 19 8 1  S2TRIG9   STRIG2 chan 9 counts
-variable 19 8 2  S2TRIG9r  STRIG2 chan 9 rate
-variable 19 9 1  S2TRIG10   STRIG2 chan 10 counts
-variable 19 9 2  S2TRIG10r  STRIG2 chan 10 rate
-variable 19 10 1  S2TRIG11   STRIG2 chan 11 counts
-variable 19 10 2  S2TRIG11r  STRIG2 chan 11 rate
-variable 19 11 1  S2TRIG12   STRIG2 chan 12 counts
-variable 19 11 2  S2TRIG12r  STRIG2 chan 12 rate
-variable 19 12 1  S2TRIG13   STRIG2 chan 13 counts
-variable 19 12 2  S2TRIG13r  STRIG2 chan 13 rate
-variable 19 13 1  S2TRIG14   STRIG2 chan 14 counts
-variable 19 13 2  S2TRIG14r  STRIG2 chan 14 rate
-variable 19 14 1  S2TRIG15   STRIG2 chan 15 counts
-variable 19 14 2  S2TRIG15r  STRIG2 chan 15 rate
-variable 19 15 1  S2TRIG16   STRIG2 chan 16 counts
-variable 19 15 2  S2TRIG16r  STRIG2 chan 16 rate
+variable 19 5 1  sUNUSED9   sUNUSED9 counts
+variable 19 5 2  sUNUSED9r  sUNUSED9 rate
+variable 19 6 1  sUNUSED10   sUNUSED10 counts
+variable 19 6 2  sUNUSED10r  sUNUSED10 rate
+variable 19 7 1  sUNUSED11   sUNUSED11 counts
+variable 19 7 2  sUNUSED11r  sUNUSED11 rate
+variable 19 8 1  sPION   sPION counts
+variable 19 8 2  sPIONr  sPION rate
+variable 19 9 1  sCER   sCER counts
+variable 19 9 2  sCERr  sCER rate
+variable 19 10 1  sELHI   sELHI counts
+variable 19 10 2  sELHIr  sELHI rate
+variable 19 11 1  sELLO   sELLO counts
+variable 19 11 2  sELLOr  sELLO rate
+variable 19 12 1  sPRHI   sPRHI counts
+variable 19 12 2  sPRHIr  sPRHI rate
+variable 19 13 1  sPRLO   sPRLO counts
+variable 19 13 2  sPRLOr  sPRLO rate
+variable 19 14 1  sSHLO   sSHLO counts
+variable 19 14 2  sSHLOr  sSHLO rate
+variable 19 15 1  sADCGATES   sADCGATES counts
+variable 19 15 2  sADCGATESr  sADCGATES rate
 # gscaler(337-352)
-variable 20 0 1  SHODO1   SHODO chan 1 counts
-variable 20 0 2  SHODO1r  SHODO chan 1 rate
-variable 20 1 1  SHODO2   SHODO chan 2 counts
-variable 20 1 2  SHODO2r  SHODO chan 2 rate
-variable 20 2 1  SHODO3   SHODO chan 3 counts
-variable 20 2 2  SHODO3r  SHODO chan 3 rate
-variable 20 3 1  SHODO4   SHODO chan 4 counts
-variable 20 3 2  SHODO4r  SHODO chan 4 rate
-variable 20 4 1  SHODO5   SHODO chan 5 counts
-variable 20 4 2  SHODO5r  SHODO chan 5 rate
-variable 20 5 1  SHODO6   SHODO chan 6 counts
-variable 20 5 2  SHODO6r  SHODO chan 6 rate
+variable 20 0 1  sS1X   sS1X counts
+variable 20 0 2  sS1Xr  sS1X rate
+variable 20 1 1  sS1Y   sS1Y counts
+variable 20 1 2  sS1Yr  sS1Y rate
+variable 20 2 1  sS2X   sS2X counts
+variable 20 2 2  sS2Xr  sS2X rate
+variable 20 3 1  sS2Y   sS2Y counts
+variable 20 3 2  sS2Yr  sS2Y rate
+variable 20 4 1  sS1   sS1 counts
+variable 20 4 2  sS1r  sS1 rate
+variable 20 5 1  sS2   sS2 counts
+variable 20 5 2  sS2r  sS2 rate
 variable 20 6 1  SHODO7   SHODO chan 7 counts
 variable 20 6 2  SHODO7r  SHODO chan 7 rate
 variable 20 7 1  SHODO8   SHODO chan 8 counts
 variable 20 7 2  SHODO8r  SHODO chan 8 rate
 variable 20 8 1  SHODO9   SHODO chan 9 counts
 variable 20 8 2  SHODO9r  SHODO chan 9 rate
-variable 20 9 1  SHODO10  SHODO chan 10 counts
-variable 20 9 2  SHODO10r SHODO chan 10 rate
+variable 20 9 1  SOSPRE  SOSPRE counts
+variable 20 9 2  SOSPREr SOSPRE rate
 variable 20 10 1  SHODO11   SHODO chan 11 counts
 variable 20 10 2  SHODO11r  SHODO chan 11 rate
 variable 20 11 1  SHODO12   SHODO chan 12 counts
 variable 20 11 2  SHODO12r  SHODO chan 12 rate
 variable 20 12 1  SHODO13   SHODO chan 13 counts
 variable 20 12 2  SHODO13r  SHODO chan 13 rate
-variable 20 13 1  SHODO14   SHODO chan 14 counts
-variable 20 13 2  SHODO14r  SHODO chan 14 rate
+variable 20 13 1  SOSTRG   SOSTRG counts
+variable 20 13 2  SOSTRGr  SOSTRG rate
 variable 20 14 1  SHODO15   SHODO chan 15 counts
 variable 20 14 2  SHODO15r  SHODO chan 15 rate
 variable 20 15 1  SHODO16   SHODO chan 16 counts
