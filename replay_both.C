@@ -1,5 +1,5 @@
   THcAnalyzer* analyzer = new THcAnalyzer;
-void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=10000000) {
+void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToReplay=11000) {
 
   //
   //  Steering script to test hodoscope decoding
@@ -10,8 +10,7 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   char* RunFileNamePattern="daq04_%d.log.0";
   } else {
     // char* RunFileNamePattern="/group/hallc/gabriel/work/daq03_%d.log.0";
-    // char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
-    char* RunFileNamePattern="/Users/brash/Dropbox/Research/daq04/daq04_%d.log.0";
+    char* RunFileNamePattern="/cache/mss/hallc/daq04/raw/daq04_%d.log.0";
     //      char* RunFileNamePattern="/home/zahmed/fAnalyzer/analysis/replay/RawData/daq04_%d.log.0";
   }
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
@@ -50,10 +49,6 @@ void replay_both(Int_t RunNumber=52949, Int_t FirstToReplay=1, Int_t MaxEventToR
   HMS->AddDetector( new THcDC("dc", "Drift Chambers" ));
   THcAerogel* aerogel = new THcAerogel("aero", "Aerogel Cerenkov" );
   HMS->AddDetector( aerogel );
-  //
-  THcScalerEvtHandler *hscaler = new THcScalerEvtHandler("HS","HC scaler event type 0");
-  hscaler->SetDebugFile("HScaler.txt");
-  gHaEvtHandlers->Add (hscaler);
   //
     THaApparatus* SOS = new THcHallCSpectrometer("S","SOS");
    gHaApps->Add( SOS );
